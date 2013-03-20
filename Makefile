@@ -1,3 +1,3 @@
-TARGET = book
+TARGET = MAA2
 
-include Makefile.include
+include ../Makefile.include
