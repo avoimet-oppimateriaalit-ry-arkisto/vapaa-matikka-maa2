@@ -121,6 +121,32 @@ Jaa tekijöihin $x^{11}+2x^{10}+3x+6$.
 \end{align*}
 \end{esimerkki}
 
+Tulon nollasääntö on yksi tärkeimmistä syistä siihen, miksi polynomien tekijöihinjako on hyödyllistä.
+
+Jos vaikkapa haluamme ratkaista yhtälön $2x^3-14x^2+32x-24=0$ ja satumme tietämään, että $2x^3-14x^2+32x-24=2(x-3)(x-2)^2$,
+voimme helposti päätellä, että polynomi saa arvon $0$ jos ja vain jos $x-3=0$ tai $x-2=0$. Yhtälön ainoat ratkaisut ovat siis $x=3$ ja $x=2$.
+
+\begin{esimerkki}
+Ratkaise yhtälö $6x^3-36x^2+54x=0$ tulon nollasäännön avulla.
+\begin{esimratk}
+\begin{align*}
+6x^3-36x^2+54x &= 0 \\
+6(x^3-6x^2+9x) &= 0 && \ppalkki \text{ otetaan } 6 \text{ yhteiseksi tekijäksi} \\
+6x(x^2-6x+9) &= 0 && \ppalkki \text{ otetaan } x \text{ yhteiseksi tekijäksi} \\
+6x(x^2-2\cdot 3\cdot x+3^2)  &= 0 \\
+6x(x-3)^2 &= 0 & \\
+6x(x-3)(x-3) &= 0 && \ppalkki \text{ tulon nollasääntö}\\
+6x=0 \textrm{\quad tai}& \quad x-3=0 \\
+x=0 \textrm{\quad tai}& \quad x=3 \\
+\end{align*}
+\end{esimratk}
+\begin{esimvast}
+$x=0$ tai $x=3$.
+\end{esimvast}
+\end{esimerkki}
+
+Myöhemmin tässä kirjassa esitetään polynomien jakolause, joka antaa vielä syvällisemmän yhteyden polynomien nollakohtien ja tekijöiden välille.
+
 \begin{tehtavasivu}
 
 \paragraph*{Opi perusteet}
@@ -250,7 +276,7 @@ Jaa tekijöihin $x^{11}+2x^{10}+3x+6$.
 		\begin{enumerate}
 			\item $-(x+2)(x-2)$
 			\item $-(x^2+4)(x^2-4)$
-			\item $-(\sqrt{x}-\sqrt{2})(\sqrt{x}+\sqrt{2})$
+			\item $2-x$
 		\end{enumerate}
 	\end{vastaus}
 \end{tehtava}
@@ -266,7 +292,7 @@ Jaa tekijöihin $x^{11}+2x^{10}+3x+6$.
 	\end{enumerate}
 	\begin{vastaus}
 		\begin{enumerate}
-			\item $\left(\sqrt{x}-\frac{1}{\sqrt{2}}\right)\left(\sqrt{x}+\frac{1}{\sqrt{2}}\right)$
+			\item $x-\frac{1}{2}$
 			\item $(x-3)(x+2)$
 			\item $(x-1)(x-7)$
 		\end{enumerate}
