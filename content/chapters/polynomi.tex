@@ -68,12 +68,12 @@ Yleensä polynomien termit kirjoitetaan niiden asteen perusteella laskevaan jär
 {Opetus.tv: \emph{polynomiesimerkkejä} (6:59 ja 7:43)}
 
 Polynomi määrittää funktion, jota kutsutaan \termi{polynomifunktio}{polynomifunktioksi}.
-Esimerkiksi polynomi $2x^2+2x-1$ määrittää funktion $P(x)=2x^2+2x-1$.
+Esimerkiksi polynomi $5x^2-3x+2$ määrittää funktion $P(x)=5x^2-3x+2$.
 Tämän funktion arvoja voidaan laskea sijoittamalla lukuja muuttujan $x$ paikalle:
 \begin{align*}
-    P(2) & = 5\cdot 2^2-3\cdot 2+2 = 20 - 6 + 2 = 16 \\
-    P(-1) & = 5(-1)^2-3(-1)+2 = 5 + 3 + 2 = 10 \\
-    P(-3) & = 5(-3)^2-3(-3)+2 = 45 + 9 + 2 = 56.
+    P(\textcolor{blue}{2}) & = 5\cdot \textcolor{blue}{2}^2-3\cdot \textcolor{blue}{2}+2 = 20 - 6 + 2 = 16 \\
+    P(\textcolor{blue}{-1}) & = 5(\textcolor{blue}{-1})^2-3(\textcolor{blue}{-1})+2 = 5 + 3 + 2 = 10 \\
+    P(\textcolor{blue}{-3}) & = 5(\textcolor{blue}{-3})^2-3(\textcolor{blue}{-3})+2 = 45 + 9 + 2 = 56.
 \end{align*}
 
 Polynomeja ja polynomifunktioita käsitellään usein yhtäläisesti;
@@ -86,14 +86,14 @@ vaikka tarkoitetaan vastaavaa polynomifunktiota.
 {Opetus.tv: \emph{polynomien yhteen- ja vähennyslasku} (7:36)}
 
 Polynomeja voidaan laskea yhteen summaamalla samanasteiset termit.
-On kätevää aloittaa ryhmittelemällä samanasteiset termit vierekkäin.
+On kätevää aloittaa ryhmittelemällä samanasteiset termit vierekkäin. Polynomien summat ja erotukset ovat aina polynomeja.
 
 \begin{esimerkki}
 Laske polynomien $5x^2-x+5$ ja $3x^2-1$ summa.
     \begin{esimratk}
         \begin{align*}
-            (\textcolor{blue}{5x^2} \textcolor{red}{{}-x} + 5) + (\textcolor{blue}{+3x^2} -1) 
-            &=\textcolor{blue}{5x^2} \textcolor{red}{{}-x} + 5  \textcolor{blue}{{}+3x^2} -1 \\
+            (\textcolor{blue}{5x^2} \textcolor{red}{{}-x} + 5) + (\textcolor{blue}{3x^2} -1) 
+            &=\textcolor{blue}{5x^2} \textcolor{red}{{}-x} + 5 + \textcolor{blue}{3x^2} -1 \\
             &=\textcolor{blue}{5x^2+3x^2} \textcolor{red}{{}-x} +5-1\\
             &=\textcolor{blue}{(5+3)x^2} \textcolor{red}{{}-x}+(5-1)\\
             &=\textcolor{blue}{8x^2} \textcolor{red}{{}-x}+4.
@@ -110,11 +110,11 @@ Polynomeja voidaan vastaavalla tavalla vähentää toisistaan.
     Laske polynomien $14x^3+69$ ja $3x^3+2x^2+x$ erotus.
     \begin{esimratk}
         \begin{align*}
-            (\textcolor{green}{14x^3} + 69) - (\textcolor{green}{3x^3} \textcolor{blue}{{}+ 2x^2} \textcolor{red}{{}+x})
-            &= \textcolor{green}{14x^3} + 69 \textcolor{green}{{}-3x^3} - \textcolor{blue}{2x^2} \textcolor{red}{{}-x} \\
-            &= \textcolor{green}{14x^3{}-3x^3} \textcolor{blue}{{}-2x^2} \textcolor{red}{{}-x} + 69 \\
-            &= \textcolor{green}{(14{}-3)x^3} \textcolor{blue}{{}-2x^2} \textcolor{red}{{}-x} + 69 \\
-            &= \textcolor{green}{11x^3} \textcolor{blue}{{}-2x^2} \textcolor{red}{{}-x} + 69
+            (\textcolor{blue!30!green}{14x^3} + 69) - (\textcolor{blue!30!green}{3x^3} \textcolor{blue}{{}+ 2x^2} \textcolor{red}{{}+x})
+            &= \textcolor{blue!30!green}{14x^3} + 69 \textcolor{blue!30!green}{{}-3x^3} \textcolor{blue}{-2x^2} \textcolor{red}{{}-x} \\
+            &= \textcolor{blue!30!green}{14x^3{}-3x^3} \textcolor{blue}{{}-2x^2} \textcolor{red}{{}-x} + 69 \\
+            &= \textcolor{blue!30!green}{(14{}-3)x^3} \textcolor{blue}{{}-2x^2} \textcolor{red}{{}-x} + 69 \\
+            &= \textcolor{blue!30!green}{11x^3} \textcolor{blue}{{}-2x^2} \textcolor{red}{{}-x} + 69
         \end{align*}
     \end{esimratk}
     \begin{esimvast}
@@ -182,7 +182,7 @@ $7x^3-x-15$  &           &                   &           &            \\ \hline
              &        2  &          $-9$     &       2   &    5       \\ \hline 
              &        3  &          $-1$     &       5   &    $-17$   \\ \hline 
              &        4  &                   &       3   &            \\ \hline 
-             &        1  &          -5       &       99  &            \\ \hline                           
+             &        1  &          $-5$     &       99  &            \\ \hline                           
     \end{tabular}
 
 %      \begin{tabular}{|l|c|c|c|c|c|c|}
@@ -342,7 +342,7 @@ $-5x^{99}$   &        1          &          $-5$     &       99            &    
 	Hyödynnä edellisen tehtävän polynomifunktioita ja laske
 	\begin{enumerate}[a)]
 		 \item polynomien P(x) ja Q(x) summa
-		 \item polynomien P(1) ja Q(-2) erotus
+		 \item lukujen P(1) ja Q(-2) erotus
 	\end{enumerate}
 	
 	\begin{vastaus}
