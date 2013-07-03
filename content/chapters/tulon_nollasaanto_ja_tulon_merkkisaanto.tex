@@ -39,19 +39,18 @@ Hyödynnämme merkkisääntöä myöhemmin, kun teemme epäyhtälöistä merkkik
 \subsection*{Tulon nollasääntö}
 
 Tulon merkkisäännöstä seuraa, että positiivisten ja negatiivisten lukujen tulo on aina positiivinen tai negatiivinen, ei koskaan nolla.
-
-Jos siis tulo on $0$, tulon tekijöistä ainakin yhden täytyy olla $0$. Toisaalta $0\cdot x = 0$ kaikilla reaaliluvuilla $x$.
-(Todistus tälle on liitteessä \ref{tod:tulonolla}.)
-
+Jos siis tulo on $0$, tulon tekijöistä ainakin yhden täytyy olla $0$.
+Toisaalta jos jokin tulon tekijöistä on $0$, myös tulo on automaattisesti $0$.
 Nämä tiedot yhdistämällä saadaan tulon nollasääntö:
 
-\laatikko{
-    \emph{Tulon nollasääntö}
-    \begin{itemize}
-   	    \item Jos jokin tulon tekijöistä on $0$, tulo on $0$.
-   	    \item Jos tulo on $0$, ainakin yksi tulon tekijöistä on $0$.
-    \end{itemize}
+\laatikko[Tulon nollasääntö]{
+\begin{itemize}
+ \item Jos jokin tulon tekijöistä on $0$, tulo on $0$.
+ \item Jos tulo on $0$, ainakin yksi tulon tekijöistä on $0$.
+\end{itemize}
 }
+
+%TODO: tästä voisi minusta varsin hyvin jättää pois tuon ensimmäisen kohdan T: Jokke
 
 Tulon nollasääntöä on kätevää soveltaa monissa tilanteissa.
 
@@ -70,11 +69,12 @@ Tulon nollasääntöä on kätevää soveltaa monissa tilanteissa.
 %	Koska selvästi $2\neq 0$, jää ainoaksi ratkaisuksi $x+5=0$ eli $x=-5$.
 %\end{esimerkki}
 
-\begin{esimerkki} Ratkaistaan $y$ yhtälöstä
-    \[(x^5+5x+5)\cdot 0\cdot \sqrt{x^3-1} =y\]
-    Koska vasemmalla puolella yksi tulon tekijöistä on $0$, tiedämme, että tulo on $0$. Siis $y=0$.
-\end{esimerkki}
+% \begin{esimerkki} Ratkaistaan $y$ yhtälöstä
+%     \[(x^5+5x+5)\cdot 0\cdot \sqrt{x^3-1} =y\]
+%     Koska vasemmalla puolella yksi tulon tekijöistä on $0$, tiedämme, että tulo on $0$. Siis $y=0$.
+% \end{esimerkki}
 
+%TODO: onko alla oleva järkevä? mistä tietää, mitä muuttujia on tarkoitus ratkaista. minusta vain sekoittaa asioita T: Jokke
 \begin{esimerkki} Ratkaise yhtälö
     \[xyz=0.\]
 Tulon nollasäännön perusteella $x=0$, $y=0$ tai $z=0$. Nollia voi siis
