@@ -3,36 +3,38 @@
 \qrlinkki{http://opetus.tv/maa/maa2/n-asteinen-polynomiepayhtalo/}{Opetus.tv: \emph{N-asteinen polynomiepäyhtälö} (16:19 ja 12:00)}
 
 Korkeamman asteen epäyhtälö, kuten epäyhtälö
-\[ x^3 -6x \leq x^2 \]
+\[
+x^3 -6x \leq x^2
+\]
 ratkaistaan siirtämällä kaikki termit epäyhtälön toiselle puolelle ja tutkimalla syntyvän polynomin merkkiä:
 \begin{align*}
-    x^3 -6x &\leq x^2 &\ppalkki -x^2 \\
-    \underbrace{x^3-x^2 -6x}_{P(x)} &\leq 0.
+x^3-6x & \leq x^2 & &\ppalkki -x^2 \\
+\underbrace{x^3-x^2-6x}_{P(x)} &\leq 0. &&
 \end{align*}
 Polynomin $P(x)$ merkin selvittämiseksi ratkaistaan sen nollakohdat:
 \begin{align*}
-    x^3 - x^2-6x &= 0 &\ppalkki \text{yhteinen tekijä} \\
-    x(x^2 -x -6) &= 0 &\ppalkki \text{tulon nollasääntö} \\
-    x = 0 \tai x^2 -x -6 &= 0 &\ppalkki \text{ratkaisukaava} \\
-    x &=\frac{-(-1) \pm \sqrt{(-1)^2-4\cdot 1 \cdot (-6)}}{2\cdot 1} \\
-    x &= -2 \tai x = 3.
+    x^3 - x^2-6x &= 0 & &\ppalkki \text{$x$ yhteiseksi tekijäksi} \\
+    x(x^2 -x -6) &= 0 & &\ppalkki \text{tulon nollasääntö} \\
+    x = 0 \quad \text{tai} \quad & x^2 -x -6 = 0 & &\ppalkki \text{ratkaisukaava} \\
+    x= 0 \quad \text{tai} \quad & x=\frac{-(-1) \pm \sqrt{(-1)^2-4\cdot 1 \cdot (-6)}}{2\cdot 1} && \\
+    x = -2 \quad \text{tai} \quad & x = 3. &&
 \end{align*}
 Polynomin $P$ nollakohdat ovat siis $0$, $-2$ ja $3$. Tästä voidaan jatkaa kahdella eri tavalla.
 
-\paragraph{Tapa 1.} Tekijöihin jako
+\textbf{Tapa 1: Tekijöihin jako.}
 
 Jaetaan polynomi tekijöihin nollakohtien avulla:
-\[ P(x) = x^3 - x^2-6x = x(x^2-x-6) = x(x+2)(x-3). \]
+\[
+P(x) = x^3 - x^2-6x = x(x^2-x-6) = x(x+2)(x-3).
+\]
 Tutkitaan kunkin tulon tekijän merkkiä:
-
 \begin{align*}
-    x+2>0 &\kun x > -2\\
-    x-3>0 &\kun x > 3\\
-    x>0 &\kun x > 0.
+    x+2>0 & \quad \text{kun} \quad x > -2\\
+    x-3>0 & \quad \text{kun} \quad x > 3\\
+    x>0 & \quad \text{kun} \quad x > 0.
 \end{align*}
 
 Kootaan tulokset merkkikaavioon, jonka jokainen ruutu vastaa yhtä reaalilukuväliä lukusuoralla:
-
 \begin{center}
     \begin{merkkikaavio}{3}
         \merkkikaavioKohta{$-2$}
@@ -67,29 +69,29 @@ Kootaan tulokset merkkikaavioon, jonka jokainen ruutu vastaa yhtä reaalilukuvä
         \merkkikaavioMerkki{$+$}
     \end{merkkikaavio}
 \end{center}
+Merkkikaavion alin rivi saadaan tulon merkkisäännöstä: kolmen negatiivisen luvun tulo on negatiivinen, yhden positiivisen ja kahden negatiivisen tulo positiivinen jne.
+Kaavion viimeiseltä riviltä voidaan nyt lukea vastaus alkuperäiseen kysymykseen: $x^3-x^2-6 \leq 0$, kun $x\leq -2$ tai $0\leq x \leq 3$.
 
-Merkkikaaviosta voidaan lukea vastaus: $x^3-x^2-6 \leq 0$, kun $x\leq -2$ tai $0\leq x \leq 3$.
+\textbf{Tapa 2: Testipisteet.}
 
-\paragraph{Tapa 2.} Testipisteet
-
-Polynomit ovat jatkuvia funktioita. Jatkuvuudesta puhutaan vasta kurssilla MAA7.
+Polynomit ovat jatkuvia funktioita. Jatkuvuutta käsitellään tarkemmin vasta kurssilla MAA7.
 Intuitiivisesti jatkuvuudessa on kyse siitä, että funktion kuvaaja on yhtenäinen viiva.
 Jatkuvuudesta seuraa, että polynomi ei voi vaihtaa merkkiä kulkematta nollakohdan kautta.
-Polynomin merkin nollakohtien välillä saa selville tarkistamalla väliltä otetun testipisteen merkin.
+Polynomin merkin nollakohtien välillä saa selville tarkistamalla jonkin väliltä otetun testipisteen merkin.
 
 Esimerkissä nollakohdat olivat $-2$, $0$ ja $3$. Valitaan niiden välistä ja
-ympäriltä testipisteiksi vaikkapa $x=-3$, $x=-1$, $x=1$ ja $x=4$. Tarkistetaan funktion merkki:
+ympäriltä testipisteiksi vaikkapa $x=-3$, $x=-1$, $x=1$ ja $x=4$. Tarkistetaan funktion merkki kussakin pisteessä:
 
-\begin{tabular}{c|l|r|c}
+\begin{tabular}{c|c|l|c}
 Väli & Testipiste & $f(x)=x^3-x^2-6x$ & Funktion merkki \\
 \hline
-\ \ \ \ \  $x < -2$ & $x = -3$ & $(-3)^3 -(-3)^2 - 6(-3) = -18$ & $-$ \\
+$x < -2$ & $x = -3$ & $(-3)^3 -(-3)^2 - 6(-3) = -18$ & $-$ \\
 $-2 <x < 0$ & $x = -1$ & $(-1)^3 -(-1)^2 - 6(-1) =4$ & $+$ \\
 $0 <x < 3$ & $x = 1$ & $1^3 -1^2 - 6\cdot 1 =  -6$ & $-$ \\
-$3 <x $ \ \ \ \ \ & $x = 4$ & $4^3 -4^2 - 6\cdot 4 = 24$ & $+$
+$3 <x $ & $x = 4$ & $4^3 -4^2 - 6\cdot 4 = 24$ & $+$
 \end{tabular}
 
-Vastaukseksi saadaan taas $x\leq -2$ tai $0\leq x \leq 3$.
+Vastaukseksi saadaan sama kuin edellä: $x^3-x^2-6 \leq 0$, kun $x\leq -2$ tai $0\leq x \leq 3$.
 
 \begin{tehtavasivu}
 
