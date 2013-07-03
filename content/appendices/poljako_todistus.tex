@@ -1,6 +1,27 @@
 \subsection*{Polynomien jakolause}
 \label{tod:poljako}
 
+% Aloin tehdä tätä toista todistusta, mutta en ehtinyt kovin pitkälle. T: Jokke
+%
+% Tarkastellaan aluksi seuraavia polynomien kertolaskuja, jotka voidaan kaikki tarkistaa käsin:
+% \begin{align*}
+% (x-1)(x+1) & =x^2-1 \\
+% (x-1)(x^2+x+1) & =x^3-1 \\
+% (x-1)(x^3+x^2+x+1) & =x^4-1 \\
+% & \vdots
+% \end{align*}
+% Näistä huomataan, että polynomi $x^n-1$ on aina jaollinen polynomilla $x-1$.
+% Osamääräksi tulee polynomi $x^{n-1}+x^{n-2}+\cdots+x+1$.
+% Tämä voidaan myös todistaa laskemalla tulo
+% \begin{align*}
+% (x-1)(x^{n-1}+x^{n-2}+\cdots+x+1) & =x(x^{n-1}+x^{n-2}+\cdots+x+1)-1\cdot(x^{n-1}+x^{n-2}+\cdots+x+1) \\
+% & =x^n+x^{n-1}+\cdots+x^2+x-x^{n-1}-x^{n-2}-\cdots-x-1 \\
+% & =x^n-1.
+% \end{align*}
+% 
+% Nyt voidaan siirtyä varsinaisen jakolauseen todistukseen.
+% Olkoon $b$ polynomin $P(x)$ juuri. Tarkoituksena on osoittaa, että $P(x)$ on jaollinen polynomilla $x-b$.
+
 Jakolauseen todistus perustuu polynomien jakoyhtälöön, josta tarkemmin kurssilla 12.
 
 \begin{todistus}
