@@ -218,6 +218,92 @@ kuvaaja.piirra("1./3*x**2-4*x+5./2", nimi = "$P(x) = \dfrac{1}{3}x^2-4x+\dfrac{5
 
 \paragraph*{Opi perusteet}
 
+
+\begin{tehtava}
+\begin{kuva}
+	kuvaaja.pohja(-2,4.5,-2,8,5,nimiX="$x$",nimiY="$P(x)$")
+	kuvaaja.piirra("x**2-4*x+3")
+\end{kuva}
+Kuvassa on polynomifunktion $P$ kuvaajaa. Määritä on kuvaajan perusteella
+\begin{alakohdat}
+\alakohta{$P(-1)$}
+\alakohta{$P(1)$}
+\alakohta{$P(2)$}
+\alakohta{polynomin $P$ nollakohdat}
+\alakohta{millä $x$:n arvoilla $P(x)=3$.}
+\end{alakohdat}
+\begin{vastaus}
+\begin{alakohdat}
+\alakohta{$8$}
+\alakohta{$0$}
+\alakohta{$-1$}
+\alakohta{Nollakohdat ovat $x=1$ ja $x=3$.}
+\alakohta{Kun $x= 0$ tai $x=4$.}
+\end{alakohdat}
+\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+    Hahmottele polynomien kuvaajat koordinaatistoon. Laske testipisteitä tarpeen mukaan.
+    \begin{alakohdat}
+        \alakohta{$P(x) = x-2$}
+        \alakohta{$Q(x) = 4-x^2$}
+        \alakohta{$R(x) = \frac{1}{4}x^3$}
+    \end{alakohdat}   
+    \begin{vastaus}
+    	\begin{alakohdat}
+    	\alakohta{ \begin{kuvaajapohja}{0.4}{-4}{4}{-4}{4}
+				\kuvaaja{2*x-2}{}{red}
+			  \end{kuvaajapohja}}
+    	\alakohta{ \begin{kuvaajapohja}{0.4}{-4}{4}{-3}{5}
+				\kuvaaja{4-x**2}{}{red}
+			  \end{kuvaajapohja}}
+		\alakohta{ \begin{kuvaajapohja}{0.4}{-4}{4}{-4}{4}
+				\kuvaaja{0.25*x**3}{}{red}
+			  \end{kuvaajapohja}}
+		\end{alakohdat}
+    \end{vastaus}
+\end{tehtava}
+
+\paragraph*{Hallitse kokonaisuus}
+
+\begin{tehtava}
+Piirrä polynomifunktion kuvaaja ja päättele sen avulla polynomin nollakohdat.
+Käytä graafista laskinta, tietokonetta tai piirrä käsin.
+\begin{alakohdat}
+\alakohta{$x^3+x^2+x+1$}
+\alakohta{$x^2-6x+2$}
+\end{alakohdat}
+\begin{vastaus}
+\begin{alakohdat}
+\alakohta{$x=-1$}
+\alakohta{$x \approx 0,35$ ja $x \approx 5,65$}
+\end{alakohdat}
+\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava} $\star$
+	Monia funktioita voidaan esittää likimääräisesti polynomeina (ns.
+Taylorin polynomi). Esimerkiksi (kun $-1<x<1$)
+
+	\begin{tabular}{lcll}
+	$\frac{1}{1+x^2}$ &$\approx$ & $1-x^2+x^4-x^6+x^8-x^{10}$ \\
+	$\sqrt{1+x}$ & $\approx $ & $ 1+\frac{x}{2}
+	-\frac{x^2}{8}+\frac{x^3}{16}-\frac{5x^4}{128}$
+	\end{tabular}
+
+	Piirrä alkuperäinen funktio ja polynomi samaan kuvaajaan tietokoneella
+tai graafisella laskimella. Kokeile, kuinka polynomin viimeisten termien pois
+jättäminen vaikuttaa tarkkuuteen. Mitä havaitset? (Termejä voi laskea lisääkin,
+mutta siihen ei puututa tässä.)
+
+	\begin{vastaus}
+		Mitä enemmän termejä, sitä parempi vastaavuus.
+	\end{vastaus}
+\end{tehtava}
+
+\paragraph*{Lisää tehtäviä}
+
 \begin{tehtava}
     Piirrä polynomien kuvaajat.
     \begin{alakohdat}
@@ -243,69 +329,6 @@ kuvaaja.piirra("1./3*x**2-4*x+5./2", nimi = "$P(x) = \dfrac{1}{3}x^2-4x+\dfrac{5
 		\end{alakohdat}
     \end{vastaus}
 \end{tehtava}
-
-\begin{tehtava}
-\begin{kuva}
-	kuvaaja.pohja(-2,4,-2,8,5,nimiX="$x$",nimiY="$P(x)$",ruudukko=False)
-	kuvaaja.piirra("x**2-4*x+3")
-\end{kuva}
-Kuvaaja esittää polynomifunktion $P$ kuvaajaa. Mitä on kuvaajan perusteella
-\begin{alakohdat}
-\alakohta{$P(-1)$}
-\alakohta{$P(0)$}
-\alakohta{$P(1)$}
-\alakohta{$P(2)$}
-\alakohta{$P(3)$?}
-\end{alakohdat}
-\begin{vastaus}
-\begin{alakohdat}
-\alakohta{$8$}
-\alakohta{$3$}
-\alakohta{$0$}
-\alakohta{$-1$}
-\alakohta{$0$}
-\end{alakohdat}
-\end{vastaus}
-\end{tehtava}
-
-\begin{tehtava}
-Piirrä polynomifunktion kuvaaja ja päättele sen avulla polynomin nollakohdat.
-\begin{alakohdat}
-\alakohta{$x^3+x^2+x+1$}
-\alakohta{$x^2-6x+2$}
-\end{alakohdat}
-\begin{vastaus}
-\begin{alakohdat}
-\alakohta{$x=1$}
-\alakohta{$x \approx 0,35$ ja $x \approx 5,65$}
-\end{alakohdat}
-\end{vastaus}
-\end{tehtava}
-
-\paragraph*{Hallitse kokonaisuus}
-
-\begin{tehtava}
-	Monia funktioita voidaan esittää likimääräisesti polynomeina (ns.
-Taylorin polynomi). Esimerkiksi
-
-	\begin{tabular}{lcll}
-	$\frac{1}{1+x^2}$ &$\approx$ & $1-x^2+x^4-x^6+x^8-x^{10}$, & kun
-$-1<x<1$ \\
-	$\sqrt{1+x}$ & $\approx $ & $ 1+\frac{x}{2}
-	-\frac{x^2}{8}+\frac{x^3}{16}-\frac{5x^4}{128}$, & kun $-1<x<1$
-	\end{tabular}
-
-	Piirrä alkuperäinen funktio ja polynomi samaan kuvaajaan tietokoneella
-tai graafisella laskimella. Kokeile, kuinka polynomin viimeisten termien pois
-jättäminen vaikuttaa tarkkuuteen. Mitä havaitset? (Termejä voi laskea lisääkin,
-mutta siihen ei puututa tässä.)
-
-	\begin{vastaus}
-		Mitä enemmän termejä, sitä parempi vastaavuus.
-	\end{vastaus}
-\end{tehtava}
-
-\paragraph*{Lisää tehtäviä}
 
 \begin{tehtava}
     Piirrä polynomien kuvaajat.
