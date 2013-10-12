@@ -191,10 +191,10 @@ Kaikki toisen asteen yhtälöt voidaan ratkaista neliöksi täydentämällä. (Y
 \begin{esimerkki} 
 Ratkaise yhtälö $x^2+4x-16 = 0$. 
 
-Kirjoitetaan yhtälö muotoon $x^2+2\cdot 2x-16 = 0$ ja verrataan kahta ensimmäistä termiä
+Kirjoitetaan yhtälö muotoon $x^2+2\cdot 2\cdot x-16 = 0$ ja verrataan kahta ensimmäistä termiä
 muistikaavaan, jotta nähdään, minkä binomin neliöksi lauseke voidaan muokata.
 \[ \begin{array}{lcl}
-x^2+2\cdot 2\cdot x  &=& (\quad + \quad)^2\\
+x^2+2\cdot x\cdot 2  &=& (\quad + \quad)^2\\
 a^2 +2\cdot a\cdot b +b^2 &=& (a+b)^2
 \end{array} \]
 Lausekkeita vertaamalla nähdään vastaavuus $a = x$, $b = 2$. Neliöstä puuttuva
@@ -423,6 +423,7 @@ x &= \frac{1 \pm \sqrt{6}}{2}.
     Toisen asteen yhtälön vakiotermi on 4 ja sen ratkaisut ovat 2 ja 3. Mikä yhtälö on kyseessä?
 
     \begin{vastaus}
+		Olkoon yhtälö muotoa $ax^2+bx+4=0$. \\      
       Muodostetaan yhtälöpari:
       \[
         \left\{
@@ -433,7 +434,8 @@ x &= \frac{1 \pm \sqrt{6}}{2}.
         \right.
       \]
       
-      Yhtälöparin ratkaisuna saadaan $a=\frac23$ ja $b=-3\frac13$.
+      Yhtälöparin ratkaisuna saadaan $a=\frac23$ ja $b=-3\frac13$. Yhtälö on siis
+      $\frac{2}{3}x^2-3\frac{1}{3}x+4=0$.
       
       Vastauksen voi saada myös ilmaisemalla polynomiyhtälön tekijämuodossa $a(x-2)(x-3)=0$.
       Tässä tarvitaan kuitenkin juurten ja tekijöiden välistä yhteyttä, joka opetetaan vasta myöhemmin tässä kirjassa.
@@ -467,15 +469,15 @@ x &= \frac{1 \pm \sqrt{6}}{2}.
     \begin{alakohdat}
         \alakohta{$x^2 - 3x = 0$}
         \alakohta{$10x + 2x^2 = 0$}
-        \alakohta{$-3x^2 + 8x = -2x$}
         \alakohta{$2x^2 - x^3 = 0$}
+        \alakohta{$-3x^2 + 8x = -2x$}
     \end{alakohdat}
     \begin{vastaus}
         \begin{alakohdat}
             \alakohta{$x=0$ tai $x=3$}
             \alakohta{$x=0$ tai $x=-5$}
-            \alakohta{$x=0$ tai $x=8$}
             \alakohta{$x=0$ tai $x=2$}
+            \alakohta{$x=0$ tai $x=\frac{10}{3}$}
         \end{alakohdat}
     \end{vastaus}
 \end{tehtava}
