@@ -264,7 +264,7 @@ Laske.
 		\alakohta{$3x$}
 		\alakohta{$x^3$}
 		\alakohta{$-10x^2$}
-		\alakohta{$17x^2$}
+		\alakohta{$14x^2$}
 		\alakohta{$-3x^5$}						
 		\end{alakohdat}
     \end{vastaus}
@@ -367,13 +367,13 @@ Kuvassa on polynomin $P(x)$ kuvaaja.
 
 		\begin{alakohdat}
 		\alakohta{Mitkä ovat polynomin nollakohdat?}
-		\alakohta{Millä muttujan $x$ arvoilla $P(x)>0$?}
+		\alakohta{Millä muuttujan $x$ arvoilla $P(x)>0$?}
 		\alakohta{Kuinka monta ratkaisua yhtälöllä $P(x)=1$ on?}
 		\end{alakohdat}
     \begin{vastaus}
 		\begin{alakohdat}
-		\alakohta{$x=0$, $x=-2$ ja $x=1$}
-		\alakohta{$x<2$ tai $0<x<1$}
+		\alakohta{$x=-2$, $x=0$ ja $x=1$}
+		\alakohta{$-2<x<0$ tai $1 < x$}
 		\alakohta{Vähintään 3. (Kuvaajassa näkyvän alueen 
 		ulkopuolella voisi olla lisää.)}
 		\end{alakohdat}
@@ -401,7 +401,7 @@ Ratkaise yhtälöt.
 		\begin{alakohdat}
 		\alakohta{$x = \frac{7}{3}$}
 		\alakohta{$x=-\frac{5}{6}$}
-		\alakohta{$ x= \frac{93}{5}=18\frac{3}{5}$}			
+		\alakohta{$15$}			
 		\end{alakohdat}
     \end{vastaus}
 \end{tehtava}
@@ -432,8 +432,8 @@ Ratkaise epäyhtälöt.
     \begin{vastaus}
 		\begin{alakohdat}
 		\alakohta{$ x > -2$}	
-		\alakohta{$x < \frac{5}{2}=2\frac{1}{2}$}
-		\alakohta{$x \geq \frac{1}{2}$}
+		\alakohta{$x < -\frac{5}{2}=-2\frac{1}{2}$}
+		\alakohta{$x \geq -\frac{1}{4}$}
 		\end{alakohdat}
     \end{vastaus}
 \end{tehtava}
@@ -449,11 +449,11 @@ täydestä tunnista. Kuinka monen tunnin vuokrassa vuokraamo B on edullisempi?
 
 \begin{tehtava} 
 Ratkaise epäyhtälö \\
-$ax \geq 2x+a$ \\ parametrin $a$ kaikilla arvoilla.
+$ax \geq a-2x$ \\ parametrin $a$ kaikilla arvoilla.
     \begin{vastaus}
-        $x \leq \frac{a}{a-2}$, kun $a > 2$ \\
-        $x \geq \frac{a}{a-2}$, kun $a < 2$ \\
-    $x \in \mathbb{R}$, kun $a = 2$ \\
+        $x \geq \frac{a}{a+2}$, kun $a > -2$ \\
+        $x \leq \frac{a}{a+2}$, kun $a < -2$ \\
+    $x \in \mathbb{R}$, kun $a = -2$ \\
 	\end{vastaus}
 \end{tehtava}
 
@@ -490,16 +490,16 @@ Ratkaise epäyhtälöt.
 \end{tehtava}
 
 \begin{tehtava} 
-Maijan ja Veeran ikien summa on 30. Ikien tulo on yli 189. Minkä ikäisiä tytöt voivat olla?
+Maijan ja Veeran ikien summa on 30. Ikien tulo on yli 186. Minkä ikäisiä tytöt voivat olla?
     \begin{vastaus}
-	Iät ovat 9 ja 21. Yhtälö on $x(30-x)=189$.
+	Vähintään 9, korkeintaan 21. Ratkeaa epäyhtälöstä $x(30-x)>186$.
 	\end{vastaus}
 \end{tehtava}
 
 \begin{tehtava} 
 Millä vakion $k$ arvolla yhtälöllä \\ $kx^2+kx=x-3$ on tasan yksi ratkaisu?
     \begin{vastaus}
-		$k = 7 \pm 4 \sqrt{3}$
+		$k = 7 \pm 4 \sqrt{3}$. Diskriminantti on $D = (k-1)^2-4\cdot k \cdot 3$.
     \end{vastaus}
 \end{tehtava}
 
@@ -529,13 +529,6 @@ Ratkaise yhtälö $2x^7=5x^2$.
 \end{tehtava}
 
 \begin{tehtava} 
-Ratkaise yhtälö $x^4=x^2+6$.
-    \begin{vastaus}
-		$x=\pm \sqrt{3}$
-    \end{vastaus}
-\end{tehtava}
-
-\begin{tehtava} 
 Anna esimerkki (jos mahdollista)
 		\begin{alakohdat}
 		\alakohta{4. asteen yhtälöstä, jolla ei ole ratkaisua }
@@ -552,9 +545,17 @@ Anna esimerkki (jos mahdollista)
 \end{tehtava}
 
 \begin{tehtava} 
-Ratkaise yhtälö $2x^7=5x^2$.
+Ratkaise yhtälö $x^4=x^2+6$.
     \begin{vastaus}
-		$x=0$ tai $x=\sqrt[5]{\frac{5}{2}}$
+		$x=\pm \sqrt{3}$
+    \end{vastaus}
+\end{tehtava}
+
+\begin{tehtava} 
+Ratkaise yhtälö
+$x^7=5x^5-x^6$.
+     \begin{vastaus}
+		$x=0$ tai $x\frac{-1 \pm \sqrt{21}}{2}$ 
     \end{vastaus}
 \end{tehtava}
 
@@ -566,20 +567,6 @@ Mitkä luvut ovat kuutiotaan suurempia?
 \end{tehtava}
 
 \begin{tehtava} 
-Ratkaise yhtälöt
-		\begin{alakohdat}
-		\alakohta{$x^4=x^2+6$}
-		\alakohta{$x^7=5x^5-x^6 $}
-		\end{alakohdat}
-     \begin{vastaus}
-		\begin{alakohdat}
-		\alakohta{$x=\pm \sqrt{3}$}
-		\alakohta{$x=0$ tai $x\frac{-1 \pm \sqrt{21}}{2}$ }
-		\end{alakohdat}
-    \end{vastaus}
-\end{tehtava}
-
-\begin{tehtava} 
 Ratkaise epäyhtälöt
 		\begin{alakohdat}
 		\alakohta{$x^4 < 5x $}
@@ -587,8 +574,8 @@ Ratkaise epäyhtälöt
 		\end{alakohdat}
      \begin{vastaus}
 		\begin{alakohdat}
-		\alakohta{$0<x<5$}
-		\alakohta{$0<x\frac{1}{2}$ tai $x<-3$}
+		\alakohta{$0<x<\sqrt[3]{5}$}
+		\alakohta{$x<-3$ tai $0<x\frac{1}{2}$}
 		\end{alakohdat}
     \end{vastaus}
 \end{tehtava}
@@ -639,8 +626,6 @@ kahden desimaalin tarkkuudella.
 	$x \approx 0,69$, $x \approx 1,86$ tai $x \approx 3,03$.
     \end{vastaus}
 \end{tehtava}
-
-
 
 
 \end{tehtavasivu}
