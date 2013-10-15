@@ -16,13 +16,13 @@ Sama epäyhtälö voidaan kirjoittaa kahdella tavalla: $a < b$ tarkoittaa samaa 
 
 Epäyhtälön totuusarvo voi riippua epäyhtälön puolilla esiintyvien muuttujien arvoista. Tämän perusteella epäyhtälöt voidaan jakaa kolmeen tyyppiin:
 \begin{itemize}
-\item \emph{Aina tosi} -- pätee kaikilla muuttujien arvoilla. Esimerkiksi epäyhtälöt $5 < 6$ tai $x + 1 \leq x + 3$ pätevät riippumatta muuttujan x arvosta.
+\item \emph{Aina tosi} -- pätee kaikilla muuttujien arvoilla. Esimerkiksi epäyhtälöt $5 < 6$ tai $x + 1 \leq x + 3$ pätevät riippumatta muuttujan $x$ arvosta.
 \item \emph{Ehdollisesti tosi} -- pätee vain joillain muuttujien arvoilla. Esimerkiksi epäyhtälö $x < 5$ pätee, kun $x = 4$, mutta ei päde, kun $x = 7$.
 \item \emph{Aina epätosi} -- ei päde millään muuttujien arvoilla. Esimerkiksi epäyhtälöt $3 < 1$ ja $x < x$ eivät päde koskaan.
 \end{itemize}
 
 \subsection*{Epäyhtälöiden muokkaaminen}
-Vastaavasti kuten yhtälöiden ratkaisemisessa, epäyhtälön ratkaisemisessa selvitetään ne muuttujien arvot, joilla epäyhtälö on tosi.
+Kuten yhtälöiden ratkaisemisessa, epäyhtälön ratkaisemisessa selvitetään ne muuttujien arvot, joilla epäyhtälö on tosi.
 
 Kuten yhtälöitä, myös epäyhtälöitä voidaan ratkaista muokkaamalla niitä sellaisilla operaatioilla, joilla muokattu epäyhtälö on yhtäpitävä alkuperäisen kanssa.
 
@@ -161,7 +161,9 @@ Tehdyt operaatiot tuottavat yhtäpitäviä epäyhtälöitä, joten epäyhtälö 
 
 Ratkaistaessa yhtälöitä ratkaisuksi saadaan yleensä pieni joukko lukuja. Epäyhtälöiden tapauksessa on tyypillistä, että ratkaisu on \termi{väli}{väli}, eli kaikki kahden luvun väliset luvut.
 
-Reaalilukuvälejä merkitään usein laittamalla välin ala- ja ylärajat hakasulkujen sisään. Mikäli ala- tai yläraja ei kuulu väliin, vastaava hakasulku käännetään. Esimerkiksi $[a, b[$ tarkoittaa lukuja $x$ jotka toteuttavat kaksoisepäyhtälön $a \leq x < b$. Väliä kutsutaan \termi{suljettu väli}{suljetuksi väliksi}, mikäli ala- ja yläraja kuuluvat väliin, ja \termi{avoin väli}{avoimeksi väliksi}, mikäli ala- ja yläraja eivät kuulu väliin. Jos vain toinen rajoista kuuluu väliin, väli on \termi{puoliavoin väli}{puoliavoin}.
+Reaalilukuvälejä merkitään usein laittamalla välin ala- ja ylärajat hakasulkujen sisään.  Esimerkiksi $[a, b]$ tarkoittaa lukuja $x$ jotka toteuttavat kaksoisepäyhtälön $a \leq x \leq b$. Mikäli ala- tai yläraja ei kuulu väliin, vastaava hakasulku käännetään. Esimerkiksi $[2,5[$ tarkoittaa lukuja $x$, joille pätee $2 \leq x < 5$.
+
+Väliä kutsutaan \termi{suljettu väli}{suljetuksi väliksi}, mikäli ala- ja yläraja kuuluvat väliin, ja \termi{avoin väli}{avoimeksi väliksi}, mikäli ala- ja yläraja eivät kuulu väliin. Jos vain toinen rajoista kuuluu väliin, väli on \termi{puoliavoin väli}{puoliavoin}.
 
 Väli voidaan piirtää lukusuoralle kahden luvun välisenä janana. Päätepisteet merkitään täytetyllä ympyrällä, mikäli luku kuuluu väliin, ja muuten tyhjällä ympyrällä. Esimerkiksi väli $[a, b[$ piirretään seuraavasti:
 
@@ -170,7 +172,7 @@ lukusuora.pohja(0, 10, 8)
 lukusuora.vali(2, 8, True, False, "$a$", "$b$")
 \end{kuva}
 
-Jos halutaan, että väli ei ole alhaalta tai ylhäältä rajoitettu, merkitään rajaksi $-\infty$ tai $\infty$. Koska ääretön ei ole luku eikä näin ollen kuulu väliin, on sitä vastaava hakasulku käännettävä, ja siten esimerkiksi väli $]{-\infty}, a[$ on avoin. 
+Jos halutaan, että väli ei ole alhaalta tai ylhäältä rajoitettu, merkitään rajaksi $-\infty$ tai $\infty$. Koska ääretön ei ole reaaliluku eikä näin ollen kuulu väliin, on sitä vastaava hakasulku käännettävä, ja siten esimerkiksi väli $]{-\infty}, a[$ on avoin. 
 
 Seuraavaan taulukkoon on koottu reaalilukuvälien olennainen käsitteistö ja merkinnät.
 
@@ -215,39 +217,53 @@ lukusuora.kohta(0, "$0$")
 lukusuora.vali(None, 5, False, False, "$-3$", "$5$")
 \end{luoKuva}
 
-\begin{tabular}{|c|p{2.0cm}|p{2.1cm}|c|}
+\begin{tabular}{|p{2.0cm}|p{2.0cm}|c|c|}
 \hline
-Välin nimitys & Epäyhtälö\-merkintä & Joukko-opillinen merkintä & Esitys lukusuoralla \\
+Epäyhtälö\-merkintä & Joukko-opillinen merkintä & Esitys lukusuoralla & Välin nimitys \\
 \hline
-Avoin väli & $-3<x<5$ & $x \in {]-3, 5[}$ & \naytaKuva{vali1} \\
+ $-3<x<5$ & $x \in {]-3, 5[}$ & \naytaKuva{vali1} & Avoin väli  \\
 \hline
-Puoliavoin väli & $-3<x \leq 5$ & $x \in {]-3, 5]}$ & \naytaKuva{vali2} \\
+ $-3<x \leq 5$ & $x \in {]-3, 5]}$ & \naytaKuva{vali2} & Puoliavoin väli  \\
 \hline
-Puoliavoin väli & $-3\leq x < 5$ & $x \in {[-3, 5[}$ & \naytaKuva{vali3} \\
+ $-3\leq x < 5$ & $x \in {[-3, 5[}$ & \naytaKuva{vali3} & Puoliavoin väli  \\
 \hline
-Suljettu väli & $-3\leq x \leq 5$ & $x \in {[-3, 5]}$ & \naytaKuva{vali4} \\
+$-3\leq x \leq 5$ & $x \in {[-3, 5]}$ & \naytaKuva{vali4} & Suljettu väli \\
 \hline
-Puoliavoin väli & $-3\leq x$ & $x \in {[-3, \infty[}$ & \naytaKuva{vali5} \\
+$-3\leq x$ & $x \in {[-3, \infty[}$ & \naytaKuva{vali5} & Puoliavoin väli  \\
 \hline
-Avoin väli & $-3<x$ & $x \in {]-3, \infty[}$ & \naytaKuva{vali6} \\
+ $-3<x$ & $x \in {]-3, \infty[}$ & \naytaKuva{vali6} & Avoin väli \\
 \hline
-Puoliavoin väli & $x \leq 5$ & $x \in {]{-\infty}, 5]}$ & \naytaKuva{vali7} \\
+$x \leq 5$ & $x \in {]{-\infty}, 5]}$ & \naytaKuva{vali7} & Puoliavoin väli  \\
 \hline
-Avoin väli & $x < 5$ & $x \in {]{-\infty}, 5[}$ & \naytaKuva{vali8} \\
+$x < 5$ & $x \in {]{-\infty}, 5[}$ & \naytaKuva{vali8} & Avoin väli  \\
 \hline
 \end{tabular}
 
- \begin{esimerkki}
- 
- a) Epäyhtälö $2<x<10$ vaatii, että $x$ saa arvoja kahden ja kymmenen väliltä, mutta se ei koskaan saa täsmälleen näitä reuna-arvoja. Kyseessä on avoin väli kahdesta kymmeneen, $]2,10[$. Annetulle epäyhtälölle yhtäpitävä ilmaisu on $x \in ]2,10[$. \\
- b) Epäyhtälö $0\leq y \leq 2$ rajaa muuttujan $y$ välille suljetulle välille $[0,2]$. Väli on suljettu, koska $y$ voi myös saada täsmälleen arvot $0$ ja $2$. \\
- c) Joskus kirjallisuudessa näkee äärettömyyssymbolin käyttöä myös kaksoisepäyhtälöissä, esimerkiksi $3<x<\infty $, mutta ilmaistaan yleisemmin muodossa $x \in ]3,\infty[$. Kyseessä on avoin väli. \\
- d) Epäyhtälöt $-100<k\leq 0$ ja $u\leq 90$ ovat puoliavoimia välejä, koska ne rajaavat muuttujan yhtäsuuruuden avulla vain toiselta puolelta. \\
- e) Kaksoisepäyhtälö $\frac{1}{5}\geq x>-\sqrt{3}$ tarkoittaa samaa kuin kaksoisepäyhtälö $-\sqrt{3}<x\leq \frac{1}{5}$. Kaksoisepäyhtälö vaatii, että muuttujalle $x$ pätee erikseen sekä epäyhtälö $-\sqrt{3}<x$ että $x\leq \frac{1}{5}$.
- \end{esimerkki}
+% \begin{esimerkki} % Wall of text!
+%  a) Epäyhtälö $2<x<10$ vaatii, että $x$ saa arvoja kahden ja kymmenen väliltä, mutta se ei koskaan saa täsmälleen näitä reuna-arvoja. Kyseessä on avoin väli kahdesta kymmeneen, $]2,10[$. Annetulle epäyhtälölle yhtäpitävä ilmaisu on $x \in ]2,10[$. \\
+% b) Epäyhtälö $0\leq y \leq 2$ rajaa muuttujan $y$ välille suljetulle välille $[0,2]$. Väli on suljettu, koska $y$ voi myös saada täsmälleen arvot $0$ ja $2$. \\
+% c) Joskus kirjallisuudessa näkee äärettömyyssymbolin käyttöä myös kaksoisepäyhtälöissä, esimerkiksi $3<x<\infty $, mutta ilmaistaan yleisemmin muodossa $x \in ]3,\infty[$. Kyseessä on avoin väli. \\
+% d) Epäyhtälöt $-100<k\leq 0$ ja $u\leq 90$ ovat puoliavoimia välejä, koska ne rajaavat muuttujan yhtäsuuruuden avulla vain toiselta puolelta. \\
+% e) Kaksoisepäyhtälö $\frac{1}{5}\geq x>-\sqrt{3}$ tarkoittaa samaa kuin kaksoisepäyhtälö $-\sqrt{3}<x\leq \frac{1}{5}$. Kaksoisepäyhtälö vaatii, että muuttujalle $x$ pätee erikseen sekä epäyhtälö $-\sqrt{3}<x$ että $x\leq \frac{1}{5}$.
+% \end{esimerkki}
 
+\begin{esimerkki}
+Merkitse väli \quad a) $[-2,4]$ \quad b) $[4,5[$ \quad c) $]6,\infty[$ \quad
+epäyhtälömerkintänä. Onko väli suljettu, avoin vai puoliavoin?
+\begin{esimratk}
+\begin{alakohdat}
+\alakohta{Kun $x\in [-2,4]$, pätee $-2\leq x \leq 4$. Väli on suljettu, koska päätepisteet kuluvat väliin.}
+\alakohta{Kun $x\in [4,5[$, pätee $4 \leq x < 5$. Väli on puoliavoin.}
+\alakohta{Kun $x\in ]6,\infty[$, pätee $6<x$. Väli on avoin, koska kumpikaan päätepiste ei kuulu väliin.}
+\end{alakohdat}
+\end{esimratk}
+\end{esimerkki}
+
+
+\newpage
 \section{Ensimmäisen asteen epäyhtälö}
-% fixme Pitäisikö tämä luku sijoittaa alkamaan omalta sivultaan, kuten luvut 2.1 ja 2.2:kin?
+% Pitäisikö tämä luku sijoittaa alkamaan omalta sivultaan, kuten luvut 2.1 ja 2.2:kin?
+% Joo, nyt on parempi -Ville
 
 \qrlinkki{http://opetus.tv/maa/maa2/ensimmaisen-asteen-epayhtalo/}{Opetus.tv: \emph{ensimmäisen asteen epäyhtälö} (14:55 ja 8:21)}
 
