@@ -334,30 +334,33 @@ $w \leq -\frac{26}{15}$
 \end{esimerkki}
 
 \begin{esimerkki}
-Ratkaise kaksoisepäyhtälö $1\leq q+7<-5q+4$.
+Ratkaise kaksoisepäyhtälö $1\leq q+7<-5q-2$.
 \begin{esimratk}
-Ratkaistavana on itse asiassa kaksi epäyhtälöä: $1\leq q+7$ ja $q+7<-5q+4$. Haluamme siis löytää ne $q$:n arvot, joilla molemmat epäyhtälöt pätevät.
+Ratkaistavana on itse asiassa kaksi epäyhtälöä: $1\leq q+7$ ja $q+7<-5q-2$. Halutaan siis löytää ne $q$:n arvot, joilla molemmat epäyhtälöt pätevät.
 \begin{align*}
 1&\leq q+7 \ \ \ \ \ && \ppalkki -7 \\
 -6&\leq q
 \end{align*}
 Vastaavasti toiselle yhtälölle:
 \begin{align*}
-q+7&<-5q+4  \ \ \ \ \ && \ppalkki +5q \\
-6q+7&<4 && \ppalkki -7 \\
-6q&<-3 && \ppalkki :6 \\
-q&< -\frac12 \\
+q+7&<-5q-2  \ \ \ \ \ && \ppalkki +5q \\
+6q+7&<-2 && \ppalkki -7 \\
+6q&<-9 && \ppalkki :6 \\
+q&< -\frac{9}{6} = -1\frac{1}{2} \\
 \end{align*}
-Nämä yhdistämällä saadaan $-6\leq q$ ja $q< -\frac12$ eli $-6\leq q < -\frac12$ eli $q\in [-6, -\frac12[$.
+Saatiin siis ehdot $-6\leq q$ ja $q< -1\frac12$, jotka täytyy yhdistää.
+
+\begin{tabular}{cl}
+\begin{lukusuora}{-8}{2}{6} \lukusuoravalisa{-6}{}{$-6$}{} \lukusuorapystyviiva{0}{$0$} \end{lukusuora} & $-6\leq q$ \\
+\begin{lukusuora}{-8}{2}{6} \lukusuoravaliaa{}{-1.5}{}{$-1\frac12$} \lukusuorapystyviiva{0}{$0$} \end{lukusuora} & $q< -1\frac12$ \\
+\begin{lukusuora}{-8}{2}{6} \lukusuoravalisa{-6}{-1.5}{$-6$}{$-1\frac12$} \lukusuorapystyviiva{0}{$0$} \end{lukusuora} & $-6\leq q < -1\frac12$ \\
+\end{tabular}
+
+Ehdot ovat yhtä aikaa voimassa, kun $-6\leq q < -1\frac12$.
 \end{esimratk}
 
-\begin{tabular}{cc}
-\begin{lukusuora}{-8}{2}{6} \lukusuoravalisa{-6}{}{$-6$}{} \lukusuorapystyviiva{0}{$0$} \end{lukusuora} & $-6\leq q$ \\
-\begin{lukusuora}{-8}{2}{6} \lukusuoravaliaa{}{-0.5}{}{$-\frac12$} \lukusuorapystyviiva{0}{$0$} \end{lukusuora} & $q< -\frac12$ \\
-\begin{lukusuora}{-8}{2}{6} \lukusuoravalisa{-6}{-0.5}{$-6$}{$-\frac12$} \lukusuorapystyviiva{0}{$0$} \end{lukusuora} & $-6\leq q < -\frac12$ \\
-\end{tabular}
 \begin{esimvast}
- $-6\leq q < -\frac12$.
+ $-6\leq q < -1\frac12$.
 \end{esimvast}
 \end{esimerkki}
 
@@ -481,7 +484,14 @@ Maalipurkki sisältää 10 litraa maalia. Maalin riittoisuus on noin $6~\text{m}
 \end{tehtava}
 
 \begin{tehtava}
-    Ratkaise seuraavat epäyhtälöt.
+	Tietyn auton käyttövoimavero on 450 \euro /vuosi, ja keskimääräinen kulutus on 5 litraa dieselöljyä / 100~km. Saman valmistajan vastaava bensiinikäyttöinen auto kuluttaa 8 litraa / 100~km. Diesel maksaa 1,55 \euro /litra, ja bensiini maksaa 1,65 \euro /litra. Kun vain annetut tiedot huomioidaan, niin kuinka paljon esimerkin dieselajoneuvolla tulee vähintään ajaa vuodessa, jotta se on edullisempi? Dieselauton mahdollista kalliimpaa ostohintaa ei huomioida.
+    \begin{vastaus}
+        8257 km
+    \end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+    Ratkaise epäyhtälöt.
     \begin{alakohdat}
         \alakohta{$3x+6<2x\leq 9-x$}
         \alakohta{$3x+6<2x\leq 1+3x$}
@@ -491,13 +501,6 @@ Maalipurkki sisältää 10 litraa maalia. Maalin riittoisuus on noin $6~\text{m}
             \alakohta{$x<-6$}
             \alakohta{ei ratkaisua}
         \end{alakohdat}
-    \end{vastaus}
-\end{tehtava}
-
-\begin{tehtava}
-	Tietyn auton käyttövoimavero on 450 \euro /vuosi, ja keskimääräinen kulutus on 5 litraa dieselöljyä / 100~km. Saman valmistajan vastaava bensiinikäyttöinen auto kuluttaa 8 litraa / 100~km. Diesel maksaa 1,55 \euro /litra, ja bensiini maksaa 1,65 \euro /litra. Kun vain annetut tiedot huomioidaan, niin kuinka paljon esimerkin dieselajoneuvolla tulee vähintään ajaa vuodessa, jotta se on edullisempi? Dieselauton mahdollista kalliimpaa ostohintaa ei huomioida.
-    \begin{vastaus}
-        8257 km
     \end{vastaus}
 \end{tehtava}
 
@@ -558,9 +561,9 @@ Vähintään arvosana 8.
 
 \begin{tehtava}
 Ratkaise kaksoisepäyhtälö
-\[ 2x-1 < x \leq 3+5x  \]
+\[ 2x-1 < x \leq 3+5x.  \]
     \begin{vastaus}
-        $-\frac{3}{4} \leq x < 1$.
+        $-\frac{3}{4} \leq x < 1$
     \end{vastaus}
 \end{tehtava}
 
