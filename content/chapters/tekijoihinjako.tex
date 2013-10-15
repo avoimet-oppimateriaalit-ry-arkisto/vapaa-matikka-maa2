@@ -1,11 +1,11 @@
 \section{Tekijöihinjako}
 
-\qrlinkki{http://opetus.tv/maa/maa2/polynomin-jakaminen-tekijoihin/}{Opetus.tv: \emph{polynomin jakaminen tekijöihin} (9:50 ja 5:44)}
-
 
 %Pitkän matematiikan 1. kurssilla on käsitelty lukujen jakamista tekijöihin.
-Esimerkiksi luvun $12$ \termi{tekijä}{tekijät} ovat luvut $1$, $2$, $3$, $4$, $6$ ja $12$. Nämä ovat sellaisia
-lukuja, joista saadaan luku $12$ kertomalla ne jollain kokonaisluvulla, tai toisin sanottuna luku $12$ voidaan jakaa
+
+
+Luvun $12$ \termi{tekijä}{tekijät} luonnolisten lukujen joukossa ovat luvut $1$, $2$, $3$, $4$, $6$ ja $12$. Ne ovat
+lukuja, joista saadaan luku $12$ kertomalla ne jollain luonnollisella luvulla. Toisin sanottuna luku $12$ voidaan jakaa
 millä tahansa näistä luvuista ilman jakojäännöstä.
 %Sanotaan myös, että luvun $12$ \termi{alkutekijä}{alkutekijät} ovat $2$ ja $3$, koska luku $12$ voidaan
 %ilmaista niiden tulona ($2\cdot 2\cdot 3 = 2^2\cdot 3 = 12$), mutta näitä tekijöitä ei
@@ -20,50 +20,58 @@ Luku $12$ voidaan kirjoittaa tekijöidensä tulona monella eri tavalla. Esimerki
 \end{align*}
 \end{esimerkki}
 
-Polynomeja voidaan jakaa vastaavalla tavalla tekijöihin. Polynomien tapauksessa tekijöihinjako tarkoittaa
+\subsection*{Polynomin jakaminen tekijöihin}
+
+\qrlinkki{http://opetus.tv/maa/maa2/polynomin-jakaminen-tekijoihin/}{Opetus.tv: \emph{polynomin jakaminen tekijöihin} (9:50 ja 5:44)}
+
+Polynomeja voidaan jakaa tekijöihin kuten lukujakin. Polynomien tapauksessa tekijöihinjako tarkoittaa
 polynomin esittämistä saman- tai pienempiasteisten polynomien tulona. Aste on aina pienempi, ellei kyse ole pelkästä
 vakiokertoimen ottamisesta yhteiseksi tekijäksi.
+
+\subsubsection*{Yhteinen tekijä}
+
+Kun polynomin jokaisessa termissä on sama tekijä, se voidaan ottaa yhteiseksi tekijäksi.
 
 \begin{esimerkki}
 Jaa tekijöihin polynomi $10x^3-20x^2$.
 \begin{align*}
-& 10x^3-20x^2 \\
-=& 10(x^3-2x^2) \ \ \ \ &\emph{otetaan $10$ yhteiseksi tekijäksi} \\
-=& 10x^2(x-2) &\emph{otetaan $x^2$ yhteiseksi tekijäksi} \\
+& 10x^3-20x^2 &\emph{otetaan $10$ yhteiseksi tekijäksi}\\
+=& 10(x^3-2x^2) &\emph{otetaan $x^2$ yhteiseksi tekijäksi} \\
+=& 10x^2(x-2)  
 \end{align*}
 \end{esimerkki}
 
-\newpage
 \begin{esimerkki}
 Jaa tekijöihin \quad a) $x^3+x$ \quad b) $3x^2+6x.$
-
-Kun jokaisessa termissä on sama tekijä, se voidaan ottaa yhteiseksi tekijäksi:
 \begin{alakohdat}
     \alakohta{$x^3+x = x(x^2+1)$}
     \alakohta{$3x^2+6x = 3x(x+2)$.}
 \end{alakohdat}
 \end{esimerkki}
 
-\begin{esimerkki}
-Jaa tekijöihin polynomi $5x^3-20x^2+20x$.
-\begin{align*}
-& 5x^3-20x^2+20x \\
-=& 5(x^3-4x^2+4x) \ \ \ \ &\emph{otetaan $5$ yhteiseksi tekijäksi} \\
-=& 5x(x^2-4x+4) &\emph{otetaan $x$ yhteiseksi tekijäksi} \\
-=& 5x(x^2-2\cdot 2x+2^2) &\emph{sovelletaan muistikaavaa} \\
-=& 5x(x-2)^2
-\end{align*}
-\end{esimerkki}
+\subsubsection*{Muistikaavat}
 
 \begin{esimerkki}
 Jaa tekijöihin \quad a) $x^2-4$ \quad b) $x^2+8x+16.$
-
 Jaetaan polynomit tekijöihin hyödyntämällä muistikaavoja
 \begin{alakohdat}
     \alakohta{$x^2-4 = x^2-2^2 = (x+2)(x-2)$}
     \alakohta{$x^2+8x+16 = x^2+ 2\cdot 4 \cdot x + 4^2 = (x+4)^2$}
 \end{alakohdat}
 \end{esimerkki}
+
+\begin{esimerkki}
+Jaa tekijöihin polynomi $5x^3-20x^2+20x$.
+\begin{align*}
+& 5x^3-20x^2+20x \ \ \ \ &\emph{otetaan $5$ yhteiseksi tekijäksi}\\
+=& 5(x^3-4x^2+4x)&\emph{otetaan $x$ yhteiseksi tekijäksi}  \\
+=& 5x(x^2-4x+4) &\emph{sovelletaan muistikaavaa} \\
+=& 5x(x^2-2\cdot 2x+2^2)  \\
+=& 5x(x-2)^2
+\end{align*}
+\end{esimerkki}
+
+
 
 %On suositeltavaa tarkistaa itse, että yllä esitetyt tekijöihinjaot todella toimivat. Polynomien tekijöihinjaon toimivuus
 %on helppoa tarkistaa -- täytyy vain laskea väitettyjen tekijöiden tulo ja katsoa, onko se alkuperäinen polynomi. Vaikka
@@ -150,7 +158,31 @@ $x=0$ tai $x=3$.
 \end{esimvast}
 \end{esimerkki}
 
-Myöhemmin tässä kirjassa esitetään polynomien jakolause, joka antaa vielä syvällisemmän yhteyden polynomien nollakohtien ja tekijöiden välille.
+Myöhemmin tällä kurssilla esitetään polynomien jakolause, joka antaa syvällisemmän yhteyden polynomien nollakohtien ja tekijöiden välille.
+
+\subsubsection*{Murtolausekkeiden sieventäminen}
+
+Kun murtolausekkeen osoittaja ja nimittäjä jaetaan tekijöihinsä,
+kummassakin esiintyvät tekijät voidaan supistaa pois.
+
+\begin{esimerkki}
+    Sievennä \quad 
+    a) $\dfrac{4x+2y}{6}$ \quad
+    b)$\dfrac{x^2+x}{2x+2}$ \quad
+    c) $\dfrac{x^2-16}{x+4}$
+    \begin{esimratk}
+        \begin{alakohdat}
+            \alakohta{$\dfrac{4x+2y}{6}=\dfrac{2(2x+y)}{2\cdot 3}=\dfrac{2x+y}{3}$}
+            \alakohta{$\dfrac{x^2+x}{2x+2}=\dfrac{x(x+1)}{2(x+1)}=\dfrac{x}{2}$}
+            \alakohta{Käytetään muistikaavaa: $\dfrac{x^2-16}{x+4}=\dfrac{(x+4)(x-4)}{x+4} = x-4$.}
+        \end{alakohdat}
+    \end{esimratk}
+    \begin{esimvast}
+        a) $\dfrac{2x+y}{3}$ \quad
+        b) $\dfrac{x}{2}$ \quad
+        c) $x-4$.
+    \end{esimvast}
+\end{esimerkki}
 
 \begin{tehtavasivu}
 
@@ -184,6 +216,22 @@ Myöhemmin tässä kirjassa esitetään polynomien jakolause, joka antaa vielä 
         \alakohta{$5a(2+b)$}
         \alakohta{$x^3(x-1)$}
         \alakohta{$xy(1+x)$}
+        \end{alakohdat}
+    \end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+    Sievennä.
+    \begin{alakohdat}
+        \alakohta{$\dfrac{3x-9}{3}$}
+        \alakohta{$\dfrac{x^2-4x}{5x}$}
+        \alakohta{$\dfrac{ab+a}{b^2+b}$}
+    \end{alakohdat}
+    \begin{vastaus}
+        \begin{alakohdat}
+        \alakohta{$x-3$}
+        \alakohta{$\frac{x-4}{3}$}
+        \alakohta{$\frac{a}{b}$}
         \end{alakohdat}
     \end{vastaus}
 \end{tehtava}
@@ -256,19 +304,19 @@ Myöhemmin tässä kirjassa esitetään polynomien jakolause, joka antaa vielä 
 \end{tehtava}
 
 \begin{tehtava}
-	Ratkaise yhtälö jakamalla tekijöihin.
-	\begin{alakohdat}
-		\alakohta{$x^2-16 = 0$}
-		\alakohta{$x^2+7x = 0$}
-		\alakohta{$x^2-6x+9 = 0$}
-	\end{alakohdat}
-	\begin{vastaus}
-		\begin{alakohdat}
-			\alakohta{$x=4$ tai $x=-4$}
-			\alakohta{$x=0$ tai $x=-7$}
-			\alakohta{$x=3$}
-		\end{alakohdat}
-	\end{vastaus}
+    Sievennä.
+    \begin{alakohdat}
+        \alakohta{$\dfrac{x^3-2x^2}{2-x}$}
+        \alakohta{$\dfrac{x^2+6x+9}{x^2+3x}$}
+        \alakohta{$\dfrac{4-x^2}{x^2-2x}$}
+    \end{alakohdat}
+    \begin{vastaus}
+        \begin{alakohdat}
+        \alakohta{$-x^2$}
+        \alakohta{$\frac{x+3}{x}$}
+        \alakohta{$-\frac{x+2}{x}$}
+        \end{alakohdat}
+    \end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
@@ -303,6 +351,30 @@ Myöhemmin tässä kirjassa esitetään polynomien jakolause, joka antaa vielä 
 			\alakohta{$(4xy+1)^2$}
 		\end{alakohdat}
 	\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+	Ratkaise yhtälö jakamalla tekijöihin.
+	\begin{alakohdat}
+		\alakohta{$x^2-16 = 0$}
+		\alakohta{$x^2+7x = 0$}
+		\alakohta{$x^2-6x+9 = 0$}
+	\end{alakohdat}
+	\begin{vastaus}
+		\begin{alakohdat}
+			\alakohta{$x=4$ tai $x=-4$}
+			\alakohta{$x=0$ tai $x=-7$}
+			\alakohta{$x=3$}
+		\end{alakohdat}
+	\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava} 
+Jaa tekijöihin \\ $(3x^2-7y^2+5)^2-(x^2-9y^2-5)^2$.
+    \begin{vastaus}
+		$8(x-2y)(x+2y)(x^2+y^2+7)$. \\
+    Opastus: Älä kerro aluksi sulkuja auki vaan käytä heti muistikaavaa.
+    \end{vastaus}
 \end{tehtava}
 
 \paragraph*{Lisää tehtäviä}
