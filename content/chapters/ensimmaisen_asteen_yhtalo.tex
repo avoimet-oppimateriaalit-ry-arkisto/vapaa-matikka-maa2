@@ -5,63 +5,86 @@ Yhtälöistä yksinkertaisin on ensimmäisen asteen yhtälö. Käydään se lyhy
 läpi kertauksen vuoksi.
 
 Ensimmäisen asteen yhtälössä ratkaistavana on vain mahdollisesti vakiolla
-kerrottu muuttuja. Yhtälön ratkaisemiseksi riittää käyttää neljää
-aritmeettista peruslaskutoimitusta. Aluksi yhtälön molemmille puolille 
-lisätään tai vähennetään jokin luku, niin että 
-vasemmalle puolelle saadaan jäämään pelkkä vakiolla kerrottu muuttuja.
-Sen jälkeen jaetaan yhtälön molemmat puolet muuttujan kertoimella, jolloin
-yhtälön ratkaisu jää oikealle puolelle.
+kerrottu muuttuja. Yhtälön ratkaisemiseksi riittää neljää
+peruslaskutoimitusta: yhteen-, vähennys-, kerto ja jakolasku. 
+Yhtälöä muokataan tekemällä yhtälön kummallekin puolelle sama laskutoimitus.
 
-% fixme tyylikorjausta, termiä juuri ei vielä esitellä
+%Aluksi yhtälön molemmille puolille 
+%lisätään tai vähennetään jokin luku, niin että 
+%vasemmalle puolelle saadaan jäämään pelkkä vakiolla kerrottu muuttuja.
+%Sen jälkeen jaetaan yhtälön molemmat puolet muuttujan kertoimella, jolloin
+%yhtälön ratkaisu jää oikealle puolelle.
 
-Yleisesti ensimmäisen asteen yhtälö on muotoa
+% fixme termiä juuri ei vielä esitellä
 
-\begin{align*}
-    ax + b = 0.
-\end{align*}
-
-Kaikki 1. asteen yhtälöt voidaan muokata tähän yleiseen
-muotoon siirtämällä kaikki termit vasemmalle puolelle ja
-sieventämällä.
-
-% fixme Esimerkit 2.30-2.31 voisi siirtää ennen yleisen muodon esittelyä, koska niissä ei sitä mihinkään tarvita.
-
-\subsubsection*{Esimerkkejä}
 
 \begin{esimerkki}
 Ratkaise yhtälö $4x + 5 = 2 + 2x$.
 
-\textbf{Ratkaisu}
+\begin{esimratk}
 \begin{align*}
     4x + 5 &= 2 + 2x && \ppalkki -2x \\
     2x + 5 &= 2      && \ppalkki -5 \\
         2x &= -3     && \ppalkki :2 \\
          x &= -\frac{3}{2}
  \end{align*}
+\end{esimratk}
+\begin{esimvast}
+$x=-\frac{3}{2}$
+\end{esimvast}
 \end{esimerkki}
 
 \begin{esimerkki}
 Ratkaise yhtälö $3x - 6 = 0$.
 
-\textbf{Ratkaisu}
+\begin{esimratk}
   \begin{align*}
     3x - 6 &= 0 && \ppalkki +6 \\
         3x &= 6 && \ppalkki :3 \\
-         x &= \frac{6}{3} \\
-           &= 2
+         x &= \frac{6}{3}  = 2 \\
   \end{align*}
+\end{esimratk}
+\begin{esimvast}
+$x=2$
+\end{esimvast}
 \end{esimerkki}
 
-Yleisen yhtälön $ax + b = 0$ ratkaisu on siis
+\begin{esimerkki}
+Ratkaise yhtälö $\dfrac{x}{2}-\dfrac{x+3}{2}=3$.
+
+\begin{esimratk}
+  \begin{align*}
+    \frac{x}{2}-\frac{x+10}{2}&=5 && \ppalkki \cdot 2 \\
+        x-(x+10) &= 10  \\
+         x-x-10 &= 10 \\
+         -10 &= 10 && \text{ ristiriita, ei ratkaisua.}
+  \end{align*}
+\end{esimratk}
+\begin{esimvast}
+ei ratkaisua
+\end{esimvast}
+\end{esimerkki}
+
+Yleisesti ensimmäisen asteen yhtälö on muotoa
+\[
+    ax + b = 0.
+\]
+Kaikki 1. asteen yhtälöt voidaan muokata tähän yleiseen
+muotoon siirtämällä kaikki termit yhtälön vasemmalle puolelle ja
+sieventämällä.
+
+Yleisen yhtälön $ax + b = 0$ ratkaisu on
 
 \begin{align*}
-  x = -\frac{b}{a}.
+	 ax + b &= 0  && \ppalkki -b\\
+	 ax &= -b  && \ppalkki : a \ (\neq 0)\\
+  x &= -\frac{b}{a}.
 \end{align*}
 
-Erityisesti kannattaa huomata, että kaikkia 1. asteen yhtälöitä ei tarvitse
-saattaa yleiseen muotoon. Esimerkiksi jos vakiotermit ovat valmiiksi
-oikealla puolella, yhtälön ratkaisemiseksi riittää luonnollisesti jakaa
-molemmat puolet muuttujan kertoimella.
+%Erityisesti kannattaa huomata, että kaikkia 1. asteen yhtälöitä ei tarvitse
+%saattaa yleiseen muotoon. Esimerkiksi jos vakiotermit ovat valmiiksi
+%oikealla puolella, yhtälön ratkaisemiseksi riittää luonnollisesti jakaa
+%molemmat puolet muuttujan kertoimella.
 
 \begin{tehtavasivu}
 
@@ -107,7 +130,7 @@ molemmat puolet muuttujan kertoimella.
     yhälönratkaisulla Anteron keksimä luku, kun oletetaan, että hänellä on yhtä monta silmää
     ja varvasta kuin hänen ikätovereillaan yleensä on.
     \begin{vastaus}
-        $2x-10=8 \leftrightarrow 2x=18 \leftrightarrow x=9$. Vastaus: Antero keksi luvun 9.
+        $2x-10=8 \Leftrightarrow 2x=18 \Leftrightarrow x=9$. Vastaus: Antero keksi luvun 9.
     \end{vastaus}
 \end{tehtava}
 
