@@ -25,8 +25,7 @@ kuvaaja.piirra("x**3-3*x-1", nimi = "$R(x) = x^3-3x-1$", kohta = 1.8)
 
 \qrlinkki{http://opetus.tv/maa/maa2/suoran-piirtaminen/}{Opetus.tv: \emph{suoran piirtäminen} (5:47)}
 
-Funktioiden kuvaajia voi piirtää laskimella tai tietokoneella. Kuvaajaa voi myös hahmotella käsin laskemalla funktion arvoja muutamilla muuttujan arvoilla, merkitsemällä pisteet
-$xy$-koordinaatistoon ja piirtämällä lopuksi kuvaajaan pisteiden kautta kulkeva viiva.
+Funktioiden kuvaajia voi piirtää tietokoneella, graafisella laskimella tai käsin. Kussakin tapauksessa periaate on sama: valitaan joitakin muuttujan arvoja, lasketaan funktion arvot ja merkitään pisteet $(x,y)$-koordinaatistoon. Tietokoneet ja laskimet laskevat funktion arvoja niin tiheään, että näyttää syntyvän yhtenäinen kuvaaja. Käsin piirrettäessä tyydytään muutamaan pisteeseen ja hahmotellaan kuvaaja niiden avulla.
 
 % Esimerkin kuvat.
 \begin{luoKuva}{esimkuva1}
@@ -248,7 +247,7 @@ Kuvassa on polynomifunktion $P$ kuvaajaa. Määritä on kuvaajan perusteella
 \end{tehtava}
 
 \begin{tehtava}
-    Hahmottele polynomien kuvaajat koordinaatistoon. Laske testipisteitä tarpeen mukaan.
+    Hahmottele polynomien kuvaajat koordinaatistoon käsin. Laske testipisteitä tarpeen mukaan. Tarkista tietokoneella tai graafisella laskimella.
     \begin{alakohdat}
         \alakohta{$P(x) = x-2$}
         \alakohta{$Q(x) = 4-x^2$}
@@ -309,107 +308,109 @@ mutta siihen ei puututa tässä.)
 \paragraph*{Lisää tehtäviä}
 
 \begin{tehtava}
-    Piirrä polynomien kuvaajat.
+    Piirrä polynomien kuvaajat käsin.
     \begin{alakohdat}
-        \alakohta{$5$}
+        \alakohta{$x+4$}
         \alakohta{$2x-3$}
+        \alakohta{$5$}
         \alakohta{$x^2+x-2$}
-        \alakohta{$x^3-x+3$}
+%        \alakohta{$x^3-x+3$}
     \end{alakohdat}   
     \begin{vastaus}
     	\begin{alakohdat}
     	\alakohta{ \begin{kuvaajapohja}{0.4}{-4}{4}{-1}{7}
-				\kuvaaja{5}{}{red}
+				\kuvaaja{x+4}{}{red}
 			  \end{kuvaajapohja}}
     	\alakohta{ \begin{kuvaajapohja}{0.4}{-4}{4}{-5}{3}
 				\kuvaaja{2*x-3}{}{red}
 			  \end{kuvaajapohja}}
+    	\alakohta{ \begin{kuvaajapohja}{0.4}{-4}{4}{-1}{7}
+				\kuvaaja{5}{}{red}
+			  \end{kuvaajapohja}}
 		\alakohta{ \begin{kuvaajapohja}{0.4}{-4}{4}{-3}{5}
 				\kuvaaja{x**2+x-2}{}{red}
 			  \end{kuvaajapohja}}
-		\alakohta{ \begin{kuvaajapohja}{0.4}{-4}{4}{-3}{5}
-				\kuvaaja{x**3-x+2}{}{red}
-			  \end{kuvaajapohja}}
+%		\alakohta{ \begin{kuvaajapohja}{0.4}{-4}{4}{-3}{5}
+%				\kuvaaja{x**3-x+2}{}{red}
+%			  \end{kuvaajapohja}}
 		\end{alakohdat}
     \end{vastaus}
 \end{tehtava}
 
-\begin{tehtava}
-    Piirrä polynomien kuvaajat.
-    \begin{alakohdat}
-        \alakohta{$x+4$}
-        \alakohta{$2x-9$}
-        \alakohta{$5x+2$}
-        \alakohta{$6x+1$}
-    \end{alakohdat}
-    \begin{vastaus}
-    	\begin{alakohdat}
-        \alakohta{ \begin{kuvaajapohja}{0.4}{-4}{4}{-1}{7}
-				\kuvaaja{x+4}{}{red}
-			  \end{kuvaajapohja}}
-    	\alakohta{ \begin{kuvaajapohja}{0.4}{-2}{6}{-6}{2}
-				\kuvaaja{2*x-9}{}{red}
-			  \end{kuvaajapohja}}
-		\alakohta{ \begin{kuvaajapohja}{0.4}{-4}{4}{-2}{6}
-				\kuvaaja{5*x+2}{}{red}
-			  \end{kuvaajapohja}}
-		\alakohta{ \begin{kuvaajapohja}{0.4}{-4}{4}{-2}{6}
-				\kuvaaja{6*x+1}{}{red}
-			  \end{kuvaajapohja}}
-		\end{alakohdat}
-    \end{vastaus}
-\end{tehtava}
 
 \begin{tehtava}
-    Piirrä polynomien kuvaajat.
+    Piirrä polynomien kuvaajat tietokoneella tai laskimella.
     \begin{alakohdat}
-        \alakohta{$x^2-1$}
-        \alakohta{$2x^2$}
-        \alakohta{$4x^2+4$}
         \alakohta{$x^2-6x+3$}
+        \alakohta{$\frac{1}{5}x^3-x^2+2$}
+        \alakohta{$-0,5x^4+0,25x^3+2,5x^2-1$}
+
     \end{alakohdat}
     \begin{vastaus}
     	\begin{alakohdat}
-        \alakohta{ \begin{kuvaajapohja}{0.4}{-4}{4}{-2}{6}
-				\kuvaaja{x+4}{}{red}
-			  \end{kuvaajapohja}}
-    	\alakohta{ \begin{kuvaajapohja}{0.4}{-4}{4}{-1}{7}
-				\kuvaaja{2*x-9}{}{red}
-			  \end{kuvaajapohja}}
-		\alakohta{ \begin{kuvaajapohja}{0.4}{-4}{4}{-1}{11}
-				\kuvaaja{5*x+2}{}{red}
-			  \end{kuvaajapohja}}
 		\alakohta{ \begin{kuvaajapohja}{0.4}{-1}{7}{-7}{5}
-				\kuvaaja{6*x+1}{}{red}
+				\kuvaaja{x**2-6*x+3}{}{red}
+			  \end{kuvaajapohja}}
+    	\alakohta{ \begin{kuvaajapohja}{0.4}{-2.5}{5.5}{-4}{4}
+				\kuvaaja{0.2*x**3-x**2+2}{}{red}
+			  \end{kuvaajapohja}}
+		\alakohta{ \begin{kuvaajapohja}{0.4}{-3}{3}{-4}{4}
+				\kuvaaja{-0.5*x**4+0.25*x**3+2.5*x**2-1}{}{red}
 			  \end{kuvaajapohja}}
 		\end{alakohdat}
     \end{vastaus}
 \end{tehtava}
 
-\begin{tehtava}
-    Piirrä polynomien kuvaajat.
-    \begin{alakohdat}
-        \alakohta{$5x^2$}
-        \alakohta{$3x^2+4$}
-        \alakohta{$2x^2-10$}
-        \alakohta{$x^2-x-1$}
-    \end{alakohdat}
-    \begin{vastaus}
-    	\begin{alakohdat}
-        \alakohta{ \begin{kuvaajapohja}{0.4}{-4}{4}{-1}{7}
-				\kuvaaja{5*x**2}{}{red}
-			  \end{kuvaajapohja}}
-    	\alakohta{ \begin{kuvaajapohja}{0.4}{-4}{4}{-1}{11}
-				\kuvaaja{3*x**2+4}{}{red}
-			  \end{kuvaajapohja}}
-		\alakohta{ \begin{kuvaajapohja}{0.4}{-4}{4}{-11}{1}
-				\kuvaaja{2*x**2-10}{}{red}
-			  \end{kuvaajapohja}}
-		\alakohta{ \begin{kuvaajapohja}{0.4}{-3}{5}{-2}{6}
-				\kuvaaja{x**2-x-1}{}{red}
-			  \end{kuvaajapohja}}
-		\end{alakohdat}
-    \end{vastaus}
-\end{tehtava}
+%\begin{tehtava}
+%    Piirrä polynomien kuvaajat.
+%    \begin{alakohdat}
+%        \alakohta{$x+4$}
+%        \alakohta{$2x-9$}
+%        \alakohta{$5x+2$}
+%        \alakohta{$6x+1$}
+%    \end{alakohdat}
+%    \begin{vastaus}
+%    	\begin{alakohdat}
+%        \alakohta{ \begin{kuvaajapohja}{0.4}{-4}{4}{-1}{7}
+%				\kuvaaja{x+4}{}{red}
+%			  \end{kuvaajapohja}}
+%    	\alakohta{ \begin{kuvaajapohja}{0.4}{-2}{6}{-6}{2}
+%				\kuvaaja{2*x-9}{}{red}
+%			  \end{kuvaajapohja}}
+%		\alakohta{ \begin{kuvaajapohja}{0.4}{-4}{4}{-2}{6}
+%				\kuvaaja{5*x+2}{}{red}
+%			  \end{kuvaajapohja}}
+%		\alakohta{ \begin{kuvaajapohja}{0.4}{-4}{4}{-2}{6}
+%				\kuvaaja{6*x+1}{}{red}
+%			  \end{kuvaajapohja}}
+%		\end{alakohdat}
+%    \end{vastaus}
+%\end{tehtava}
+%
+%\begin{tehtava}
+%    Piirrä polynomien kuvaajat.
+%    \begin{alakohdat}
+%        \alakohta{$x^2-1$}
+%        \alakohta{$2x^2$}
+%        \alakohta{$4x^2+4$}
+%        \alakohta{$x^2-6x+3$}
+%    \end{alakohdat}
+%    \begin{vastaus}
+%    	\begin{alakohdat}
+%        \alakohta{ \begin{kuvaajapohja}{0.4}{-4}{4}{-2}{6}
+%				\kuvaaja{x+4}{}{red}
+%			  \end{kuvaajapohja}}
+%    	\alakohta{ \begin{kuvaajapohja}{0.4}{-4}{4}{-1}{7}
+%				\kuvaaja{2*x-9}{}{red}
+%			  \end{kuvaajapohja}}
+%		\alakohta{ \begin{kuvaajapohja}{0.4}{-4}{4}{-1}{11}
+%				\kuvaaja{5*x+2}{}{red}
+%			  \end{kuvaajapohja}}
+%		\alakohta{ \begin{kuvaajapohja}{0.4}{-1}{7}{-7}{5}
+%				\kuvaaja{6*x+1}{}{red}
+%			  \end{kuvaajapohja}}
+%		\end{alakohdat}
+%    \end{vastaus}
+%\end{tehtava}
 
 \end{tehtavasivu}
