@@ -3,7 +3,7 @@
 \qrlinkki{http://opetus.tv/maa/maa2/polynomien-kertolasku/}
 {Opetus.tv: \emph{polynomien kertolasku} (10:00)}
 
-Polynomilausekkeiden käsittely on välttämätön taito matematiikassa, ja siksi tähän lukuun kannattaa paneutua kunnolla.
+Polynomilausekkeiden käsittely on välttämätön taito matematiikassa, ja siksi tähän lukuun kannattaa paneutua huolella.
 
 \subsubsection*{Monomien tulo}
 
@@ -34,10 +34,10 @@ Polynomeja voi kertoa keskenään reaalilukujen tuttujen laskusääntöjen avull
 käytetään osittelulakia $a(b+c)=ab+ac$.
 
 \begin{esimerkki}
-Laske \quad a) $5(x+3)$ \quad b) $2x(x-5)$ \quad 
+Laske \quad a) $5\cdot(x+3)$ \quad b) $2x(x-5)$ \quad 
 c) $3(a+b+c)$
 \begin{alakohdat}
-    \alakohta{$5(x+3) = 5\cdot x + 5\cdot 3 = 5x+15$}
+    \alakohta{$5\cdot(x+3) = 5\cdot x + 5\cdot 3 = 5x+15$}
     \alakohta{$2x(x-5)=2x^2-10x$}
     \alakohta{$3(a+b+c)=3a+3b+3c$}
 \end{alakohdat}
@@ -64,9 +64,9 @@ Laske binomien $x+2$ ja $x-5$ tulo. \\
 
 \pgfmathsetmacro{\klAx}{0.40}
 \pgfmathsetmacro{\klBx}{1.00}
-\pgfmathsetmacro{\klCx}{1.5}
-\pgfmathsetmacro{\klDx}{2.1} 
-\pgfmathsetmacro{\klEx}{2.9}
+\pgfmathsetmacro{\klCx}{1.4}
+\pgfmathsetmacro{\klDx}{1.8} 
+\pgfmathsetmacro{\klEx}{2.5}
 \pgfmathsetmacro{\klLo}{-0.22}
 \pgfmathsetmacro{\klHi}{0.26}
 
@@ -87,7 +87,7 @@ Laske binomien $x^2-x$ ja $2x-1$ tulo. \\
 \pgfmathsetmacro{\klBx}{1.15}
 \pgfmathsetmacro{\klCx}{1.7}
 \pgfmathsetmacro{\klDx}{2.5}
-\pgfmathsetmacro{\klEx}{3.2}
+\pgfmathsetmacro{\klEx}{2.7}
 \pgfmathsetmacro{\klLo}{-0.22}
 \pgfmathsetmacro{\klHi}{0.26}
 
@@ -98,6 +98,15 @@ Laske binomien $x^2-x$ ja $2x-1$ tulo. \\
 \pbezier{\klBx}{\klDx}{\klLo}{-0.3}
 \end{tikzpicture}\newline
 \end{esimerkki}
+
+Kahden binomin tulon laskusääntö perustellaan soveltamalla osittelulakia kahdesti:
+
+
+\begin{align*}
+(a+b)(c+d) &= (a+b)\cdot c + (a+b)\cdot d &\emph{osittelulaki} \\
+ &= ac+bc+ad+bd &\emph{osittelulaki} 
+\end{align*}
+
 
 \subsubsection*{Yleinen kertolasku}
 
@@ -168,12 +177,20 @@ Opetus.tv: \emph{muistikaavat} (8:05, 6:38 ja 9:08)}
 Joitakin polynomien kertolaskuja tarvitaan niin usein, että niitä kutsutaan \termi{muistikaavat}{muistikaavoiksi}.
 
 \laatikko[Muistikaavat]{
-    \begin{description}
-        \item[Summan neliö] $(a+b)^2 = a^2+2ab+b^2$
-        \item[Erotuksen neliö] $(a-b)^2 = a^2-2ab+b^2$
-        \item[Summan ja erotuksen tulo] $(a+b)(a-b) = a^2-b^2$
-    \end{description}
-}
+    \begin{tabular}{lrcl}
+		& \\        
+        {\bf Summan neliö} & $(a+b)^2$ &$=$& $a^2+2ab+b^2$\\
+       {\bf Erotuksen neliö} & $(a-b)^2$ &$=$& $a^2-2ab+b^2$ \\
+       {\bf Summan ja erotuksen tulo} & $(a+b)(a-b)$ &$=$& $a^2-b^2$ 
+    \end{tabular} }
+
+%\laatikko[Muistikaavat]{
+%    \begin{description}
+%        \item[Summan neliö] $(a+b)^2 = a^2+2ab+b^2$
+%        \item[Erotuksen neliö] $(a-b)^2 = a^2-2ab+b^2$
+%        \item[Summan ja erotuksen tulo] $(a+b)(a-b) = a^2-b^2$
+%    \end{description}
+%}
 
 Nämä kaavat voidaan todistaa helposti laskemalla.
 
@@ -206,6 +223,14 @@ Edellä todistettuja kahta muistikaavaa kutsutaan yhdessä nimellä binomin neli
 &= a^2-ab+ab-b^2 &\emph{vaihdannaisuus ($ba=ab$)} \\
 &= a^2-b^2
 \end{align*}
+
+\begin{esimerkki}
+Sievennä $(x+5)^2$. \\
+\quad\\
+Käytetään muistikaavaa $(a+b)^2 = a^2+2ab+b^2$. Nyt $a = x$ ja $b = 5$.
+Saadaan
+        \[ (x+5)^2 = x^2-2\cdot x\cdot 5+5^2 = x^2+10x+25. \]
+\end{esimerkki}
 
 \begin{esimerkki}
 Sievennä $(3x-2y)^2$. \\
@@ -405,15 +430,16 @@ Käytetään ovelasti muistikaavoja $(a-b)^2 = a^2-2ab+b^2$ ja \mbox{$(a+b)(a-b)
 \end{tehtava}
 
 \begin{tehtava}
-    Sievennä.
+    Osoita, että
     \begin{alakohdat}
-        \alakohta{$(t+v)^2+(t-v)^2$}
-        \alakohta{$(t+v)^2-(t-v)^2$}
+        \alakohta{$(t+v)^2+(t-v)^2=2t^2+2v^2$}
+        \alakohta{$(t+v)^2-(t-v)^2 = 4tv$.}
     \end{alakohdat}
     \begin{vastaus}
+    	Sievennetään yhtälöiden vasempia puolia:
         \begin{alakohdat}
-            \alakohta{$(t+v)^2+(t-v)^2 = t^2+2tv+v^2+t^2-2tv+v^2 = 2t^2+2v^2$}
-            \alakohta{$(t+v)^2-(t-v)^2 = t^2+2tv+v^2-t^2+2tv-v^2 = 4tv$}
+            \alakohta{$(t+v)^2+(t-v)^2 = t^2+2tv+v^2+t^2-2tv+v^2 = 2t^2+2v^2$.}
+            \alakohta{$(t+v)^2-(t-v)^2 = t^2+2tv+v^2-t^2+2tv-v^2 = 4tv$.}
         \end{alakohdat}
     \end{vastaus}
 \end{tehtava}
