@@ -263,26 +263,29 @@ epäyhtälömerkintänä. Onko väli suljettu, avoin vai puoliavoin?
 \newpage
 \section{Ensimmäisen asteen epäyhtälö}
 % Pitäisikö tämä luku sijoittaa alkamaan omalta sivultaan, kuten luvut 2.1 ja 2.2:kin?
-% Joo, nyt on parempi -Ville
+% Korjattu, nyt on parempi. -Ville
 
 \qrlinkki{http://opetus.tv/maa/maa2/ensimmaisen-asteen-epayhtalo/}{Opetus.tv: \emph{ensimmäisen asteen epäyhtälö} (14:55 ja 8:21)}
 
-Harjoittelemme nyt erityisesti 1. asteen epäyhtälöiden ratkaisemista -- toisen asteen ja sitä korkeampien polynomiepäyhtälöiden ratkaisemista käsitellään toisen asteen yhtälön käsittelyn jälkeen.
+%Harjoittelemme nyt erityisesti 1. asteen epäyhtälöiden ratkaisemista -- toisen asteen ja sitä korkeampien polynomiepäyhtälöiden ratkaisemista käsitellään toisen asteen yhtälön käsittelyn jälkeen.
 
 Samoin kuin yhtälöiden kohdalla, epäyhtälö pyritään muuttamaan niin yksinkertaiseen muotoon kuin mahdollista, jotta yksinkertaisesta tilanteesta nähdään välittömästi, mitkä luvut kuuluvat ratkaisuun ja mitkä eivät. Tuntemattomat pyritään yhdistämään, ja epäyhtälöä muokataan niin, että tuntematon saadaan yksin omalle puolelleen yhtälöä.
 
-
 \begin{esimerkki}
-Ratkaistaan epäyhtälö $2x+1 < 0$.
+Ratkaise epäyhtälö $2x+1 < 0$.
+\begin{esimratk}
 \begin{align*}
 2x+1 &< 0 && \ppalkki -1 \\
 2x &< -1 && \ppalkki :2 \\
 x &< -\frac{1}{2}
 \end{align*}
+\end{esimratk}
+\begin{esimvast}
+$x < -\frac{1}{2}$. 
+%Ratkaisu voidaan esittää myös muodossa $x \in ]-\infty, -\frac{1}{2}[$.
+\end{esimvast}
 
-Epäyhtälön ratkaisu voidaan esittää myös muodossa $x \in ]-\infty, -\frac{1}{2}[$.
-
-Ratkaisua voidaan perustella myös graafisesti tutkimalla lausekkeeseen $2x+1$ liittyvää kuvaajaa:
+Ratkaisua voidaan tulkita graafisesti tutkimalla lausekkeeseen $2x+1$ liittyvää kuvaajaa:
 
 \begin{kuva}
 kuvaaja.pohja(-2, 2, -1, 3, korkeus = 5, nimiX = "$x$")
@@ -290,14 +293,30 @@ kuvaaja.piirra("2*x+1", nimi = "$f(x) = 2x + 1$", kohta = 0.75)
 \end{kuva}
 
 Alkuperäinen epäyhtälö $2x+1<0$ vaatii, että lausekkeen $2x+1$ arvo on negatiivinen. Yhtälön ratkaisu on mahdollista nähdä katsomalla kuvasta, millä kaikilla $x$:n arvoilla funktion $2x+1$ kuvaaja laskee vaaka-akselin alapuolelle. Tällöin funktio, siis toisaalta lauseke $2x+1$, saa negatiivisia arvoja.
+\end{esimerkki}
 
+Ensimmäisen asteen epäyhtälö ratkaistaan muuten kuin yhtälö, mutta kun kerrotaan tai jaetaan negatiivisella luvulla, epäyhtälömerkki kääntyy.
+
+\begin{esimerkki}
+Ratkaise epäyhtälö $x < 5x-8$.
+\begin{esimratk}
+\begin{align*}
+x &< 5x-8 && \ppalkki -5x \\
+-4x &< -8 && \ppalkki :(-4), \ \ 
+\text{merkki kääntyy, } -4 < 0 \\
+x &> 2 &&
+\end{align*}
+\end{esimratk}
+\begin{esimvast}
+$x > 2$.
+\end{esimvast}
 \end{esimerkki}
 
 % fixme tyhjää tilaa esimerkkien välissä
 
-\begin{esimerkki}Selvitetään, millä $w$:n arvoilla pätee
+\begin{esimerkki} Millä $w$:n arvoilla pätee
 $-8w-(8-w) \geq \frac12 w+5$?
-
+\begin{esimratk}
 \begin{align*}
 -8w-(8-w) &\geq \frac12 w+5 \\
 -8w-8+w &\geq \frac12 w+5 \\
@@ -308,16 +327,16 @@ w &\leq 13:(-\frac{15}{2}) \\
 w &\leq -13\cdot \frac{2}{15} \\
 w &\leq -\frac{26}{15} \\
 \end{align*}
-
-Vastaus: $w \leq -\frac{26}{15}$
+\end{esimratk}
+\begin{esimvast}
+$w \leq -\frac{26}{15}$
+\end{esimvast}
 \end{esimerkki}
 
-Ensimmäisen asteen polynomiepäyhtälö ratkaistaan siis aivan kuten vastaava yhtälö, mutta negatiivisella luvulla jaettaessa tai kerrottaessa epäyhtälömerkki kääntyy toisin päin.
-
 \begin{esimerkki}
-Ratkaistaan kaksoisepäyhtälö $1\leq q+7<-5q+4$.
-
-Tässä on itse asiassa kaksi epäyhtälöä $1\leq q+7$ ja $q+7<-5q+4$. Haluamme siis löytää ne $q$:n arvot, joilla molemmat epäyhtälöt pätevät.
+Ratkaise kaksoisepäyhtälö $1\leq q+7<-5q+4$.
+\begin{esimratk}
+Ratkaistavana on itse asiassa kaksi epäyhtälöä: $1\leq q+7$ ja $q+7<-5q+4$. Haluamme siis löytää ne $q$:n arvot, joilla molemmat epäyhtälöt pätevät.
 \begin{align*}
 1&\leq q+7 \ \ \ \ \ && \ppalkki -7 \\
 -6&\leq q
@@ -329,19 +348,52 @@ q+7&<-5q+4  \ \ \ \ \ && \ppalkki +5q \\
 6q&<-3 && \ppalkki :6 \\
 q&< -\frac12 \\
 \end{align*}
-
 Nämä yhdistämällä saadaan $-6\leq q$ ja $q< -\frac12$ eli $-6\leq q < -\frac12$ eli $q\in [-6, -\frac12[$.
+\end{esimratk}
 
 \begin{tabular}{cc}
 \begin{lukusuora}{-8}{2}{6} \lukusuoravalisa{-6}{}{$-6$}{} \lukusuorapystyviiva{0}{$0$} \end{lukusuora} & $-6\leq q$ \\
 \begin{lukusuora}{-8}{2}{6} \lukusuoravaliaa{}{-0.5}{}{$-\frac12$} \lukusuorapystyviiva{0}{$0$} \end{lukusuora} & $q< -\frac12$ \\
 \begin{lukusuora}{-8}{2}{6} \lukusuoravalisa{-6}{-0.5}{$-6$}{$-\frac12$} \lukusuorapystyviiva{0}{$0$} \end{lukusuora} & $-6\leq q < -\frac12$ \\
 \end{tabular}
+\begin{esimvast}
+ $-6\leq q < -\frac12$.
+\end{esimvast}
 \end{esimerkki}
 
 \begin{tehtavasivu}
 
 \paragraph*{Opi perusteet}
+
+\begin{luoKuva}{teht1}
+lukusuora.pohja(-12, 12, 3, varaa_tila = False)
+lukusuora.kohta(0, "$0$")
+lukusuora.vali(-10, 10, False, False, "$-10$", "$10$")
+\end{luoKuva}
+
+\begin{luoKuva}{teht2}
+lukusuora.pohja(-11, 9, 3, varaa_tila = False)
+lukusuora.kohta(0, "$0$")
+lukusuora.vali(-9, 7, False, True, "$-9$", "$7$")
+\end{luoKuva}
+
+\begin{luoKuva}{teht3}
+lukusuora.pohja(-2, 12, 3, varaa_tila = False)
+lukusuora.kohta(0, "$0$")
+lukusuora.vali(5, None, True, False, "$5$", "$turha$")
+\end{luoKuva}
+
+\begin{luoKuva}{teht4}
+lukusuora.pohja(-1, 9, 3, varaa_tila = False)
+lukusuora.kohta(0, "$0$")
+lukusuora.vali(5, 7.5, True, True, "$5$", "$7,5$")
+\end{luoKuva}
+
+\begin{luoKuva}{teht5}
+lukusuora.pohja(-1, 7, 3, varaa_tila = False)
+lukusuora.kohta(0, "$0$")
+lukusuora.vali(1, 5, False, True, "$1$", "$5$")
+\end{luoKuva}
 
 \begin{tehtava}
     Esitä joukko-opillisilla merkinnöillä ja lukusuoralla.
@@ -355,11 +407,11 @@ Nämä yhdistämällä saadaan $-6\leq q$ ja $q< -\frac12$ eli $-6\leq q < -\fra
     \end{alakohdat}
     \begin{vastaus}
         \begin{alakohdat}
-			\alakohta{$x \in \aavali{-10}{10}$}
-            \alakohta{$x \in \asvali{-9}{7}$}
-            \alakohta{$c \in \savali{5}{\infty}$}
-            \alakohta{$s \in \ssvali{5}{7\frac{1}{2}}$}
-            \alakohta{$x \in \asvali{1}{5}$}
+			\alakohta{$x \in \aavali{-10}{10}$ \\  \naytaKuva{teht1}}
+            \alakohta{$x \in \asvali{-9}{7}$ \\  \naytaKuva{teht2}}
+            \alakohta{$c \in \savali{5}{\infty}$ \\  \naytaKuva{teht3}}
+            \alakohta{$s \in \ssvali{5}{7\frac{1}{2}}$ \\ , \naytaKuva{teht4}}
+            \alakohta{$x \in \asvali{1}{5}$ \\  \naytaKuva{teht5}}
 %            \alakohta{$a \in \aavali{-\infty}{b} \; \tai b \in \aavali{a}{\infty}$}
         \end{alakohdat}
     \end{vastaus}
@@ -508,7 +560,7 @@ Vähintään arvosana 8.
 Ratkaise kaksoisepäyhtälö
 \[ 2x-1 < x \leq 3+5x  \]
     \begin{vastaus}
-        $-\frac{3}{4} \leq x < 1$
+        $-\frac{3}{4} \leq x < 1$.
     \end{vastaus}
 \end{tehtava}
 
