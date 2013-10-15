@@ -23,20 +23,23 @@ $4$ &  ei muuttujia\\
 \end{tabular}
 
 Polynomeissa on muuttujien potenssien (eksponentit luonnollisia lukuja) lisäksi ainoastaan vakiolla kertomista sekä yhteen- ja vähennyslaskua.
-Formaalisti kirjoitettuna polynomin yleinen muoto on
-\[
-a_n x^n + a_{n-1} x^{n-1} + \ldots + a_1 x + a_0 \] 
-jollakin  $n\in\N$. Kertoimet $a_0, a_1, \ldots, a_{n-1}, a_n$ ovat vakioita.
+
+%Formaalisti kirjoitettuna polynomin yleinen muoto on
+%\[
+%a_n x^n + a_{n-1} x^{n-1} + \ldots + a_1 x + a_0 \] 
+%jollakin  $n\in\N$. Kertoimet $a_0, a_1, \ldots, a_{n-1}, a_n$ ovat vakioita.
  % miten nollapolynomin laita? asteista ei puhuta tässä, joten a_n \neq 0 ei välttämätön
 
 
 % Jokainen lauseke, joka on esitettävissä polynomin yleisessä muodossa, on polynomi.
 
 Esimerkiksi muuttujan $x$ lausekkeet 
-\[ \frac{2}{x} \text{ ja } \sqrt{x}+2 \]  \emph{eivät ole} polynomeja, sillä niissä esiintyy potensseja, jotka eivät ole luonnollisia lukuja:
-\[
-\frac{2}{x} = 2x^{-1} \text{ ja } \sqrt{x}+2 = x^{\frac{1}{2}}+2.
-\]
+\[ \frac{2}{x} \quad \text{ ja } \quad \sqrt{x}+2 \]  \emph{eivät ole} polynomeja.
+
+% sillä niissä esiintyy potensseja, jotka eivät ole luonnollisia lukuja:
+%\[
+%\frac{2}{x} = 2x^{-1} \text{ ja } \sqrt{x}+2 = x^{\frac{1}{2}}+2.
+%\]
 
 Yhden muuttujan polynomeissa muuttujana käytetään tyypillisesti kirjainta $x$.
 Yleisimmät muut kirjaimet muuttujien merkitsemiseen ovat $y$ ja $z$.
@@ -47,12 +50,17 @@ Esimerkiksi polynomin $-2x^3+5x^2+x-7$ termit ovat $-2x^3$, $5x^2$, $x$ ja $-7$.
 Termejä, jotka eivät sisällä muuttujaa, kutsutaan  \termi{vakiotermi}{vakiotermeiksi}.
 Vakiotermejä ovat siis esimerkiksi $1$ ja $-7$.
 
-Yhden ja kahden termin polynomeja kutsutaan \termi{monomi}{monomeiksi} ja \termi{binomi}{binomeiksi}, vastaavasti.
+Yhden termin polynomeja kutsutaan \termi{monomi}{monomeiksi} ja kahden termin polynomeja \termi{binomi}{binomeiksi}.
+\begin{center}\begin{tabular}{cc}
+monomi	& binomi \\
+$-3x^2$   & $x^2-5$
+ \end{tabular} \end{center}
 
 Muuttujan eksponenttia kutsutaan termin \termi{aste}{asteeksi} tai \termi{asteluku}{asteluvuksi}.
-Vakiotermin aste on nolla. Polynomin aste on suurin sen termien asteista.
-On tärkeää huomata, että polynomin asteen saaminen selville voi vaatia polynomin sieventämistä.
-Esimerkiksi $2x^2-x^2+1-x^2 = 1$ ei ole toisen, vaan nollannen asteen polynomi.
+Vakiotermin aste on nolla. Polynomin aste on suurin sen sievennetyn muodon termien asteista.
+Polynomin asteen saaminen selville voi vaatia polynomin sieventämistä.
+Esimerkiksi $x^2-x^2+1$ ei ole toisen, vaan nollannen asteen polynomi, sillä sivennettynä
+$x^2-x^2+1=1$.
 
 Koska yhteenlasku on vaihdannainen, polynomin termit voi kirjoittaa missä tahansa järjestyksessä.
 Esimerkiksi polynomi $y^4+y^2-1$ voidaan kirjoittaa myös järjestyksessä $-1+y^4+y^2$.
@@ -62,7 +70,7 @@ Yleensä polynomien termit kirjoitetaan niiden asteen perusteella laskevaan jär
     Mitkä ovat polynomin $x^4-2x^3+5$ termit ja niiden asteet? Mikä on polynomin aste?
     \begin{esimvast}
         Polynomin $x^4-2x^3+5$ termit ovat $x^4$, $-2x^3$ ja $5$ ja niiden asteet ovat
-        neljä, kolme ja nolla, vastaavasti. Polynomin aste on sama kuin sama kuin
+        neljä, kolme ja nolla. Polynomin aste on sama kuin sama kuin
         korkein termien asteista, eli neljä.
     \end{esimvast}
 \end{esimerkki}
@@ -101,7 +109,7 @@ Laske polynomien $5x^2-x+5$ ja $3x^2-1$ summa.
             (\textcolor{blue}{5x^2} \textcolor{red}{{}-x} + 5) + (\textcolor{blue}{3x^2} -1) 
             &=\textcolor{blue}{5x^2} \textcolor{red}{{}-x} + 5 + \textcolor{blue}{3x^2} -1 \\
             &=\textcolor{blue}{5x^2+3x^2} \textcolor{red}{{}-x} +5-1\\
-            &=\textcolor{blue}{(5+3)x^2} \textcolor{red}{{}-x}+(5-1)\\
+%                       &=\textcolor{blue}{(5+3)x^2} \textcolor{red}{{}-x}+(5-1)\\
             &=\textcolor{blue}{8x^2} \textcolor{red}{{}-x}+4.
         \end{align*}
     \end{esimratk}
@@ -110,28 +118,46 @@ Laske polynomien $5x^2-x+5$ ja $3x^2-1$ summa.
     \end{esimvast}
 \end{esimerkki}
 
-Polynomeja voidaan vastaavalla tavalla vähentää toisistaan.
+Polynomeja voidaan vastaavalla tavalla vähentää toisistaan. Kun sulkujen edessä on
+miinusmerkki, tulee musitaa vaihtaa termien merkin sulkuja avattaessa.
 
 \begin{esimerkki}
-    Laske polynomien $14x^3+69$ ja $3x^3+2x^2+x$ erotus.
+    Laske polynomien $4x^3+1$ ja $6x^3-2$ erotus.
     \begin{esimratk}
         \begin{align*}
-            (\textcolor{blue!30!green}{14x^3} + 69) - (\textcolor{blue!30!green}{3x^3} \textcolor{blue}{{}+ 2x^2} \textcolor{red}{{}+x})
-            &= \textcolor{blue!30!green}{14x^3} + 69 \textcolor{blue!30!green}{{}-3x^3} \textcolor{blue}{-2x^2} \textcolor{red}{{}-x} \\
-            &= \textcolor{blue!30!green}{14x^3{}-3x^3} \textcolor{blue}{{}-2x^2} \textcolor{red}{{}-x} + 69 \\
-            &= \textcolor{blue!30!green}{(14{}-3)x^3} \textcolor{blue}{{}-2x^2} \textcolor{red}{{}-x} + 69 \\
-            &= \textcolor{blue!30!green}{11x^3} \textcolor{blue}{{}-2x^2} \textcolor{red}{{}-x} + 69
+		(\textcolor{blue}{4x^3}+1)-(\textcolor{blue}{6x^3}-2) 
+		&= \textcolor{blue}{4x^3}+1 - \textcolor{blue}{6x^3} + 2 \\
+		&= \textcolor{blue}{4x^3-6x^3} +1 +2 \\
+		&=\textcolor{blue}{-2x^3}+3
         \end{align*}
     \end{esimratk}
     \begin{esimvast}
-        Polynomien erotus on $11x^3-2x^2-x+69$.
+        Polynomien erotus on $-2x^3+3$.
     \end{esimvast}
 \end{esimerkki}
 
+%\begin{esimerkki}
+%    Laske polynomien $14x^3+69$ ja $3x^3+2x^2+x$ erotus.
+%    \begin{esimratk}
+%        \begin{align*}
+%            (\textcolor{blue!30!green}{14x^3} + 69) - (\textcolor{blue!30!green}{3x^3} \textcolor{blue}{{}+ 2x^2} \textcolor{red}{{}+x})
+%            &= \textcolor{blue!30!green}{14x^3} + 69 \textcolor{blue!30!green}{{}-3x^3} \textcolor{blue}{-2x^2} \textcolor{red}{{}-x} \\
+%            &= \textcolor{blue!30!green}{14x^3{}-3x^3} \textcolor{blue}{{}-2x^2} \textcolor{red}{{}-x} + 69 \\
+%%           &= \textcolor{blue!30!green}{(14{}-3)x^3} \textcolor{blue}{{}-2x^2} \textcolor{red}{{}-x} + 69 \\
+%            &= \textcolor{blue!30!green}{11x^3} \textcolor{blue}{{}-2x^2} \textcolor{red}{{}-x} + 69
+%        \end{align*}
+%    \end{esimratk}
+%    \begin{esimvast}
+%        Polynomien erotus on $11x^3-2x^2-x+69$.
+%    \end{esimvast}
+%\end{esimerkki}
+
 Samanasteisten termien yhteen- ja vähennyslasku perustuu siihen,
 että reaalilukujen osittelulain (ks. Vapaa matikka 1) nojalla vakiokerroin voidaan ottaa yhteiseksi tekijäksi:
-\[
-ax^n+bx^n=(a+b)x^n.
+\[ \begin{array}{rcll}
+ax^n+bx^n &=&(a+b)x^n, & \text{ esimerkiksi }\\
+5x^2+3x^2 &=& (5+3)x^2 &= 8x^2.
+\end{array} 
 \]
 
 Polynomifunktioita nimetään tyypillisesti isoilla kirjaimilla, kuten $P$, $Q$ tai $R$.
@@ -186,8 +212,8 @@ polynomi     & \begin{sideways}\begin{minipage}{3.5cm}termien\\lukumäärä\end{
 $-2x^2+6x$   &        2  &         $-2$      &       2   &    0       \\ \hline 
 $7x^3-x-15$  &           &                   &           &            \\ \hline 
              &        2  &          $-9$     &       2   &    5       \\ \hline 
-             &        3  &          $-1$     &       5   &    $-17$   \\ \hline 
-             &        4  &                   &       3   &            \\ \hline 
+%             &        3  &          $-1$     &       5   &    $-17$   \\ \hline 
+%             &        4  &                   &       3   &            \\ \hline 
              &        1  &          -5       &       99  &            \\ \hline                           
     \end{tabular}
 
@@ -218,8 +244,8 @@ $7x^3-x-15$  &           &                   &           &            \\ \hline
 
     
     \begin{vastaus}
-    Värilliset kohdat voivat olla jotain muutakin.
-    
+%    Värilliset kohdat voivat olla jotain muutakin.
+% ei avointa tehtävää ensimmäiseksi tehtäväksi    
     \begin{tabular}{|c|c|c|c|c|}
                                                                                            \hline
 polynomi     & \begin{sideways}\begin{minipage}{3.5cm}termien\\lukumäärä\end{minipage}\end{sideways}%
@@ -229,10 +255,10 @@ polynomi     & \begin{sideways}\begin{minipage}{3.5cm}termien\\lukumäärä\end{
 $-2x^2+6x$   &        2          &         $-2$      &       2             &    0       \\ \hline 
 $7x^3-x-15$  &        3          &           7       &       3             &    $-15$   \\ \hline 
 $-9x^2+5$    &        2          &          $-9$     &       2             &    5       \\ \hline 
-$-x^5\textcolor{blue}{+4x}-17$%
-             &        3          &          $-1$     &       5             &    $-17$   \\ \hline 
-$\textcolor{blue}{8}x^3\textcolor{blue}{-x^2+4x}-17$%
-             &        4          &\textcolor{blue}{8}  &       3             &\textcolor{blue}{17}\\ \hline 
+%$-x^5\textcolor{blue}{+4x}-17$%
+%             &        3          &          $-1$     &       5             &    $-17$   \\ \hline 
+%$\textcolor{blue}{8}x^3\textcolor{blue}{-x^2+4x}-17$%
+%             &        4          &\textcolor{blue}{8}  &       3             &\textcolor{blue}{17}\\ \hline 
 $-5x^{99}$   &        1          &          $-5$     &       99            &         0      \\ \hline                           
      \end{tabular}
      \end{vastaus}
