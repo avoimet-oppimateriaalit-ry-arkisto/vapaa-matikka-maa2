@@ -3,28 +3,32 @@
 \qrlinkki{http://opetus.tv/maa/maa2/diskriminantti/}{Opetus.tv: \emph{diskriminantti 2. asteen yhtälölle} (7:56 ja 8:30)}
 
 \begin{esimerkki}
-    Ratkaistaan toisen asteen yhtälö $3x^2-5x+10=0$.
+    Ratkaistaan toisen asteen yhtälö $3x^2-5x+10=0$.\\
+    
+%    \begin{align*}
+%        \underbrace{3}_{=a}x^2\underbrace{-5}_{=b}x+\underbrace{10}_{=c}=0
+%    \end{align*}
+    Sijoitetaan $a=3$, $b=-5$ ja $c=10$ toisen asteen yhtälön ratkaisukaavaan $x=\frac{-b \pm \sqrt[]{b^2-4ac}}{2a}$.
     \begin{align*}
-        \underbrace{3}_{=a}x^2\underbrace{-5}_{=b}x+\underbrace{10}_{=c}=0
-    \end{align*}
-    Sijoitetaan vakiot $a=3$, $b=-5$ ja $c=10$ toisen asteen yhtälön ratkaisukaavaan $x=\frac{-b \pm \sqrt[]{b^2-4ac}}{2a}$.
-    \begin{align*}
-        x=\frac{-(-5) \pm \sqrt[]{(-5)^2-4\cdot 3 \cdot 10}}{2 \cdot 3} \\
-        x=-\frac{5 \pm \sqrt[]{25-120}}{6}
+        x &=\frac{-(-5) \pm \sqrt[]{(-5)^2-4\cdot 3 \cdot 10}}{2 \cdot 3} \\
+        x &=-\frac{5 \pm \sqrt[]{25-120}}{6} \\
+          x &=-\frac{5 \pm \sqrt[]{-95}}{6} 
     \end{align*}
     Koska juurrettava on negatiivinen,
-    \begin{align*}
-        b^2-4ac=(-5)^2-4 \cdot 3 \cdot 10=25-120=-95<0,
-    \end{align*}
-    niin toisen asteen yhtälöllä ei ole ratkaisuja.
+	 yhtälöllä ei ole ratkaisuja.
 \end{esimerkki}
 
-%Marginaaliin tai kuvaksi 2. asteen yhtälön ratkaisukaava (tai tekstin sekaan)
+Edellisen esimerkin tulokseen päästäisiin nopeamminkin.
+Koska ratkaisukaavassa esiintyvä lauseke $b^2-4ac$ on negatiivinen,
+ratkaisua ei ole.
 
-Toisen asteen yhtälön ratkaisukaavassa esiintyy neliöjuuri. Tämän neliöjuuren sisällä oleva lauseke $b^2-4ac$ määrää, kuinka monta ratkaisua yhtälöllä on. Joskus riittää pelkkä tieto ratkaisujen olemassaolosta tai lukumäärästä. Tällaisissa tapauksissa ei tarvitse ratkaista yhtälöä, vaan pelkkä edellä mainitun lausekkeen tarkastelu riittää. Tästä lausekkeesta käytetään nimeä \emph{diskriminantti} ja sitä merkitään kirjaimella $D$.
+Lauseketta $b^2-4ac$ kutsutaan \termi{diskriminantti}{diskriminantiksi}. Sen arvo kertoo yhtälön ratkaisujen lukumäärän. Jos $D<0$, ratkaisuja ei ole, sillä negatiivisella luvulla ei ole neliöjuurta. Jos $D=0$, neliöjuuren arvoksikin tulee $0$ ja ratkaisuja saadaan vain yksi ($\pm 0 = 0$).
+Jos $D>0$, neliöjuuri saa positiivisen arvon ja ratkaisuja on kaksi.
+
+Diskriminantin avulla voidaan siis tutkia yhtälön ratkaisujen lukumäärää ilman että
+yhtälöä tarvitsee ratkaista.
 
 \newpage
-
 \laatikko{Toisen asteen yhtälön $ax^2+bx+c=0$ ratkaisujen lukumäärä
 voidaan laskea diskriminantin $D=b^2-4ac$ avulla seuraavasti:
 \begin{itemize}
@@ -77,17 +81,17 @@ neliöjuuren alle negatiivinen luku.
 \end{esimerkki}
 
 \begin{esimerkki}
-Millä $a$:n arvolla yhtälöllä $9x^2+ax+1$ on tasan yksi ratkaisu?
+Millä $k$:n arvolla yhtälöllä $9x^2+kx+1$ on tasan yksi ratkaisu?
 
 Jotta ratkaisuja olisi tasan yksi, on diskriminantin oltava 0.
 \begin{align*}
 D &= 0\\
-a^2-4\cdot 9\cdot 1 &= 0\\
-a^2-36 &= 0\\
-a^2 &= 36\\
-a &= \pm 6
+k^2-4\cdot 9\cdot 1 &= 0\\
+k^2-36 &= 0\\
+k^2 &= 36\\
+k &= \pm 6
 \end{align*}
-Yhtälöllä on täsmälleen yksi ratkaisu, jos $a=-6$ tai $a=6$.
+Yhtälöllä on täsmälleen yksi ratkaisu, kun $k=-6$ tai $k=6$.
 \end{esimerkki}
 
 \begin{tehtavasivu}
@@ -98,17 +102,17 @@ Yhtälöllä on täsmälleen yksi ratkaisu, jos $a=-6$ tai $a=6$.
 	Laske diskriminanttien arvot.
 	Kuinka monta ratkaisua yhtälöillä on?
 	\begin{alakohdat}
-		\alakohta{$-3x^2+9x-5=0$}
-		\alakohta{$5x^2-2x+1=0$}
-		\alakohta{$x^2-7x-40=0$}
+		\alakohta{$3x^2+4x+1=0$}
+		\alakohta{$x^2+2x+5=0$}
 		\alakohta{$3x^2-6x+3=0$}
+		\alakohta{$x^2-7x-40=0$}
 	\end{alakohdat}
 	\begin{vastaus}
 		\begin{alakohdat}
-			\alakohta{$D=21$, eli $2$ ratkaisua.}
-			\alakohta{$D=-16$, eli ei ratkaisuja.}
-			\alakohta{$D=209$, kaksi ratkaisua}
+			\alakohta{$D=4$, eli kaksi ratkaisua.}
+			\alakohta{$D=-1$, eli ei ratkaisuja.}
 			\alakohta{$D=0$, eli $1$ ratkaisu}
+			\alakohta{$D=209$, kaksi ratkaisua}
 		\end{alakohdat}
 	\end{vastaus}
 \end{tehtava}
@@ -129,7 +133,7 @@ Yhtälöllä on täsmälleen yksi ratkaisu, jos $a=-6$ tai $a=6$.
 \end{tehtava}
 
 \begin{tehtava}
-	Tulkitse polynomifunktion lausekketta: Onko kyseessä ylös- vai alaspäin aukeava paraabeli?
+	Tulkitse polynomifunktion lauseketta: Onko kyseessä ylös- vai alaspäin aukeava paraabeli?
 	Kuinka monta nollakohtaa funktiolla on?
 	\begin{alakohdat}
 		\alakohta{$P(x)=-3x^2+9x-5$}
@@ -155,7 +159,7 @@ Yhtälöllä on täsmälleen yksi ratkaisu, jos $a=-6$ tai $a=6$.
 \begin{tehtava}
 	Millä luvuilla $c$ yhtälöllä $x^2+5x+c = 0$ ei ole ratkaisua?
 	\begin{vastaus}
-		$c> \frac{25}{4} =6,25$
+		 $c> \frac{25}{4} =6,25$. (Halutaan $D < 0$, eli $5^2-4\cdot 1 \cdot c <0$.)
 	\end{vastaus}
 \end{tehtava}
 
@@ -180,13 +184,6 @@ Yhtälöllä on täsmälleen yksi ratkaisu, jos $a=-6$ tai $a=6$.
 \end{tehtava}
 
 \begin{tehtava}
-	Millä vakion $k$ arvoilla yhtälöllä \\ $-x^2-x-k = 0$ ei ole ratkaisua?
-	\begin{vastaus}
-		Pitää olla $D=(-1)^2-4 \cdot (-1) \cdot (-k)<0$. Siis $k>\frac{1}{4}$.
-	\end{vastaus}
-\end{tehtava}
-
-\begin{tehtava}
 	Millä vakion $a$ arvoilla yhtälöllä \\ $(2a-1)x^2+(a+1)x+3=0$ on 
 	täsmälleen yksi juuri?
 	\begin{vastaus}
@@ -195,7 +192,7 @@ Yhtälöllä on täsmälleen yksi ratkaisu, jos $a=-6$ tai $a=6$.
 \end{tehtava}
 
 \begin{tehtava}
-	Mitä voit sanoa ratkaisujen määrästä vaillinaisten yhtälöiden $ax^2+c=0$  ja $ax^2+bx=0$  tapauksessa? Oletetaan, että $a$,$b$,$c \neq 0$.
+	Mitä voit sanoa ratkaisujen lukumäärästä vaillinaisten yhtälöiden $ax^2+c=0$  ja $ax^2+bx=0$  tapauksessa? Oletetaan, että $a$,$b$,$c \neq 0$.
 	\begin{vastaus}
 		\begin{description}
 			\item[$ax^2+c=0$] Joko kaksi ratkaisua tai ei yhtään ratkaisua. ($D \neq 0$)
@@ -234,6 +231,21 @@ Yhtälöllä on täsmälleen yksi ratkaisu, jos $a=-6$ tai $a=6$.
 \end{tehtava}
 
 \begin{tehtava}
+	Millä vakion $k$ arvoilla yhtälöllä \\ $-x^2-x-k = 0$ on ratkaisuja?
+	\begin{vastaus}
+		Pitää olla $D=(-1)^2-4 \cdot (-1) \cdot (-k) \geq 0$. Siis $k \leq \frac{1}{4}$.
+	\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+	Millä vakion $a$ arvoilla yhtälöllä \\ $ax^2+x=ax-5$ on 
+	täsmälleen yksi ratkaisu?
+	\begin{vastaus}
+		$a =11 \pm 2\sqrt{30}$.
+	\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
 	Kuinka monta ratkaisua yhtälöillä on vakion $a$ eri arvoilla?
 	\begin{alakohdat}
 		\alakohta{$x^2+6x+a+1=0$}
@@ -242,7 +254,7 @@ Yhtälöllä on täsmälleen yksi ratkaisu, jos $a=-6$ tai $a=6$.
 	\begin{vastaus}
 		\begin{alakohdat}
 			\alakohta{Kaksi, kun $a<8$, yksi, kun $a=8$, ja nolla, kun $a>8$.}
-			\alakohta{Kaksi, kun $a>0$ tai $-4<x<0$, yksi, kun $a=-4$ tai $a=0$, ja nolla, kun $a<-4$.}
+			\alakohta{Kaksi, kun $-4<a$ ja $a\neq 0$; yksi, kun $a=-4$ tai $a=0$, ja nolla, kun $a<-4$.}
 		\end{alakohdat}
 	\end{vastaus}
 \end{tehtava}
