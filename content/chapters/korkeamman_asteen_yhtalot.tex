@@ -13,6 +13,27 @@ Niille yhtälöille, joille ei ole ratkaisukaavaa, ratkaiseminen onnistuu vain n
 Joissain erikoistapauksissa korkeamman asteen yhtälön ratkaiseminen onnistuu myös käsin.
 Seuraavassa tarkastellaan tällaisia erikoistapauksia.
 
+\subsection*{Potenssiyhtälö}
+
+Jos yhtälössä esiintyy vain yhtä muuttujan $x$ potenssia, yhtälö ratkeaa juuren avulla.
+
+\begin{esimerkki}
+Ratkaise yhtälö $x^5 +7 = 0$.
+
+\begin{esimratk}
+\begin{align*}
+x^5+7 &= 0 && \ppalkki -7 \\
+x^5 &= -7 && \ppalkki \sqrt[5]{ \ } \\
+x &= \sqrt[5]{-7} \\
+x &= -\sqrt[5]{7}
+\end{align*} 
+\end{esimratk}
+
+\begin{esimvast} $x = -\sqrt[5]{7}$.
+\end{esimvast}
+\end{esimerkki}
+
+
 \subsection*{Tekijöihinjako}
 
 Polynomiyhtälöitä voidaan toisinaan ratkaista jakamalla polynomi tekijöihin.
@@ -43,8 +64,8 @@ x =\frac{3\pm\sqrt{3^2-4\cdot 1\cdot 1}}{2\cdot 1}=\frac{3\pm \sqrt{5}}{2}.
 \end{esimvast}
 \end{esimerkki}
 
-Jos polynomi voidaan jakaa tekijöihin, sen ratkaiseminen helpottuu, koska voidaan soveltaa tulon nollasääntöä.
-Sopiva tekijöihinjako on kuitenkin usein vaikea löytää. Tarkastellaan vielä toista esimerkkiä.
+Jos polynomi siis osataan jakaa tekijöihin, yhtälön voi ratkaista tulon nollasäännön avulla.
+Sopiva tekijöihinjako voi kuitenkin olla vaikea löytää. Tarkastellaan vielä toista esimerkkiä.
 %Aiemmin esitellyn polynomien jakolauseen mukaan kaikki polynomit voidaan jakaa tekijöihin, jotka ovat korkeintaan toista astetta.
 %Periaatteessa tällä tavalla voidaan siis ratkaista kaikki polynomiyhtälöt. Tekijöihin jakaminen on kuitenkin yleensä vaikeaa.
 
@@ -76,7 +97,7 @@ $x = 17$, $x = 1$ tai $x=-1$
 \subsection*{Sijoitukset}
 
 Joskus yhtälöt ratkeavat, kun niihin sijoitetaan jokin apumuuttuja.
-Tällöin puhutaan myös muuttujanvaihdosta.
+Tällöin puhutaan muuttujanvaihdosta.
 
 %Esimerkiksi muotoa $ax^4+bx^2+c=0$ olevissa yhtälöissä huomataan, että merkitsemällä lauseketta $x^2$ kirjaimella $y$, yhtälö voidaan kirjoittaa muotoon $ay^2+by+c=0$. Uudesta yhtälöstä voidaan ratkaista $y$ toisen asteen yhtälön ratkaisukaavalla, ja sijoituksesta $y = x^2$ voidaan ratkaista $x$.
 
@@ -103,7 +124,7 @@ Ne ovat $x=\pm\sqrt{2}$.
 \end{esimratk}
 
 \begin{esimvast}
-$x=2$ tai $x=-2$
+$x=\sqrt{2}$ tai $x=-\sqrt{2}$
 \end{esimvast}
 \end{esimerkki}
 
@@ -130,6 +151,22 @@ $x = \sqrt[5]{-2}$ tai $x = 1$
 \begin{tehtavasivu}
 
 \paragraph*{Opi perusteet}
+
+\begin{tehtava}
+    Ratkaise yhtälöt.
+    \begin{alakohdat}
+        \alakohta{$x(x+2)(x+17)=0$}
+        \alakohta{$x^9  = -512$}
+        \alakohta{$x^6 - 7x^7 = 0$}
+    \end{alakohdat}
+    \begin{vastaus}
+        \begin{alakohdat}
+            \alakohta{$x = 0$ tai $x=-2$ tai $x=17$}
+            \alakohta{$x = - 2$}
+            \alakohta{$x = 0$ tai $x=\frac{1}{7}$}
+        \end{alakohdat}
+    \end{vastaus}
+\end{tehtava}
 
 \begin{tehtava}
     Ratkaise yhtälöt.
@@ -163,21 +200,7 @@ $x = \sqrt[5]{-2}$ tai $x = 1$
     \end{vastaus}
 \end{tehtava}
 
-\begin{tehtava}
-    Ratkaise yhtälöt.
-    \begin{alakohdat}
-        \alakohta{$x^8 - 1 = 0$}
-        \alakohta{$x^8 - x^4 = 0$}
-        \alakohta{$x^8 - x^4 - 1 = 0$}
-    \end{alakohdat}
-    \begin{vastaus}
-        \begin{alakohdat}
-            \alakohta{$x = \pm\sqrt{1}$}
-            \alakohta{$x = 0$ tai $x = \pm\sqrt{1}$}
-            \alakohta{$x = \pm\sqrt[4]{\frac{1+\sqrt{5}}{2}} = \pm\sqrt[4]{\upvarphi}$ ($\upvarphi$ on kultaisena leikkauksena tunnettu vakio)}
-        \end{alakohdat}
-    \end{vastaus}
-\end{tehtava}
+
 
 \paragraph*{Hallitse kokonaisuus}
 
@@ -215,6 +238,15 @@ Ratkaise yhtälöt.
     \end{vastaus}
 \end{tehtava}
 
+\begin{tehtava} % Korkeamman asteen yhtälö
+Kun kolme peräkkäistä kokonaislukua kerrotaan keskenään, ja tuloon
+lisätään keskimmäinen luku, tulos on 15 kertaa keskimmäisen luvun neliö.
+Mitkä luvut ovat kyseessä?
+    \begin{vastaus}
+	Luvut ovat $-1, 0$ ja $1$ tai $14, 15$ ja $16$.
+    \end{vastaus}
+\end{tehtava}
+
 \begin{tehtava}
 	Ratkaise yhtälö $x^{627} - 6x^{514} + 5x^{401} = 0$.
 	\begin{vastaus}
@@ -222,6 +254,19 @@ Ratkaise yhtälöt.
 	\end{vastaus}
 \end{tehtava}
 
+\begin{tehtava}
+    Ratkaise yhtälöt.
+    \begin{alakohdat}
+        \alakohta{$x^5 - 2x^3 + x = 0$}
+        \alakohta{$x^8 + 4x^4 = 5x^6$}
+    \end{alakohdat}
+    \begin{vastaus}
+        \begin{alakohdat}
+        	\alakohta{$x = 0$ tai $x = \pm1$}
+        	\alakohta{$x = 0$ tai $x = \pm1$ tai $x = \pm2$}
+        \end{alakohdat}
+    \end{vastaus}
+\end{tehtava}
 
 \begin{tehtava}
  	Ratkaise yhtälö $5^{x^3+4x^2+x}=1$. 
@@ -250,6 +295,22 @@ Ratkaise yhtälöt.
 \begin{tehtava}
     Ratkaise yhtälöt.
     \begin{alakohdat}
+        \alakohta{$x^8 - 1 = 0$}
+        \alakohta{$x^8 - x^4 = 0$}
+        \alakohta{$x^8 - x^4 - 1 = 0$}
+    \end{alakohdat}
+    \begin{vastaus}
+        \begin{alakohdat}
+            \alakohta{$x = \pm\sqrt{1}$}
+            \alakohta{$x = 0$ tai $x = \pm\sqrt{1}$}
+            \alakohta{$x = \pm\sqrt[4]{\frac{1+\sqrt{5}}{2}} (= \pm\sqrt[4]{\upvarphi})$ (luku $\upvarphi$ on kultaisena leikkauksena tunnettu vakio)}
+        \end{alakohdat}
+    \end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+    Ratkaise yhtälöt.
+    \begin{alakohdat}
         \alakohta{$x^4 + 7x^3 = 0$}
         \alakohta{$2x^3 - 16x^2 + 32x = 0$}
         \alakohta{$x^6 + 6x^5 = -9x^4$}
@@ -265,33 +326,12 @@ Ratkaise yhtälöt.
     \end{vastaus}
 \end{tehtava}
 
-\begin{tehtava}
-    Ratkaise yhtälöt.
-    \begin{alakohdat}
-        \alakohta{$x^5 - 2x^3 + x = 0$}
-        \alakohta{$x^8 + 4x^4 = 5x^6$}
-    \end{alakohdat}
-    \begin{vastaus}
-        \begin{alakohdat}
-        	\alakohta{$x = 0$ tai $x = \pm1$}
-        	\alakohta{$x = 0$ tai $x = \pm1$ tai $x = \pm2$}
-        \end{alakohdat}
-    \end{vastaus}
-\end{tehtava}
 
-\begin{tehtava} % Korkeamman asteen yhtälö
-Kun kolme peräkkäistä kokonaislukua kerrotaan keskenään, ja tuloon
-lisätään keskimmäinen luku, tulos on 15 kertaa keskimmäisen luvun neliö.
-Mitkä luvut ovat kyseessä?
-    \begin{vastaus}
-	Luvut ovat $-1, 0$ ja $1$ tai $14, 15$ ja $16$.
-    \end{vastaus}
-\end{tehtava}
 
 \begin{tehtava} % Tämä kai tarvitsisi polynomien jakokulman?
 (K94/T2a) Polynomin $P(x)=ax^3-31x^2+1$ eräs nollakohta on $x=1$. Määritä $a$ ja ratkaise tämän jälkeen yhtälö $P(x)=0$.
 \begin{vastaus}
-      $a=30$ yhtälön ratkaisut ovat $1$, $\frac{1}{5}$ ja $-\frac{1}{6}$.
+      $a=30$. Yhtälön ratkaisut ovat $1$, $\frac{1}{5}$ ja $-\frac{1}{6}$.
     \end{vastaus}
 \end{tehtava}
 
