@@ -17,20 +17,22 @@ Täydennetään vasen puoli binomin neliöksi.
 \begin{align*}
 4a^2x^2+4abx&=-4ac &&\textnormal{\footnotesize{lisätään puolittain termi}} \ b^2 \\
 4a^2x^2+4abx+b^2&=b^2-4ac &&\textnormal{\footnotesize{neliö:}} \ 4a^2x^2+4abx+b^2=(2ax+b)^2 \\
-(2ax+b)^2&=b^2-4ac &&\textnormal{\footnotesize{otetaan puolittain neliöjuuri, jos}} \ b^2 \geq 4ac \\
+(2ax+b)^2&=b^2-4ac &&\textnormal{\footnotesize{otetaan puolittain neliöjuuri, jos}} \ b^2 -4ac \geq 0 \\
 2ax+b&= \pm \sqrt[]{b^2-4ac} &&\textnormal{\footnotesize{vähennetään puolittain termi}} \ b \\
 2ax&=-b \pm \sqrt[]{b^2-4ac} &&\textnormal{\footnotesize{jaetaan puolittain termillä}} \ 2a \neq 0 \\
 x&= \frac{-b \pm \sqrt[]{b^2-4ac}}{2a}
 \end{align*}
-Toisen asteen yhtälön ratkaisukaava on siis \[x= \frac{-b \pm \sqrt[]{b^2-4ac}}{2a}\] oletuksella, että $b^2 \geq 4ac$. Oletus tarvitaan, koska negatiivisille luvuille ei ole reaaliluvuilla määriteltyä neliöjuurta.\\
+Toisen asteen yhtälön ratkaisukaava on siis \[x= \frac{-b \pm \sqrt[]{b^2-4ac}}{2a}\] oletuksella, että $b^2-4ac \geq 0$. Oletus tarvitaan, koska negatiivisille luvuille ei ole reaaliluvuilla määriteltyä neliöjuurta.\\
 \laatikko{\textbf{Toisen asteen yhtälön ratkaisukaava} \\
 Yhtälön
-$ax^2+bx+c=0$, missä $a \neq 0$ ja $b^2 \geq 4ac$, reaaliset ratkaisut ovat
+$ax^2+bx+c=0$, missä $a \neq 0$ ja $b^2 - 4ac \geq 0$, reaaliset ratkaisut ovat
 muotoa \\
 \[ x=\frac{-b \pm \sqrt{b^2-4ac}}{2a}.\]
 }
 \begin{esimerkki}
-Ratkaistaan yhtälö $x^2-8x+16=0$.
+Ratkaise yhtälö $x^2-8x+16=0$. \\
+\begin{esimratk}
+Yhtälö on muodossa $ax^2+bx+c=0$:
 \begin{align*}
 \underbrace{1}_{=a}x^2 +\underbrace{(-8)}_{=b}x+\underbrace{16}_{=c}=0
 \end{align*}
@@ -42,36 +44,70 @@ x&=\frac{8 \pm \sqrt{64- 64}}{2} \\
 x&=\frac{8 \pm 0}{2} \\
 x&=4
 \end{align*}
+\end{esimratk}
+\begin{esimvast}
+$x=4$.
+\end{esimvast}
 \end{esimerkki}
 
 \begin{esimerkki}
-Ratkaistaan yhtälö $15x^2+24x+10=0$.
+Ratkaise yhtälö $15x^2+24x=-10$.
+\begin{esimratk}
+Siirretään kaikki termit samalle puolelle yhtälöä:
 \begin{align*}
 \underbrace{15}_{=a}x^2+\underbrace{24}_{=b}x+\underbrace{10}_{=c}=0
 \end{align*}
-Sijoitetaan vakioiden $a=15$, $b=24$ ja $c=10$ arvot toisen asteen yhtälön ratkaisukaavaan.
+Sijoitetaan  $a=15$, $b=24$ ja $c=10$ toisen asteen yhtälön ratkaisukaavaan.
 \begin{align*}
 x&=\frac{-24 \pm \sqrt[]{24^2-4 \cdot 15 \cdot 10}}{2 \cdot 15} \\
 x&=\frac{-24 \pm \sqrt[]{576-600}}{30} \\
 x&=\frac{-24 \pm \sqrt[]{-24}}{30}
 \end{align*}
-Koska juurrettava on negatiivinen ($-24<0$), niin yhtälöllä ei ole reaalilukuratkaisuja. \\
+Koska juurrettava on negatiivinen ($-24<0$), niin yhtälöllä ei ole reaalilukuratkaisuja.
+\end{esimratk}
+\begin{esimvast}
+Ei ratkaisua.
+\end{esimvast}
 \end{esimerkki}
 
 \begin{esimerkki}
-Ratkaistaan yhtälö $x^2+2x-3=0$.
-\begin{align*}
-\underbrace{1}_{=a} \cdot x^2+\underbrace{2}_{=b}x\underbrace{-3}_{=c}=0
-\end{align*}
-Sijoitetaan vakioiden $a=1$, $b=2$ ja $c=-3$ arvot toisen asteen yhtälön ratkaisukaavaan.
+Ratkaise yhtälö $x^2+2x-3=0$.
+\begin{esimratk}
+Sijoitetaan  $a=1$, $b=2$ ja $c=-3$ ratkaisukaavaan.
 \begin{align*}
 x&=\frac{-2 \pm \sqrt[]{2^2-4 \cdot 1 \cdot (-3)}}{2 \cdot 1} \\
 x&=\frac{-2 \pm \sqrt[]{4+12}}{2} \\
 x&=\frac{-2 \pm \sqrt[]{16}}{2} \\
 x&=\frac{-2 \pm 4}{2} \\
 x&=-1 \pm 2 \\
-x&=1 \text{ tai } x=-3 \\
+x&= -1+2 \text{ tai } x = -1-2 \\
+x&=1 \text{ tai } x=-3 
 \end{align*}
+\end{esimratk}
+\begin{esimvast}
+$x=1$ tai $x=-3$.
+\end{esimvast}
+\end{esimerkki}
+
+\begin{esimerkki}
+Kahden luvun erotus on $7$ ja tulo 330. Mitkä luvut ovat kyseessä?
+\begin{esimratk}
+Olkoon pienempi luvuista $x$, jolloin suurempi on $x+7$. Saadaan yhtälö
+\begin{align*}
+x(x+7) &= 330 && \ppalkki -330 \\
+x^2+7x-330 &= 0 && \ppalkki \text{ 2. asteen yhtälön ratkaisukaava}\\
+x&=\frac{-7 \pm \sqrt{7^2-4\cdot 1 \cdot 330}}{2\cdot 1} \\
+x&=\frac{-7 \pm \sqrt{1369}}{2}  &&	\ppalkki \sqrt{1369} = 37\\
+x&=\frac{-7 \pm 37}{2}  \\
+x&=\frac{-7 + 37}{2}\  \text{ tai } \  x = \frac{-7 - 37}{2}  \\
+x&=15\  \text{ tai } \ x = -21
+\end{align*}
+Koska $x$ oli pienempi alkuperäisistä luvuista, suurempi on $15+7=22$ tai
+$-21+7=-14$.
+\end{esimratk}
+\begin{esimvast}
+Luvut ovat $15$ ja $22$ tai $-21$ ja $-14$.
+\end{esimvast}
 \end{esimerkki}
 
 %\begin{esimerkki}
@@ -95,16 +131,14 @@ x&=1 \text{ tai } x=-3 \\
 \begin{tehtava}
     Ratkaise
     \begin{alakohdat}
+        \alakohta{$x^2 + 6x + 5 = 0$}
         \alakohta{$x^2 - 2x - 3 = 0$}
-        \alakohta{$-x^2 - 6x - 5 = 0$}
-        \alakohta{$x + 2x^2 - 6= 0$}
-        \alakohta{$1 + x + 3x^2= 0$.}
+        \alakohta{$2x^2+3x+5= 0$.}
     \end{alakohdat}
     \begin{vastaus}
         \begin{alakohdat}
-            \alakohta{$x = 3 \tai x = -1$}
             \alakohta{$x = -5 \tai x = -1$}
-            \alakohta{$x = \frac{3}{2} \tai x = -2$}
+            \alakohta{$x = 3 \tai x = -1$}
             \alakohta{Ei ratkaisuja.}
         \end{alakohdat}
     \end{vastaus}
@@ -114,15 +148,15 @@ x&=1 \text{ tai } x=-3 \\
     Ratkaise
     \begin{alakohdat}
         \alakohta{$9x^2 - 12x + 4 = 0$}
-        \alakohta{$x^2 + 2x = -4$}
-        \alakohta{$4x^2 = 12x - 8$}
+        \alakohta{$2x+x^2 = -4$}
+        \alakohta{$x^2+3x=5$}
         \alakohta{$3x^2 - 13x + 50 = -2x^2 + 17x + 5$.}
     \end{alakohdat}
     \begin{vastaus}
         \begin{alakohdat}
             \alakohta{$x = \dfrac{2}{3}$}
             \alakohta{Ei ratkaisua.}
-            \alakohta{$x = 1$ tai $x = 2$}
+            \alakohta{$x = \frac{-3 \pm \sqrt{29}}{2}$}
             \alakohta{$x = 3$}
         \end{alakohdat}
     \end{vastaus}
@@ -134,7 +168,7 @@ x&=1 \text{ tai } x=-3 \\
         \alakohta{$9x^2 - 15x + 6 = 0$}
         \alakohta{$x^2 + 23x = 0$}
         \alakohta{$4x^2 - 64 = 0$}
-        \alakohta{$6x^2 + 18x + 1 = 0$.}
+        \alakohta{$6x^2 + 1 = -18x$.}
     \end{alakohdat}
     \begin{vastaus}
         \begin{alakohdat}
@@ -190,36 +224,14 @@ x&=1 \text{ tai } x=-3 \\
 \end{tehtava}
 
 \begin{tehtava}
-	Sivusta katsottuna pallon lentorata on muotoa $y=-x^2+15x-36$. Oletetaan, että pallo heitettiin korkeudelta $y=0$. Laske
-		\begin{alakohdat}
-			\alakohta{heiton pituus}
-			\alakohta{mistä heitettiin}
-			\alakohta{mihin pallo laskeutui}
-		\end{alakohdat}
+	Jalkapallo potkaistiin ilmaan tasaiselta kentältä. Sivusta katsottuna pallon lentorata oli paraabeli, jonka
+	yhtälö oli muotoa \\$y=-x^2+15x-36$, missä $x$ on etäisyys metreinä kenttää pitkin mitattuna ja $y$ korkeus kentän pinnasta.
+Kuinka pitkan matkan pallon lensi?
 	\begin{vastaus}
-		\begin{alakohdat}
-			\alakohta{9 yksikköä}
-			\alakohta{kohdasta $x=3$}
-			\alakohta{kohtaan $x=12$}
-		\end{alakohdat}
+		Paraabelin nollakohdat ovat $x=3$ ja $x=12$, joten pallo lensi
+		$12-3 = 9$ metriä. 
 	\end{vastaus}
 \end{tehtava}
-
-\begin{tehtava}
-    Tasaisesti kiihtyvässä liikkeessä on voimassa kaavat $v = v_0 + at$ ja $s = v_0t + \dfrac{1}{2}at^2$, missä $v$ on loppunopeus, $v_0$ alkunopeus, $a$ kiihtyvyys, $t$ aika ja $s$ siirtymä.
-		\begin{alakohdat}
-            \alakohta{Auton nopeus on $20$~m/s. Auto pysäytetään jarruttamalla tasaisesti. Se pysähtyy $10$ sekunnissa. Laske jarrutusmatka.}
-            \alakohta{Kivi heitetään suoraan alas $50$ metriä syvään rotkoon nopeudella $3,0$~m/s. Kuinka monen sekunnin kuluttua se kohtaa rotkon pohjan? Putoamiskiihtyvyys on
-            noin $10$~m/$\text{s}^2$}
-        \end{alakohdat}
-    \begin{vastaus}
-        \begin{alakohdat}
-            \alakohta{Jarrutusmatka on $100$ metriä.}
-            \alakohta{Noin $2,9$ sekunnin kuluttua.}
-        \end{alakohdat}
-    \end{vastaus}
-\end{tehtava}
-
 
 \begin{tehtava}
 Ratkaise yhtälö $(4t+1)x^2-8tx+(4t-1)=0$ vakion $t$ kaikilla reaaliarvoilla.
@@ -261,6 +273,22 @@ Ratkaise yhtälö $(4t+1)x^2-8tx+(4t-1)=0$ vakion $t$ kaikilla reaaliarvoilla.
 	\end{vastaus}
 \end{tehtava}
 
+\begin{tehtava}
+    Kun kappaleen kiihtyvyys $a$ on vakio, pätee $x = v_0t + \dfrac{1}{2}at^2$ ja
+    $v = v_0 + at$, missä $x$ on kuljettu matka, $v_0$ alkunopeus, $v$ loppunopeus ja $t$ aika.
+		\begin{alakohdat}
+            \alakohta{Kivi heitetään suoraan alas Olympiastadionin tornista 
+            (korkeus $72$ metriä) nopeudella $3,0$~m/s. Kuinka monen sekunnin kuluttua kivi osuu maahan? Putoamiskiihtyvyys on
+            noin $10$~m/$\text{s}^2$}
+            \alakohta{Bussin nopeus on $20$~m/s. Bussi pysähtyy jarruttamalla tasaisesti. Se pysähtyy $10$ sekunnissa. Laske jarrutusmatka.}
+        \end{alakohdat}
+    \begin{vastaus}
+        \begin{alakohdat}
+            \alakohta{Jarrutusmatka on $100$ metriä.}
+            \alakohta{Noin $3,5$ sekunnin kuluttua. (Todellisuudessa putoamisessa kestää kauemmin, sillä lasku ei huomioi ilmanvastusta.)}
+        \end{alakohdat}
+    \end{vastaus}
+\end{tehtava}
 
 \begin{tehtava}
 	Johda neliöksi täydentämällä ratkaisukaava yhtälölle
@@ -269,6 +297,16 @@ Ratkaise yhtälö $(4t+1)x^2-8tx+(4t-1)=0$ vakion $t$ kaikilla reaaliarvoilla.
 	\begin{vastaus}
 		$x=\frac{-p \pm \sqrt{p^2-4q}}{2}$.
 	\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava} % toisen asteen yhtälö
+On olemassa viisi peräkkäistä positiivista kokonaislukua, joista kolmen
+ensimmäisen neliöiden summa on yhtä suuri kuin kahden jälkimmäisen
+neliöiden summa. Mitkä luvut ovat kyseessä?
+    \begin{vastaus}
+		$10^2+11^2+12^2 = 13^2 + 14^2$.
+    	(Jos negatiivisetkin luvut sallittaisiin, $(-2)^2+(-1)^2+0^2 = 1^2 + 2^2$ kävisi 			myös.) Löytyykö vastaava $4 + 3$ luvun sarja? Entä pidempi?
+    \end{vastaus}
 \end{tehtava}
 
 \begin{tehtava} % HANKALA! (Joo, tykkään. -Ville)
@@ -282,7 +320,7 @@ Ratkaise yhtälö $(4t+1)x^2-8tx+(4t-1)=0$ vakion $t$ kaikilla reaaliarvoilla.
 \paragraph*{Lisää tehtäviä}
 
 \begin{tehtava}
-    Ratkaise seuraavat yhtälöt.
+    Ratkaise yhtälöt.
     \begin{alakohdat}
         \alakohta{$x^2+3x+2=0$}
         \alakohta{$2x^2+5x-12=0$}
@@ -302,7 +340,7 @@ Ratkaise yhtälö $(4t+1)x^2-8tx+(4t-1)=0$ vakion $t$ kaikilla reaaliarvoilla.
 \end{tehtava}
 
 \begin{tehtava}
-    Ratkaise seuraavat yhtälöt.
+    Ratkaise yhtälöt.
     \begin{alakohdat}
         \alakohta{$x^2+3x-5=4x+8$}
         \alakohta{$8x^2-5x+1=-36$}
@@ -330,6 +368,15 @@ Ratkaise yhtälö $(4t+1)x^2-8tx+(4t-1)=0$ vakion $t$ kaikilla reaaliarvoilla.
 			\alakohta{Ei ratkaisuja.}
 			\alakohta{$\frac{27 \pm \sqrt{684}}{10} = \frac{27 \pm 6 \sqrt{19}}{10}$}
         \end{alakohdat}
+    \end{vastaus}
+\end{tehtava}
+
+\begin{tehtava} % toisen asteen yhtälö
+Neliön muotoisen taulun sivu on 36 cm. Taululle tehdään tasalevyinen kehys, jonka
+nurkat on pyöristettu neljännesympyrän muotoisiksi. Kuinka leveä kehys on, kun sen
+pinta-ala on puolet taulun pinta-alasta? (Ympyrän pinta-ala on $\pi r^2$.)
+    \begin{vastaus}
+     $7,7$~cm
     \end{vastaus}
 \end{tehtava}
 
@@ -366,23 +413,6 @@ Ratkaise yhtälö $(4t+1)x^2-8tx+(4t-1)=0$ vakion $t$ kaikilla reaaliarvoilla.
     \end{vastaus}
 \end{tehtava}
 
-\begin{tehtava}
-	$\star$ Ratkaise yhtälö $(x^3-2)^2+x^3-2=2$.
-	\begin{vastaus}
-		Kirjoitetaan yhtälö muotoon $(x^3-2)^2+(x^3-2)-2=0$ ja sovelletaan ratkaisukaavaa.
-		Näin saadaan $x^3-2=1$ tai $x^3-2=-2$, joista voidaan edelleen ratkaista $x=\sqrt[3]{3}$ tai $x=0$.
-	\end{vastaus}
-\end{tehtava}
-
-\begin{tehtava} % toisen asteen yhtälö
-Neliön muotoisen taulun sivu on 36 cm. Taululle tehdään tasalevyinen kehys, jonka
-nurkat on pyöristettu neljännesympyrän muotoisiksi. Kuinka leveä kehys on, kun sen
-pinta-ala on puolet taulun pinta-alasta? (ympyrän pinta-ala on $\pi r^2$.)
-    \begin{vastaus}
-     $7,7$~cm
-    \end{vastaus}
-\end{tehtava}
-
 \begin{tehtava} % toisen asteen yhtälö
 Ratkaise yhtälö $x - 3 = \frac{1}{x}$.
     \begin{vastaus}
@@ -390,14 +420,12 @@ Ratkaise yhtälö $x - 3 = \frac{1}{x}$.
     \end{vastaus}
 \end{tehtava}
 
-\begin{tehtava} % toisen asteen yhtälö
-On olemassa viisi peräkkäistä positiivista kokonaislukua, joista kolmen
-ensimmäisen neliöiden summa on yhtä suuri kuin kahden jälkimmäisen
-neliöiden summa. Mitkä luvut ovat kyseessä?
-    \begin{vastaus}
-		$10^2+11^2+12^2 = 13^2 + 14^2$.
-    	(Jos negatiivisetkin luvut sallittaisiin, $(-2)^2+(-1)^2+0^2 = 1^2 + 2^2$ kävisi 			myös.) Löytyykö vastaava $4 + 3$ luvun sarja? Entä pidempi?
-    \end{vastaus}
+\begin{tehtava}
+	$\star$ Ratkaise yhtälö $(x^3-2)^2+x^3-2=2$.
+	\begin{vastaus}
+		Kirjoitetaan yhtälö muotoon $(x^3-2)^2+(x^3-2)-2=0$ ja sovelletaan ratkaisukaavaa.
+		Näin saadaan $x^3-2=1$ tai $x^3-2=-2$, joista voidaan edelleen ratkaista $x=\sqrt[3]{3}$ tai $x=0$.
+	\end{vastaus}
 \end{tehtava}
 
 \end{tehtavasivu}
