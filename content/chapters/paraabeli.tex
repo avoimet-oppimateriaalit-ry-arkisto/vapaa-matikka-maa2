@@ -8,20 +8,88 @@ P(x)=ax^2+bx+c,
 \end{align*}
 missä vakiot $b$ ja $c$ voivat olla mitä tahansa reaalilukuja $(b, \ c \in \R)$ ja $a$ voi olla mikä tahansa reaaliluku, paitsi luku nolla $(a \in \R, \ a \neq 0)$.
 
-Toisen asteen polynomifunktion kuvaajaa nimitetään \termi{paraabeli}{paraabeliksi}. Jos toisen asteen polynomifunktiossa $a < 0$ sanomme sen kuvaajaa
-alaspäin aukeavaksi paraabeliksi ja vastaavasti, kun $a > 0$, kuvaajaa nimitetään ylöspäin aukeavaksi paraabeliksi.
+Toisen asteen polynomifunktion kuvaajaa nimitetään \termi{paraabeli}{paraabeliksi}.
+Kaikki paraabelit ovat keskenään yhdenmuotoisia, vain niiden paikka ja asento vaihtelee.
 
-% FIXME: kuvat alaspäin ja ylöspäin aukeavista paraabeleista
+Funkiton $P(x)=ax^2+bx+c$ kuvaaja on joka ylös- tai alaspäin aukeava paraabeli.
+Paraabelin suuntaan vaikuttaa ainoastaan toisen asteen termin kerroin $a$: kun
+$a>0$, paraabeli aukeaa ylöpäin, ja kun $a<0$, paraabeli aukeaa alaspäin.
+
+\begin{center}
+\begin{tabular}{cc}
+
+\begin{tabular}{c}
+	\begin{lukusuora}{-2}{2}{4}
+	\lukusuoraisobbox
+	\lukusuorakuvaaja{x**2-1}
+	\end{lukusuora}
+	\\ ylöspäin aukeava paraabeli, \\ $a > 0$
+\end{tabular}
+&
+\begin{tabular}{c}
+	\begin{lukusuora}{-2}{2}{4}
+	\lukusuoraisobbox
+	\lukusuorakuvaaja{-x**2+1}
+	\end{lukusuora}
+	\\ alaspäin aukeava paraabeli, \\ $a < 0$
+\end{tabular}
+
+\end{tabular}
+\end{center}
+
+Vakiotermi $c$ vaikuttaa kuvaajan korkeuteen.
+
+%FIXME: kuvaajassa x^2+3 ja x^2 menevät päällekäin 
 \begin{luoKuva}{paraabelit}
-	kuvaaja.pohja(-5, 5, -5, 5, leveys=7)
+	kuvaaja.pohja(-5, 5, -1, 8, leveys=7)
 	
-	kuvaaja.piirra("-3*x**2+3", nimi="$-3x^2+3$")
-	kuvaaja.piirra("x**2-4", nimi="$x^2-4$")
+	kuvaaja.piirra("x**2+3", nimi="$x^2+3$")
+	kuvaaja.piirra("x**2", nimi="$x^2$")
 \end{luoKuva}
+
+\begin{luoKuva}{paraabelit2}
+	kuvaaja.pohja(-5, 5, -4, 6, leveys=7)
+	
+	kuvaaja.piirra("x**2-3*x", nimi="$x^2-3x$")
+	kuvaaja.piirra("x**2", nimi="$x^2$")
+\end{luoKuva}
+
+
+%\begin{luoKuva}{vakio}
+%	kuvaaja.pohja(-5, 5, -5, 5, leveys=7)
+%	
+%	kuvaaja.piirra("*x**2+2", nimi="$x^2+2$")
+%	kuvaaja.piirra("x**2", nimi="$x^2$")
+%\end{luoKuva}
 
 \begin{center}
 	\naytaKuva{paraabelit}
 \end{center}
+
+Ensimmäisen asteen termin kerroin $b$ vaikuttaa huipun sijaintiin sekä pysty- että vaakasuunnassa.
+
+\begin{center}
+	\naytaKuva{paraabelit2}
+\end{center}
+
+%\begin{center}
+%	\naytaKuva{vakio}
+%\end{center}
+
+
+%
+%\begin{luoKuva}{ekaaste}
+%	kuvaaja.pohja(-5, 5, -5, 5, leveys=7)
+%	
+%	kuvaaja.piirra("*x**2-3*x", nimi="$x^2-3x$")
+%	kuvaaja.piirra("x**2", nimi="$x^2$")
+%\end{luoKuva}
+%
+%\begin{center}
+%	\naytaKuva{ekaaste}
+%\end{center}
+
+
 
 \begin{tehtavasivu}
 
@@ -48,6 +116,67 @@ alaspäin aukeavaksi paraabeliksi ja vastaavasti, kun $a > 0$, kuvaajaa nimitet�
       \alakohta{Alas}
     \end{alakohdat}
   \end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+Funktiot $P(x)$ ja $Q(x)$ ovat toisen asteen polynomeja.\\
+\begin{kuvaajapohja}{1}{-2}{3}{-1}{3}
+\kuvaaja{x*(2-x)}{$P(x)$}{black}
+\kuvaaja{x**2+1}{$Q(x)$}{black}
+\end{kuvaajapohja} \\
+Päättele kuvaajan perusteella
+\begin{alakohdat}
+\alakohta{mihin suuntaan paraabelit aukeavat}
+\alakohta{funktion $P$ nollakohdat}
+\alakohta{yhtälön $Q(x)=2$ ratkaisu}
+\alakohta{polynomin $Q(x)$ vakiotermi}
+\end{alakohdat}
+
+\begin{vastaus}
+\begin{alakohdat}
+\alakohta{$P$ alaspäin, $Q$ ylöspäin.}
+\alakohta{nollakohdat: $x=0$ ja $x=2$}
+\alakohta{$x=-1$ tai $x=1$}
+\alakohta{$1$, sillä kun $x=0$, $Q(x)=1$.}
+\end{alakohdat}
+\end{vastaus}
+\end{tehtava}
+
+\paragraph*{Hallitse kokonaisuus}
+
+\begin{tehtava}
+Kuvassa on funktion $P(x)=x^2$ kuvaaja.\\
+\begin{kuvaajapohja}{1.5}{-1.5}{1.5}{-1}{3}
+\kuvaaja{x**2}{$P(x)=x^2$}{black}
+\end{kuvaajapohja} \\
+Hahmottele kuvaajan avulla funktioiden
+\begin{alakohdat}
+\alakohta{$x^2-1$}
+\alakohta{$2-x^2$}
+\alakohta{$\frac{1}{2}x^2$}
+\alakohta{$(x-2)^2$}
+\end{alakohdat}
+kuvaajat.
+\begin{vastaus}
+\begin{alakohdat}
+\alakohta{
+\begin{kuvaajapohja}{1}{-1.5}{1.5}{-2}{2}
+\kuvaaja{x**2-1}{$P(x)=x^2-1$}{black}
+\end{kuvaajapohja}}
+\alakohta{
+\begin{kuvaajapohja}{1}{-1.5}{1.5}{-1}{3}
+\kuvaaja{2-x**2}{$P(x)=2-x^2$}{black}
+\end{kuvaajapohja}}
+\alakohta{
+\begin{kuvaajapohja}{1}{-1.5}{1.5}{-1}{3}
+\kuvaaja{0.5*x**2}{$P(x)=\frac12x^2$}{black}
+\end{kuvaajapohja}}
+\alakohta{
+\begin{kuvaajapohja}{1}{-0.5}{3.5}{-1}{3}
+\kuvaaja{(x-2)**2}{$P(x)=(x-2)^2$}{black}
+\end{kuvaajapohja}}
+\end{alakohdat}
+\end{vastaus}
 \end{tehtava}
 
 \end{tehtavasivu}
