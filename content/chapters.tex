@@ -63,19 +63,24 @@
 	\include{chapters/diskriminantti}
 	%diskriminantti
 		%D=b^2-4ac kertoo ratkaisujen lukumäärän
-	\include{chapters/polynomin_jakaminen_tekijoihin}
-	%sen nollakohtien avulla
-	%lause: "Jos x=b on yhtälön P(x)=0 ratkaisu, x-b on polynomin P(x) tekijä."
-	%todistus oikeastaan tarvitsee polynomien jakokulmaa, sen voi yrittää muotoilla uudestaan
-	%erityisesti toisen asteen polynomille: ax^2+bx+c=a(x-x_1)(x-x_2)
 	\include{chapters/toisen_asteen_epayhtalo}
 	%resepti: kaikki termit toiselle puolelle yhtälöä, ratkaise nollakohdat
 	%sitten joko:
 		%(A) jaa tekijöihin ja käytä tulon merkkisääntöä
 		%tai (B) vetoa paraabelin muotoon
 	%huomioitava myös tapaus, jossa polynomilla ei ole nollakohtia, sekä vaillinaiset tapaukset x(x-a)>0 ja x^2<a
+	\include{chapters/polynomin_jakaminen_tekijoihin}
+	%sen nollakohtien avulla
+	%lause: "Jos x=b on yhtälön P(x)=0 ratkaisu, x-b on polynomin P(x) tekijä."
+	%todistus oikeastaan tarvitsee polynomien jakokulmaa, sen voi yrittää muotoilla uudestaan
+	%erityisesti toisen asteen polynomille: ax^2+bx+c=a(x-x_1)(x-x_2)
+
 
 \chapter{Korkeampi aste}
+
+	\input{chapters/korkeamman_asteen_polynomifunktio}
+
+	\newpage
 	\input{chapters/korkeamman_asteen_yhtalot}
 	%yleisesti näitä on vaikea ratkaista
 	%3. ja 4. asteen yhtälöille on ratkaisukaava, 5. asteesta eteenpäin ei
