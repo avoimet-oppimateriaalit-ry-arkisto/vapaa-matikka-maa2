@@ -9,8 +9,17 @@
 \subsection*{Polynomit}
 
 \termi{polynomi}{Polynomit} ovat matematiikassa tärkeitä lausekkeita.
-Polynomissa voi olla yksi tai useampia muuttujia, tai se voi olla muuttujaton vakiopolynomi.
-% koostuu muuttujan $x$ ja vakioiden yhteen- ja kertolaskuista
+
+\laatikko{Polynomi on lauseke, jossa esiintyy vain:
+\begin{itemize}
+\item muuttujien potensseja (eksponentti luonnollinen luku, mukaan lukien $0$)
+\item kerrottuna jollakin vakiolla sekä
+\item näiden potenssitermien summia.
+\end{itemize}
+}
+
+Polynomissa voi olla yksi tai useampia muuttujia, tai se voi olla muuttujaton vakiopolynomi. Vakiopolynomin tapauksessa muuttujan eksponentin ajatellaan olevan $0$, sillä $x^0=1$, jolloin muuttuja katoaa.
+
 Esimerkiksi seuraavat lausekkeet ovat polynomeja:
 
 \begin{tabular}{ll}
@@ -22,12 +31,10 @@ $4$ &  ei muuttujia\\
  $xy^2+x^2y$& muuttujina $x$ ja $y$
 \end{tabular}
 
-Polynomeissa on muuttujien potenssien (eksponentit luonnollisia lukuja) lisäksi ainoastaan vakiolla kertomista sekä yhteen- ja vähennyslaskua.
-
 %Formaalisti kirjoitettuna polynomin yleinen muoto on
 %\[
 %a_n x^n + a_{n-1} x^{n-1} + \ldots + a_1 x + a_0 \] 
-%jollakin  $n\in\N$. Kertoimet $a_0, a_1, \ldots, a_{n-1}, a_n$ ovat vakioita.
+%jollakin $n\in\N$. Kertoimet $a_0, a_1, \ldots, a_{n-1}, a_n$ ovat vakioita.
  % miten nollapolynomin laita? asteista ei puhuta tässä, joten a_n \neq 0 ei välttämätön
 
 
@@ -50,10 +57,10 @@ Esimerkiksi polynomin $-2x^3+5x^2+x-7$ termit ovat $-2x^3$, $5x^2$, $x$ ja $-7$.
 Termejä, jotka eivät sisällä muuttujaa, kutsutaan  \termi{vakiotermi}{vakiotermeiksi}.
 Vakiotermejä ovat siis esimerkiksi $1$ ja $-7$.
 
-Yhden termin polynomeja kutsutaan \termi{monomi}{monomeiksi} ja kahden termin polynomeja \termi{binomi}{binomeiksi}.
-\begin{center}\begin{tabular}{cc}
-monomi	& binomi \\
-$-3x^2$   & $x^2-5$
+Yhden termin polynomeja kutsutaan \termi{monomi}{monomeiksi}, kahden termin polynomeja \termi{binomi}{binomeiksi} ja kolmen termin polynomeja \termi{trinomi}{trinomeiksi} ja niin edelleen.
+\begin{center}\begin{tabular}{ccc}
+monomi	& binomi 	&	trinomi \\
+$-3x^2$   &	$x^2-5$	& $a^2+3y-x$
  \end{tabular} \end{center}
 
 Muuttujan eksponenttia kutsutaan termin \termi{aste}{asteeksi} tai \termi{asteluku}{asteluvuksi}.
