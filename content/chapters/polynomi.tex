@@ -20,6 +20,7 @@
 
 Polynomissa voi olla yksi tai useampia muuttujia, tai se voi olla muuttujaton vakiopolynomi. Vakiopolynomin tapauksessa muuttujan eksponentin ajatellaan olevan $0$, sillä $x^0=1$, jolloin muuttuja katoaa.
 
+\begin{esimerkki}
 Esimerkiksi seuraavat lausekkeet ovat polynomeja:
 
 \begin{tabular}{ll}
@@ -31,22 +32,29 @@ $4$ &  ei muuttujia\\
  $xy^2+x^2y$& muuttujina $x$ ja $y$
 \end{tabular}
 
-%Formaalisti kirjoitettuna polynomin yleinen muoto on
-%\[
-%a_n x^n + a_{n-1} x^{n-1} + \ldots + a_1 x + a_0 \] 
-%jollakin $n\in\N$. Kertoimet $a_0, a_1, \ldots, a_{n-1}, a_n$ ovat vakioita.
- % miten nollapolynomin laita? asteista ei puhuta tässä, joten a_n \neq 0 ei välttämätön
+\end{esimerkki}
+
+\begin{esimerkki}
+
+Miksi muuttujan $t$ lausekkeet 
+\[ \frac{2}{t}, \quad \pi^t,  \quad \sqrt{t}+2 \quad \text{ ja } \quad t^\pi \]  \emph{eivät ole} polynomeja?
 
 
-% Jokainen lauseke, joka on esitettävissä polynomin yleisessä muodossa, on polynomi.
+	\begin{esimratk}
 
-Esimerkiksi muuttujan $x$ lausekkeet 
-\[ \frac{2}{x} \quad \text{ ja } \quad \sqrt{x}+2 \]  \emph{eivät ole} polynomeja.
+KESKEN
 
 % sillä niissä esiintyy potensseja, jotka eivät ole luonnollisia lukuja:
 %\[
 %\frac{2}{x} = 2x^{-1} \text{ ja } \sqrt{x}+2 = x^{\frac{1}{2}}+2.
 %\]
+
+	\end{esimratk}
+
+
+\end{esimerkki}
+
+%asteluku, kun useampi muuttuja?
 
 Yhden muuttujan polynomeissa muuttujana käytetään tyypillisesti kirjainta $x$.
 Yleisimmät muut kirjaimet muuttujien merkitsemiseen ovat $y$ ja $z$.
@@ -87,8 +95,8 @@ Yleensä polynomien termit kirjoitetaan niiden asteen perusteella laskevaan jär
 \qrlinkki{http://opetus.tv/maa/maa2/polynomiesimerkkeja/}
 {Opetus.tv: \emph{polynomiesimerkkejä} (6:59 ja 7:43)}
 
-Polynomi määrittää funktion, jota kutsutaan \termi{polynomifunktio}{polynomifunktioksi}.
-Esimerkiksi polynomi $5x^2-3x+2$ määrittää funktion $P(x)=5x^2-3x+2$.
+Polynomi reaalilukujen laskutoimituksena määrittää funktion, jota kutsutaan \termi{polynomifunktio}{polynomifunktioksi}.
+Esimerkiksi polynomi $5x^2-3x+2$ määrittää funktion $P$, jonka arvot voidaan laskea kaavalla $P(x)=5x^2-3x+2$.
 Tämän funktion arvoja voidaan laskea sijoittamalla lukuja muuttujan $x$ paikalle:
 \begin{align*}
     P(\textcolor{blue}{2}) & = 5\cdot \textcolor{blue}{2}^2-3\cdot \textcolor{blue}{2}+2 = 20 - 6 + 2 = 16 \\
@@ -105,7 +113,7 @@ vaikka tarkoitetaan vastaavaa polynomifunktiota.
 \qrlinkki{http://opetus.tv/maa/maa2/polynomien-yhteen-ja-vahennyslasku/}
 {Opetus.tv: \emph{polynomien yhteen- ja vähennyslasku} (7:36)}
 
-Polynomeja voidaan laskea yhteen summaamalla samanasteiset termit.
+Polynomeja voidaan laskea yhteen laskemalla yhteen samanasteiset termit.
 On kätevää aloittaa ryhmittelemällä samanasteiset termit vierekkäin. Polynomien summat ja erotukset ovat aina polynomeja.
 \newpage 
 
@@ -126,7 +134,7 @@ Laske polynomien $5x^2-x+5$ ja $3x^2-1$ summa.
 \end{esimerkki}
 
 Polynomeja voidaan vastaavalla tavalla vähentää toisistaan. Kun sulkujen edessä on
-miinusmerkki, tulee musitaa vaihtaa termien merkin sulkuja avattaessa.
+miinusmerkki, tulee muistaa vaihtaa termien merkin sulkuja avattaessa.
 
 \begin{esimerkki}
     Laske polynomien $4x^3+1$ ja $6x^3-2$ erotus.
@@ -201,6 +209,30 @@ Tämä tehdään esimerkiksi silloin, kun selvitetään polynomin aste.
     \begin{esimvast}
         $R(x) = -3x^3+x^2+x+1$. Polynomin $R$ aste on kolme.
     \end{esimvast}
+\end{esimerkki}
+
+\subsection{Polynomin yleinen muoto}
+
+Formaalisti kirjoitettuna polynomin yleinen muoto on
+\[
+a_n x^n + a_{n-1} x^{n-1} + \ldots + a_1 x + a_0 \] 
+jollakin $n\in\N$. Kertoimet $a_0, a_1, \ldots, a_{n-1}, a_n$ ovat vakioita.
+ 
+Jokainen lauseke, joka on esitettävissä polynomin yleisessä muodossa, on polynomi.
+
+\begin{esimerkki}
+
+Lauseke $\frac{2x^2+1}{x}$ ei ensi näkemältä näytä polynomilta murtolausekkeen nimittäjässä olevan $x$:n vuoksi. Lauseketta on kuitenkin mahdollista sieventää esimerkiksi seuraavasti:
+
+  \begin{align*}
+            
+            \frac{2x^3+x^2}{x}= \frac{2x^3}{x}+\frac{x^2}{x} \\
+           2x^3+x\\ 
+            
+        \end{align*}
+
+Kyseessä oli siis kuitenkin kolmannen asteen kaksiterminen yhden muuttujan polynomi. (Huomataan kuitenkin, että alkuperäisen esitysmuodon vuoksi $x \neq 0$, koska nollalla jakamista ei ole määritelty.)
+
 \end{esimerkki}
 
 \begin{tehtavasivu}
