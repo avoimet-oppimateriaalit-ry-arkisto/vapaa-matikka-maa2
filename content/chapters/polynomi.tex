@@ -21,65 +21,49 @@
 Polynomissa voi olla yksi tai useampia muuttujia, tai se voi olla muuttujaton vakiopolynomi. Vakiopolynomin tapauksessa muuttujan eksponentin ajatellaan olevan $0$, sillä $x^0=1$, jolloin muuttuja katoaa.
 
 \begin{esimerkki}
-Esimerkiksi seuraavat lausekkeet ovat polynomeja:
+Kaikki seuraavat lausekkeet ovat polynomeja:
 
 \begin{tabular}{ll}
-$4$ &  ei muuttujia\\
- $5x^2+x-7$ &   muuttujana $x$\\
- $-3x^{100}$& muuttujana $x$\\
- $y$& muuttujana $y$\\
- $y^2+1$& muuttujana $y$\\
- $xy^2+x^2y$& muuttujina $x$ ja $y$
+$4$ &  ei muuttujia ($4x^0=4 \cdot 1=4$)\\
+$2x+1$ &  muuttujana $x$ ($x^1=x$)\\
+$5x^2+x-7$ &   muuttujana $x$\\
+$-3t^{100}$& muuttujana $t$\\
+$y$& muuttujana $y$\\
+$y^2+1$& muuttujana $y$\\
+$xy^2+x^2y$& muuttujina $x$ ja $y$
 \end{tabular}
 
 \end{esimerkki}
 
+Polynomi on summalauseke, joiden yhteenlaskettavia kutsutaan \termi{termi}{termeiksi}. Termejä edeltävät miinukset ymmärretään termin osaksi negatiivisina kertoimina. Esimerkiksi polynomin $-2x^3+5x^2+x-7$ termit ovat $-2x^3$, $5x^2$, $x$ ja $-7$. Termejä, jotka eivät sisällä muuttujaa, kutsutaan  \termi{vakiotermi}{vakiotermeiksi}. Vakiotermejä ovat siis esimerkiksi $1$ ja $-7$.
+
 \begin{esimerkki}
 
+%itemize?
 Miksi muuttujan $t$ lausekkeet 
 \[ \frac{2}{t}, \quad \pi^t,  \quad \sqrt{t}+2 \quad \text{ ja } \quad t^\pi \]  \emph{eivät ole} polynomeja?
 
-
 	\begin{esimratk}
-
-KESKEN
-
-% sillä niissä esiintyy potensseja, jotka eivät ole luonnollisia lukuja:
-%\[
-%\frac{2}{x} = 2x^{-1} \text{ ja } \sqrt{x}+2 = x^{\frac{1}{2}}+2.
-%\]
-
+ \\
+$\frac{2}{t}$ ei ole polynomi, sillä muuttujan $t$ eksponentti ei ole luonnollinen luku: $\frac{2}{t}=2\cdot \frac{1}{t}= 2t^{-1}$, ja $-1\nin \mathbb{N}$. \\
+$\pi^t$ ei ole polynomi, sillä muuttuja on eksponentissa eikä potenssin kantalukuna. \\
+$\sqrt{t}+2$ ei ole polynomi, sillä neliöjuuri ei ole esitettävissä potenssina, jonka eksponentti olisi luonnollinen luku: $\sqrt{t}+2=t^{\frac{1}{2}}+2$, ja $-2 \nin \mathbb{N}$. \\
+$\quad t^\p$ ei ole polynomi, sillä muuttujan eksponentti ei ole luonnollinen luku: $\pi \nin \mathbb{N}$. \\
 	\end{esimratk}
-
-
 \end{esimerkki}
 
-%asteluku, kun useampi muuttuja?
+%Yhden muuttujan polynomeissa muuttujana käytetään tyypillisesti kirjainta $x$.
+%Yleisimmät muut kirjaimet muuttujien merkitsemiseen ovat $y$ ja $z$.
 
-Yhden muuttujan polynomeissa muuttujana käytetään tyypillisesti kirjainta $x$.
-Yleisimmät muut kirjaimet muuttujien merkitsemiseen ovat $y$ ja $z$.
+%etymologiahuomautukset sivun laitaan?
 
-Polynomi on summalauseke, joiden yhteenlaskettavia kutsutaan \termi{termi}{termeiksi}.
-Termejä edeltävät miinukset ymmärretään termin osaksi negatiivisina kertoimina.
-Esimerkiksi polynomin $-2x^3+5x^2+x-7$ termit ovat $-2x^3$, $5x^2$, $x$ ja $-7$.
-Termejä, jotka eivät sisällä muuttujaa, kutsutaan  \termi{vakiotermi}{vakiotermeiksi}.
-Vakiotermejä ovat siis esimerkiksi $1$ ja $-7$.
-
-Yhden termin polynomeja kutsutaan \termi{monomi}{monomeiksi}, kahden termin polynomeja \termi{binomi}{binomeiksi} ja kolmen termin polynomeja \termi{trinomi}{trinomeiksi} ja niin edelleen.
+Polynomi-sanan 'poly' on kreikkaa ja tarkoittaa montaa. Erityisesti yhden termin polynomeja kutsutaan \termi{monomi}{monomeiksi}, kahden termin polynomeja \termi{binomi}{binomeiksi}, kolmen termin polynomeja \termi{trinomi}{trinomeiksi} ja niin edelleen:
 \begin{center}\begin{tabular}{ccc}
 monomi	& binomi 	&	trinomi \\
-$-3x^2$   &	$x^2-5$	& $a^2+3y-x$
+$-3x^2$   &	$x^2-5$	& $y^2+3y-x$
  \end{tabular} \end{center}
 
-Muuttujan eksponenttia kutsutaan termin \termi{aste}{asteeksi} tai \termi{asteluku}{asteluvuksi}.
-Vakiotermin aste on nolla. Polynomin aste on suurin sen sievennetyn muodon termien asteista.
-Polynomin asteen saaminen selville voi vaatia polynomin sieventämistä.
-Esimerkiksi $x^2-x^2+1$ ei ole toisen, vaan nollannen asteen polynomi, sillä sivennettynä
-$x^2-x^2+1=1$.
-
-Koska yhteenlasku on vaihdannainen, polynomin termit voi kirjoittaa missä tahansa järjestyksessä.
-Esimerkiksi polynomi $y^4+y^2-1$ voidaan kirjoittaa myös järjestyksessä $-1+y^4+y^2$.
-Yleensä polynomien termit kirjoitetaan niiden asteen perusteella laskevaan järjestykseen niin, että korkeimman asteen termi kirjoitetaan ensin.
+Muuttujan eksponenttia kutsutaan termin \termi{aste}{asteeksi} tai \termi{asteluku}{asteluvuksi}. Vakiotermin aste on nolla. \termi{Polynomin aste}{Polynomin aste} on suurin sen sievennetyn muodon termien asteista. Polynomin asteen saaminen selville voi vaatia polynomin sieventämistä. Esimerkiksi $x^2-x^2+1$ ei ole toisen, vaan nollannen asteen polynomi, sillä sievennettynä $x^2-x^2+1=1$. Useamman muuttujan tapauksessa polynomin termien asteet lasketaan muuttujien potenssien summana.
 
 \begin{esimerkki}
     Mitkä ovat polynomin $x^4-2x^3+5$ termit ja niiden asteet? Mikä on polynomin aste?
@@ -90,32 +74,78 @@ Yleensä polynomien termit kirjoitetaan niiden asteen perusteella laskevaan jär
     \end{esimvast}
 \end{esimerkki}
 
+
+Koska yhteenlasku on vaihdannainen, polynomin termit voi kirjoittaa missä tahansa järjestyksessä. Esimerkiksi polynomi $y^4+y^2-1$ voidaan kirjoittaa myös järjestyksessä $-1+y^4+y^2$. Yleensä polynomien termit kirjoitetaan niiden asteen perusteella laskevaan järjestykseen niin, että korkeimman asteen termi kirjoitetaan ensin. Useaa muuttujaa sisältävät termit on tapana kirjoittaa ennen yhtä muuttujaa sisältäviä termejä – kuitenkin niin, että potenssijärjestys on tärkeämpi.
+
+\begin{esimerkki}
+	Mikä on polynomin $3t^2-1+t^3$ aste? Mikä on korkeimman asteen termin kerroin?
+\begin{esimratk}
+	
+Aloitetaan järjestämällä polynomin termit asteluvun mukaiseen laskevaan järjestykseen: \\
+	  $\textcolor{blue}{3t^2}\textcolor{red}{-1}+t^3=$ \\
+	  $t^3\textcolor{blue}{+3t^2}\textcolor{red}{-1}$ \\
+	
+\end{esimratk}
+
+\begin{esimvast}
+Polynomi on kolmatta astetta. Korkeimman (eli kolmannen) asteen termin kerroin on $1$.
+\end{esimvast}
+
+\end{esimerkki}
+
+\begin{esimerkki}
+	Kuinka monetta astetta on (kahden muuttujan) polynomi $x^2+2xy^2+xy$?
+\begin{esimratk}
+Merkitään selkeyden vuoksi molempien muuttujien kaikkien eksponentit näkyviin: \\
+\[x^2+2x^1y^2+x^1y^1\]
+
+Kun termissä on kaksi eri muuttujaa, niin termin asteluku on näiden muuttujien eksponenttien summa. Näin ollen ensimmäisen termin aste on kaksi, toisen termin aste on $1+2=3$ ja kolmannen termin aste on $1+1=2$. Järjestetään termit vielä asteiden mukaiseen laskevaan järjestykseen:
+
+\[\textcolor{blue}{x^2}+\textcolor{red}{2x^1y^2}+x^1y^1\]
+\[\textcolor{red}{2x^1y^2}+x^1y^1+\textcolor{blue}{x^2}\]
+
+\end{esimratk} 
+
+\begin{esimvast}
+Polynomin asteluku on kolme.
+\end{esimvast}
+
+\end{esimerkki}
+
 \subsection*{Polynomifunktion arvo}
 
 \qrlinkki{http://opetus.tv/maa/maa2/polynomiesimerkkeja/}
 {Opetus.tv: \emph{polynomiesimerkkejä} (6:59 ja 7:43)}
 
-Polynomi reaalilukujen laskutoimituksena määrittää funktion, jota kutsutaan \termi{polynomifunktio}{polynomifunktioksi}.
-Esimerkiksi polynomi $5x^2-3x+2$ määrittää funktion $P$, jonka arvot voidaan laskea kaavalla $P(x)=5x^2-3x+2$.
-Tämän funktion arvoja voidaan laskea sijoittamalla lukuja muuttujan $x$ paikalle:
+Polynomi reaalilukujen laskutoimituksena määrittää funktion, jota kutsutaan \termi{polynomifunktio}{polynomifunktioksi}. Oletusarvoisesti kaikkien lukiomatematiikassa käsiteltävien polynomifunktioiden määrittelyjoukko on koko reaalilukujen joukko $\mathbb{R}$, ja tällöin myös funktion arvot reaalilukuja. (Numeeristen ja algebrallisten menetelmien syventävällä kurssilla tarkastellaan polynomifunktioita myös reaalilukujoukkoa laajemmalla kompleksilukualueella $\mathbb{C}$.)
+
+Polynomifunktioita nimetään tyypillisesti suuraakkosin kuten $P$, $Q$ tai $R$.
+
+\begin{esimerkki}
+
+Polynomi $5x^2-3x+2$ määrittää funktion $P:\mathbb{R}\rightarrow \mathbb{R}$, jonka arvot voidaan laskea kaavalla $P(x)=5x^2-3x+2$. Arvoja voidaan laskea siis sijoittamalla joitakin (mielivaltaisia) lukuja muuttujan $x$ paikalle:
 \begin{align*}
     P(\textcolor{blue}{2}) & = 5\cdot \textcolor{blue}{2}^2-3\cdot \textcolor{blue}{2}+2 = 20 - 6 + 2 = 16 \\
     P(\textcolor{blue}{-1}) & = 5(\textcolor{blue}{-1})^2-3(\textcolor{blue}{-1})+2 = 5 + 3 + 2 = 10 \\
     P(\textcolor{blue}{-3}) & = 5(\textcolor{blue}{-3})^2-3(\textcolor{blue}{-3})+2 = 45 + 9 + 2 = 56.
 \end{align*}
+\end{esimerkki}
 
-Polynomeja ja polynomifunktioita käsitellään usein yhtäläisesti;
-voidaan esimerkiksi sanoa ''polynomi $P(x)=2x+1$'',
-vaikka tarkoitetaan vastaavaa polynomifunktiota.
+Polynomeja ja polynomifunktioita käsitellään usein yhtäläisesti; voidaan esimerkiksi sanoa ''polynomi $P(x)=2x+1$'', vaikka tarkoitetaan vastaavaa polynomifunktiota.
 
 \subsection*{Polynomien yhteen- ja vähennyslasku}
 
 \qrlinkki{http://opetus.tv/maa/maa2/polynomien-yhteen-ja-vahennyslasku/}
 {Opetus.tv: \emph{polynomien yhteen- ja vähennyslasku} (7:36)}
 
-Polynomeja voidaan laskea yhteen laskemalla yhteen samanasteiset termit.
-On kätevää aloittaa ryhmittelemällä samanasteiset termit vierekkäin. Polynomien summat ja erotukset ovat aina polynomeja.
-\newpage 
+Polynomeja voidaan laskea yhteen laskemalla yhteen samanasteiset termit. On kätevää aloittaa ryhmittelemällä samanasteiset termit vierekkäin. Polynomien summat ja erotukset ovat aina polynomeja.
+
+Samanasteisten termien yhteen- ja vähennyslasku perustuu siihen, että reaalilukujen osittelulain (ks. Vapaa matikka 1) nojalla vakiokerroin voidaan ottaa yhteiseksi tekijäksi:
+\[ \begin{array}{rcll}
+ax^n+bx^n &=&(a+b)x^n, & \text{ esimerkiksi }\\
+5x^2+3x^2 &=& (5+3)x^2 &= 8x^2.
+\end{array} 
+\]
 
 \begin{esimerkki}
 Laske polynomien $5x^2-x+5$ ja $3x^2-1$ summa.
@@ -151,31 +181,21 @@ miinusmerkki, tulee muistaa vaihtaa termien merkin sulkuja avattaessa.
     \end{esimvast}
 \end{esimerkki}
 
-%\begin{esimerkki}
-%    Laske polynomien $14x^3+69$ ja $3x^3+2x^2+x$ erotus.
-%    \begin{esimratk}
-%        \begin{align*}
-%            (\textcolor{blue!30!green}{14x^3} + 69) - (\textcolor{blue!30!green}{3x^3} \textcolor{blue}{{}+ 2x^2} \textcolor{red}{{}+x})
-%            &= \textcolor{blue!30!green}{14x^3} + 69 \textcolor{blue!30!green}{{}-3x^3} \textcolor{blue}{-2x^2} \textcolor{red}{{}-x} \\
-%            &= \textcolor{blue!30!green}{14x^3{}-3x^3} \textcolor{blue}{{}-2x^2} \textcolor{red}{{}-x} + 69 \\
-%%           &= \textcolor{blue!30!green}{(14{}-3)x^3} \textcolor{blue}{{}-2x^2} \textcolor{red}{{}-x} + 69 \\
-%            &= \textcolor{blue!30!green}{11x^3} \textcolor{blue}{{}-2x^2} \textcolor{red}{{}-x} + 69
-%        \end{align*}
-%    \end{esimratk}
-%    \begin{esimvast}
-%        Polynomien erotus on $11x^3-2x^2-x+69$.
-%    \end{esimvast}
-%\end{esimerkki}
-
-Samanasteisten termien yhteen- ja vähennyslasku perustuu siihen,
-että reaalilukujen osittelulain (ks. Vapaa matikka 1) nojalla vakiokerroin voidaan ottaa yhteiseksi tekijäksi:
-\[ \begin{array}{rcll}
-ax^n+bx^n &=&(a+b)x^n, & \text{ esimerkiksi }\\
-5x^2+3x^2 &=& (5+3)x^2 &= 8x^2.
-\end{array} 
-\]
-
-Polynomifunktioita nimetään tyypillisesti isoilla kirjaimilla, kuten $P$, $Q$ tai $R$.
+\begin{esimerkki}
+    Laske polynomien $14x^3+69$ ja $3x^3+2x^2+x$ erotus.
+    \begin{esimratk}
+        \begin{align*}
+            (\textcolor{blue!30!green}{14x^3} + 69) - (\textcolor{blue!30!green}{3x^3} \textcolor{blue}{{}+ 2x^2} \textcolor{red}{{}+x})
+            &= \textcolor{blue!30!green}{14x^3} + 69 \textcolor{blue!30!green}{{}-3x^3} \textcolor{blue}{-2x^2} \textcolor{red}{{}-x} \\
+            &= \textcolor{blue!30!green}{14x^3{}-3x^3} \textcolor{blue}{{}-2x^2} \textcolor{red}{{}-x} + 69 \\
+%           &= \textcolor{blue!30!green}{(14{}-3)x^3} \textcolor{blue}{{}-2x^2} \textcolor{red}{{}-x} + 69 \\
+            &= \textcolor{blue!30!green}{11x^3} \textcolor{blue}{{}-2x^2} \textcolor{red}{{}-x} + 69
+        \end{align*}
+    \end{esimratk}
+    \begin{esimvast}
+        Polynomien erotus on $11x^3-2x^2-x+69$.
+    \end{esimvast}
+\end{esimerkki}
 
 \begin{esimerkki}
     Olkoot polynomit $P(x)=2x+1$ ja $Q(x)=3x^2-2x+5$. Määritä summa $R(x)=P(x)+Q(x)$.
@@ -211,12 +231,12 @@ Tämä tehdään esimerkiksi silloin, kun selvitetään polynomin aste.
     \end{esimvast}
 \end{esimerkki}
 
-\subsection{Polynomin yleinen muoto}
+\subsection*{Polynomin yleinen muoto}
 
 Formaalisti kirjoitettuna polynomin yleinen muoto on
 \[
 a_n x^n + a_{n-1} x^{n-1} + \ldots + a_1 x + a_0 \] 
-jollakin $n\in\N$. Kertoimet $a_0, a_1, \ldots, a_{n-1}, a_n$ ovat vakioita.
+jollakin $n\in\N$. Kertoimet $a_0, a_1, \ldots, a_{n-1}, a_n$ ovat reaalilukuvakioita.
  
 Jokainen lauseke, joka on esitettävissä polynomin yleisessä muodossa, on polynomi.
 
@@ -226,12 +246,11 @@ Lauseke $\frac{2x^2+1}{x}$ ei ensi näkemältä näytä polynomilta murtolausekk
 
   \begin{align*}
             
-            \frac{2x^3+x^2}{x}= \frac{2x^3}{x}+\frac{x^2}{x} \\
-           2x^3+x\\ 
+            \frac{2x^3+x^2}{x} = \frac{2x^3}{x}+\frac{x^2}{x} = 2x^2+x \\ 
             
         \end{align*}
 
-Kyseessä oli siis kuitenkin kolmannen asteen kaksiterminen yhden muuttujan polynomi. (Huomataan kuitenkin, että alkuperäisen esitysmuodon vuoksi $x \neq 0$, koska nollalla jakamista ei ole määritelty.)
+Kyseessä oli siis kuitenkin toisen asteen kaksiterminen yhden muuttujan polynomi. (Huomataan kuitenkin, että alkuperäisen esitysmuodon vuoksi $x \neq 0$, koska nollalla jakamista ei ole määritelty.)
 
 \end{esimerkki}
 
