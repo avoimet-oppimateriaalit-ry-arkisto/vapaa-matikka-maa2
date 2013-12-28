@@ -35,8 +35,6 @@ $xy^2+x^2y$& muuttujina $x$ ja $y$
 
 \end{esimerkki}
 
-Polynomi on summalauseke, joiden yhteenlaskettavia kutsutaan \termi{termi}{termeiksi}. Termejä edeltävät miinukset ymmärretään termin osaksi negatiivisina kertoimina. Esimerkiksi polynomin $-2x^3+5x^2+x-7$ termit ovat $-2x^3$, $5x^2$, $x$ ja $-7$. Termejä, jotka eivät sisällä muuttujaa, kutsutaan  \termi{vakiotermi}{vakiotermeiksi}. Vakiotermejä ovat siis esimerkiksi $1$ ja $-7$.
-
 \begin{esimerkki}
 
 %itemize?
@@ -44,13 +42,17 @@ Miksi muuttujan $t$ lausekkeet
 \[ \frac{2}{t}, \quad \pi^t,  \quad \sqrt{t}+2 \quad \text{ ja } \quad t^\pi \]  \emph{eivät ole} polynomeja?
 
 	\begin{esimratk}
- \\
-$\frac{2}{t}$ ei ole polynomi, sillä muuttujan $t$ eksponentti ei ole luonnollinen luku: $\frac{2}{t}=2\cdot \frac{1}{t}= 2t^{-1}$, ja $-1\nin \mathbb{N}$. \\
+
+$\frac{2}{t}$ ei ole polynomi, sillä muuttujan $t$ eksponentti ei ole luonnollinen luku: $\frac{2}{t}=2 \cdot \frac{1}{t}= 2t^{-1}$, ja $-1 \notin \mathbb{N}$. \\
 $\pi^t$ ei ole polynomi, sillä muuttuja on eksponentissa eikä potenssin kantalukuna. \\
-$\sqrt{t}+2$ ei ole polynomi, sillä neliöjuuri ei ole esitettävissä potenssina, jonka eksponentti olisi luonnollinen luku: $\sqrt{t}+2=t^{\frac{1}{2}}+2$, ja $-2 \nin \mathbb{N}$. \\
-$\quad t^\p$ ei ole polynomi, sillä muuttujan eksponentti ei ole luonnollinen luku: $\pi \nin \mathbb{N}$. \\
+$\sqrt{t}+2$ ei ole polynomi, sillä neliöjuuri ei ole esitettävissä potenssina, jonka eksponentti olisi luonnollinen luku: $\sqrt{t}+2=t^{\frac{1}{2}}+2$, ja $-2 \notin \mathbb{N}$. \\
+$\quad t^{\pi}$ ei ole polynomi, sillä muuttujan eksponentti ei ole luonnollinen luku: $\pi \notin \mathbb{N}$. \\
 	\end{esimratk}
 \end{esimerkki}
+
+%ei kuulu joukkoon -merkki? ^ :S
+
+Polynomi on summalauseke, joiden yhteenlaskettavia kutsutaan \termi{termi}{termeiksi}. Termejä edeltävät miinukset ymmärretään termin osaksi negatiivisina kertoimina. Esimerkiksi polynomin $-2x^3+5x^2+x-7$ termit ovat $-2x^3$, $5x^2$, $x$ ja $-7$. Termejä, jotka eivät sisällä muuttujaa, kutsutaan  \termi{vakiotermi}{vakiotermeiksi}. Vakiotermejä ovat siis esimerkiksi $1$ ja $-7$.
 
 %Yhden muuttujan polynomeissa muuttujana käytetään tyypillisesti kirjainta $x$.
 %Yleisimmät muut kirjaimet muuttujien merkitsemiseen ovat $y$ ja $z$.
@@ -133,6 +135,8 @@ Polynomi $5x^2-3x+2$ määrittää funktion $P:\mathbb{R}\rightarrow \mathbb{R}$
 
 Polynomeja ja polynomifunktioita käsitellään usein yhtäläisesti; voidaan esimerkiksi sanoa ''polynomi $P(x)=2x+1$'', vaikka tarkoitetaan vastaavaa polynomifunktiota.
 
+%pitäisikö täsmentää? ^
+
 \subsection*{Polynomien yhteen- ja vähennyslasku}
 
 \qrlinkki{http://opetus.tv/maa/maa2/polynomien-yhteen-ja-vahennyslasku/}
@@ -212,8 +216,8 @@ miinusmerkki, tulee muistaa vaihtaa termien merkin sulkuja avattaessa.
     \end{esimvast}
 \end{esimerkki}
 
-Polynomit sievennetään yleensä yleiseen muotoon, jossa on vain yksi termi kutakin astetta kohti.
-Tämä tehdään esimerkiksi silloin, kun selvitetään polynomin aste.
+%Polynomit sievennetään yleensä yleiseen muotoon, jossa on vain yksi termi kutakin astetta kohti.
+%Tämä tehdään esimerkiksi silloin, kun selvitetään polynomin aste.
 
 \begin{esimerkki}
     Laske polynomien $P$ ja $Q$ erotus $R$, kun $P(x)=-3x^4+x^2+1$ ja $Q(x)=-3x^4+3x^3-x$.
@@ -233,22 +237,25 @@ Tämä tehdään esimerkiksi silloin, kun selvitetään polynomin aste.
 
 \subsection*{Polynomin yleinen muoto}
 
-Formaalisti kirjoitettuna polynomin yleinen muoto on
+Formaalisti kirjoitettuna yhden muuttujan polynomin yleinen muoto on
 \[
 a_n x^n + a_{n-1} x^{n-1} + \ldots + a_1 x + a_0 \] 
-jollakin $n\in\N$. Kertoimet $a_0, a_1, \ldots, a_{n-1}, a_n$ ovat reaalilukuvakioita.
+jollakin $n\in\N$. Muuttuja $n$ kertoo polynomin asteen, ja kertoimet $a_0, a_1, \ldots, a_{n-1}, a_n$ ovat reaalilukuvakioita. Jos jokin kertoimista on $0$, kyseinen termi katoaa.
+
+\begin{esimerkki}
+
+Polynomi $-3x^13-\frac{3}{4}x^2-17$ on polynomin yleistä muotoa siten, että $n=13$, $a_{13}=-3$, $a_2=-\frac{3}{4}$ ja $a_0=-17$, ja kaikki muut kertoimet ovat nollia.
+
+\end{esimerkki}
  
 Jokainen lauseke, joka on esitettävissä polynomin yleisessä muodossa, on polynomi.
 
 \begin{esimerkki}
 
-Lauseke $\frac{2x^2+1}{x}$ ei ensi näkemältä näytä polynomilta murtolausekkeen nimittäjässä olevan $x$:n vuoksi. Lauseketta on kuitenkin mahdollista sieventää esimerkiksi seuraavasti:
+Lauseke $\frac{2x^2+1}{x}$ ei ensi näkemältä näytä polynomilta murtolausekkeen nimittäjässä olevan $x$:n vuoksi. Lauseketta on kuitenkin mahdollista sieventää esimerkiksi seuraavasti: \\
 
-  \begin{align*}
-            
-            \frac{2x^3+x^2}{x} = \frac{2x^3}{x}+\frac{x^2}{x} = 2x^2+x \\ 
-            
-        \end{align*}
+
+$\frac{2x^3+x^2}{x} = \frac{2x^3}{x}+\frac{x^2}{x} = 2x^2+x $ \\
 
 Kyseessä oli siis kuitenkin toisen asteen kaksiterminen yhden muuttujan polynomi. (Huomataan kuitenkin, että alkuperäisen esitysmuodon vuoksi $x \neq 0$, koska nollalla jakamista ei ole määritelty.)
 
@@ -259,7 +266,55 @@ Kyseessä oli siis kuitenkin toisen asteen kaksiterminen yhden muuttujan polynom
 \paragraph*{Opi perusteet}
 
 \begin{tehtava}
-    Täydennä taulukko.
+    Mitkä seuraavista ovat polynomeja?
+    \begin{enumerate}[a)]
+        \item $\frac{1}{x}$
+       %\item $x^3+4x$
+        \item $5x-125$
+       %\item $2^x$
+        \item $\sqrt{x}+1$
+        \item $3x^4+6x^2+9$
+        \item $\sqrt{2}x-x$
+        \item $4^x+5x+6$
+    \end{enumerate}
+    \begin{vastaus}
+        \begin{enumerate}[a)]
+            \item Ei ole.
+           %\item On.
+            \item On.
+           %\item Ei ole.
+            \item Ei ole.
+            \item On.
+            \item On.
+            \item Ei ole.
+        \end{enumerate}
+    \end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+	Mikä on/mitkä ovat polynomin \\ $P(x) = x^5-3x^3+2x-1$
+	\begin{enumerate}[a)]
+		\item aste
+		\item termit
+		\item kolmannen asteen termi
+		\item kolmannen termin aste
+		\item vakiotermi
+	\end{enumerate}
+
+	\begin{vastaus}
+		\begin{enumerate}[a)]
+			\item $5$
+			\item $x^5$, $-3x^3$, $2x$, $-1$
+			\item $-3x^3$
+			\item $1$
+			\item $-1$
+		\end{enumerate}
+	\end{vastaus}
+\end{tehtava}
+
+
+\begin{tehtava}
+    Täydennä taulukko. Polynomeissa on vain yksi muuttuja, $x$.
         
     \begin{tabular}{|c|c|c|c|c|}
                                                                          \hline
@@ -302,9 +357,8 @@ $7x^3-x-15$  &           &                   &           &            \\ \hline
 
     
     \begin{vastaus}
-%    Värilliset kohdat voivat olla jotain muutakin.
-% ei avointa tehtävää ensimmäiseksi tehtäväksi    
-    \begin{tabular}{|c|c|c|c|c|}
+
+	    \begin{tabular}{|c|c|c|c|c|}
                                                                                            \hline
 polynomi     & \begin{sideways}\begin{minipage}{3.5cm}termien\\lukumäärä\end{minipage}\end{sideways}%
 & \begin{sideways}\begin{minipage}{3.5cm}korkeimman asteen\\termin kerroin\end{minipage}\end{sideways}%
@@ -318,8 +372,44 @@ $-9x^2+5$    &        2          &          $-9$     &       2             &    
 %$\textcolor{blue}{8}x^3\textcolor{blue}{-x^2+4x}-17$%
 %             &        4          &\textcolor{blue}{8}  &       3             &\textcolor{blue}{17}\\ \hline 
 $-5x^{99}$   &        1          &          $-5$     &       99            &         0      \\ \hline                           
-     \end{tabular}
+   	  \end{tabular}
      \end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+    Sievennä.
+    \begin{enumerate}[a)]
+        \item $3x+5x $
+        \item $4x^2+7x^2$
+        \item $-6y+2y $
+        \item $3x-(-2x)$
+    \end{enumerate}
+    \begin{vastaus}
+        \begin{enumerate}[a)]
+            \item $8x$
+            \item $11x^2$
+            \item $-4y$
+            \item $5x$
+        \end{enumerate}
+    \end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+    Sievennä.
+    \begin{enumerate}[a)]
+    	\item $5x-2+2x+7$
+        \item $5x-3y-y-2x$
+        \item $2x^2+x+x^2-5x$
+        \item $y^3 - 2y^2+4y^3-y $
+    \end{enumerate}
+    \begin{vastaus}
+        \begin{enumerate}[a)]
+        	\item $7x+5$
+            \item $3x-4y$
+            \item $3x^2-4x$
+            \item $5y^3-2y^2-y$
+        \end{enumerate}
+    \end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
@@ -340,70 +430,14 @@ $-5x^{99}$   &        1          &          $-5$     &       99            &    
     \end{vastaus}
 \end{tehtava}
 
-\begin{tehtava}
-    Laske.
-    \begin{enumerate}[a)]
-        \item $3x+5x $
-        \item $4x^2+7x^2$
-        \item $-6y+2y $
-        \item $3x-(-2x)$
-    \end{enumerate}
-    \begin{vastaus}
-        \begin{enumerate}[a)]
-            \item $8x$
-            \item $11x^2$
-            \item $-4y$
-            \item $5x$
-        \end{enumerate}
-    \end{vastaus}
-\end{tehtava}
-
-\begin{tehtava}
-    Laske.
-    \begin{enumerate}[a)]
-    	\item $5x-2+2x+7$
-        \item $5x-3y-y-2x$
-        \item $2x^2+x+x^2-5x$
-        \item $y^3 - 2y^2+4y^3-y $
-    \end{enumerate}
-    \begin{vastaus}
-        \begin{enumerate}[a)]
-        	\item $7x+5$
-            \item $3x-4y$
-            \item $3x^2-4x$
-            \item $5y^3-2y^2-y$
-        \end{enumerate}
-    \end{vastaus}
-\end{tehtava}
-
-\begin{tehtava}
-    Olkoot $P(x)=x^2+3x+4$ ja $Q(x)=x^3-10x+1$. Sievennä
-    \begin{enumerate}[a)]
-        \item $P(x)+Q(x)$
-        \item $P(x)-Q(x)$
-        \item $Q(x)-P(x)$
-        \item $2P(3)+Q(2)$.
-    \end{enumerate}
-    \begin{vastaus}
-        \begin{enumerate}[a)]
-            \item $x^3+x^2-7x+5$ % x^2+3x+4 + x^3-10x+1
-            \item $-x^3+x^2+13x+3$ % x^2+3x+4 -(x^3-10x+1) = x^2+3x+4 -x^3+10x-1
-            \item $x^3-x^2-13x-3$ % 
-            \item $33$ % 2*(3^2+3*3+4) +  2^3-10*2+1 = 2*(9+9+4)+8-20+1 =44-11 =33
-        \end{enumerate}
-    \end{vastaus}
-\end{tehtava}
-
-
-
 \paragraph*{Hallitse kokonaisuus}
 
 \begin{tehtava}
-    Sievennä
+    Sievennä.
     \begin{enumerate}[a)]
         \item $(x^2 - 2x + 1) + (-x^2 + x) $
         \item $(3y^3 + 2y^2  + y) - (-y^2 + y)$
-        \item $(z^{10} - z^6 + z^2 + 1) + (z^{10} + 2z^8 - 3z^6)$.
+        \item $(z^{10} - z^6 + z^2 + 1) + (z^{10} + 2z^8 - 3z^6)$
     \end{enumerate}
     \begin{vastaus}
         \begin{enumerate}[a)]
@@ -448,6 +482,24 @@ $-5x^{99}$   &        1          &          $-5$     &       99            &    
 \end{tehtava}
 
 \begin{tehtava}
+    Olkoot $P(x)=x^2+3x+4$ ja $Q(x)=x^3-10x+1$. Sievennä
+    \begin{enumerate}[a)]
+        \item $P(x)+Q(x)$
+        \item $P(x)-Q(x)$
+        \item $Q(x)-P(x)$
+        \item $2P(3)+Q(2)$.
+    \end{enumerate}
+    \begin{vastaus}
+        \begin{enumerate}[a)]
+            \item $x^3+x^2-7x+5$ % x^2+3x+4 + x^3-10x+1
+            \item $-x^3+x^2+13x+3$ % x^2+3x+4 -(x^3-10x+1) = x^2+3x+4 -x^3+10x-1
+            \item $x^3-x^2-13x-3$ % 
+            \item $33$ % 2*(3^2+3*3+4) +  2^3-10*2+1 = 2*(9+9+4)+8-20+1 =44-11 =33
+        \end{enumerate}
+    \end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
 	Sievennä polynomifunktiot ja laske funktioiden arvot muuttujan arvoilla $1$, $-1$ ja $3$.
 	\begin{enumerate}[a)]
 		\item $P(x)=(x^3-4x+5)+(-x^3+x^2+4x-2)$
@@ -477,53 +529,8 @@ $-5x^{99}$   &        1          &          $-5$     &       99            &    
 	\end{vastaus}
 \end{tehtava}
 
-\newpage
+
 \paragraph*{Lisää tehtäviä}
-
-\begin{tehtava}
-	Mikä on/mitkä ovat polynomin \\ $P(x) = x^5-3x^3+2x-1$
-	\begin{enumerate}[a)]
-		\item aste
-		\item termit
-		\item kolmannen asteen termi
-		\item vakiotermi
-	\end{enumerate}
-
-	\begin{vastaus}
-		\begin{enumerate}[a)]
-			\item $5$
-			\item $x^5$, $-3x^3$, $2x$, $-1$
-			\item $-3x^3$
-			\item $-1$
-		\end{enumerate}
-	\end{vastaus}
-\end{tehtava}
-
-\begin{tehtava}
-    Mitkä seuraavista ovat polynomeja?
-    \begin{enumerate}[a)]
-        \item $\frac{1}{x}$
-       %\item $x^3+4x$
-        \item $5x-125$
-       %\item $2^x$
-        \item $\sqrt{x}+1$
-        \item $3x^4+6x^2+9$
-        \item $\sqrt{2}x-x$
-        \item $4^x+5x+6$
-    \end{enumerate}
-    \begin{vastaus}
-        \begin{enumerate}[a)]
-            \item Ei ole.
-           %\item On.
-            \item On.
-           %\item Ei ole.
-            \item Ei ole.
-            \item On.
-            \item On.
-            \item Ei ole.
-        \end{enumerate}
-    \end{vastaus}
-\end{tehtava}
 
 \begin{tehtava}
     Olkoot $P(x)=x^2+3x+4$ ja \\ $Q(x)=x^3-10x+1$. Laske:
@@ -590,6 +597,29 @@ $-5x^{99}$   &        1          &          $-5$     &       99            &    
 			\item $R(x)=-x^3+8x-15$, $R(1)=-8$, $R(-1)=-22$ ja $R(3)=-18$
 			\item $S(x)=-2$, $S(1)=-1$, $S(-1)=-3$ ja $S(3)=1$
 		\end{enumerate}
+	\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+	$\star$ Määritellään kahden reaalimuuttujan polynomifunktio kaavalla $f(x,y)=xy^2+x^2y$.
+		\begin{enumerate}
+		\item Laske funktion arvo $f(-1,2)$.
+		\item Onko $f(x,y)=f(y,x)$ kaikilla $x$ ja $y$?
+		\end{enumerate}	
+	
+	\begin{vastaus}
+		\begin{enumerate}[a)]
+			\item $f(-1,2)=(-1)\cdot 2^2+(-1)^2 \cdot 2=-4+2=-2$
+			\item Kyllä.
+		\end{enumerate}
+	\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+	$\star$ Kahden muuttujan ($x$ ja $y$) binomista tiedetään, että sen asteluku on kaksi, vakiotermejä ei ole, ja kaikkien termien kertoimet ovat ykkösiä. Luettele kaikki mahdolliset polynomit, jotka toteuttavat nämä ehdot.
+	
+	\begin{vastaus}
+		$x^2+y$, $x^2+xy$, $y^2+x$, $y^2+xy$, $x^2+y^2$
 	\end{vastaus}
 \end{tehtava}
 
