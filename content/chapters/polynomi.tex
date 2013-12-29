@@ -1,4 +1,4 @@
-\section{Käsitteitä}
+\section{Peruskäsitteitä}
 
 \qrlinkki{http://opetus.tv/maa/maa2/polynomien-peruskasitteet/}
 {Opetus.tv: \emph{polynomien peruskäsitteet} (9:00)}
@@ -37,25 +37,29 @@ $xy^2+x^2y$& muuttujina $x$ ja $y$
 
 \begin{esimerkki}
 
-%itemize?
 Miksi muuttujan $t$ lausekkeet 
-\[ \frac{2}{t}, \quad \pi^t,  \quad \sqrt{t}+2 \quad \text{ ja } \quad t^\pi \]  \emph{eivät ole} polynomeja?
+\begin{enumerate}
+\item $\frac{2}{t}$
+\item $\pi^t$
+\item $\sqrt{t}+2$ ja
+\item $t^\pi$
+\end{enumerate}
+
+\emph{eivät ole} polynomeja?
 
 	\begin{esimratk}
 
-$\frac{2}{t}$ ei ole polynomi, sillä muuttujan $t$ eksponentti ei ole luonnollinen luku: $\frac{2}{t}=2 \cdot \frac{1}{t}= 2t^{-1}$, ja $-1 \notin \mathbb{N}$. \\
-$\pi^t$ ei ole polynomi, sillä muuttuja on eksponentissa eikä potenssin kantalukuna. \\
-$\sqrt{t}+2$ ei ole polynomi, sillä neliöjuuri ei ole esitettävissä potenssina, jonka eksponentti olisi luonnollinen luku: $\sqrt{t}+2=t^{\frac{1}{2}}+2$, ja $-2 \notin \mathbb{N}$. \\
-$\quad t^{\pi}$ ei ole polynomi, sillä muuttujan eksponentti ei ole luonnollinen luku: $\pi \notin \mathbb{N}$. \\
+\begin{enumerate}
+\item $\frac{2}{t}$ ei ole polynomi, sillä muuttujan $t$ eksponentti ei ole luonnollinen luku: $\frac{2}{t}=2 \cdot \frac{1}{t}= 2t^{-1}$, ja $-1 \notin \mathbb{N}$.
+\item $\pi^t$ ei ole polynomi, sillä muuttuja on eksponentissa eikä potenssin kantalukuna.
+\item $\sqrt{t}+2$ ei ole polynomi, sillä neliöjuuri ei ole esitettävissä potenssina, jonka eksponentti olisi luonnollinen luku: $\sqrt{t}+2=t^{\frac{1}{2}}+2$, ja $-2 \notin \mathbb{N}$.
+\item $t^{\pi}$ ei ole polynomi, sillä muuttujan eksponentti ei ole luonnollinen luku: $\pi \notin \mathbb{N}$.
+\end{enumerate}
+
 	\end{esimratk}
 \end{esimerkki}
 
-%ei kuulu joukkoon -merkki? ^ :S
-
-Polynomi on summalauseke, joiden yhteenlaskettavia kutsutaan \termi{termi}{termeiksi}. Termejä edeltävät miinukset ymmärretään termin osaksi negatiivisina kertoimina. Esimerkiksi polynomin $-2x^3+5x^2+x-7$ termit ovat $-2x^3$, $5x^2$, $x$ ja $-7$. Termejä, jotka eivät sisällä muuttujaa, kutsutaan  \termi{vakiotermi}{vakiotermeiksi}. Vakiotermejä ovat siis esimerkiksi $1$ ja $-7$.
-
-%Yhden muuttujan polynomeissa muuttujana käytetään tyypillisesti kirjainta $x$.
-%Yleisimmät muut kirjaimet muuttujien merkitsemiseen ovat $y$ ja $z$.
+Polynomi on summalauseke, joiden yhteenlaskettavia kutsutaan \termi{termi}{termeiksi}. Termejä edeltävät miinukset ymmärretään termin osaksi negatiivisina kertoimina. Esimerkiksi polynomin $-2x^3+5x^2+x-7$ termit ovat $-2x^3$, $5x^2$, $x$ ja $-7$. Termejä, jotka eivät sisällä muuttujaa, kutsutaan  \termi{vakiotermi}{vakiotermeiksi}. Vakiotermejä ovat siis esimerkiksi $1$, $-7$, $\frac{\pi}{2}$ ja $-\sqrt{2}$.
 
 %etymologiahuomautukset sivun laitaan?
 
@@ -65,7 +69,7 @@ monomi	& binomi 	&	trinomi \\
 $-3x^2$   &	$x^2-5$	& $y^2+3y-x$
  \end{tabular} \end{center}
 
-Muuttujan eksponenttia kutsutaan termin \termi{aste}{asteeksi} tai \termi{asteluku}{asteluvuksi}. Vakiotermin aste on nolla. \termi{Polynomin aste}{Polynomin aste} on suurin sen sievennetyn muodon termien asteista. Polynomin asteen saaminen selville voi vaatia polynomin sieventämistä. Esimerkiksi $x^2-x^2+1$ ei ole toisen, vaan nollannen asteen polynomi, sillä sievennettynä $x^2-x^2+1=1$. Useamman muuttujan tapauksessa polynomin termien asteet lasketaan muuttujien potenssien summana.
+Muuttujan eksponenttia kutsutaan termin \termi{aste}{asteeksi} tai \termi{asteluku}{asteluvuksi}. Vakiotermin aste on nolla. \termi{Polynomin aste}{Polynomin aste} on suurin sen sievennetyn muodon termien asteista. Polynomin asteen saaminen selville voi vaatia polynomin sieventämistä. Esimerkiksi $x^2-x^2+1$ ei ole toisen, vaan nollannen asteen polynomi, sillä sievennettynä $x^2-x^2+1=1$. (Ja $1=1x^0$.) Useamman muuttujan tapauksessa polynomin termien asteet lasketaan muuttujien potenssien summana.
 
 \begin{esimerkki}
     Mitkä ovat polynomin $x^4-2x^3+5$ termit ja niiden asteet? Mikä on polynomin aste?
@@ -75,7 +79,6 @@ Muuttujan eksponenttia kutsutaan termin \termi{aste}{asteeksi} tai \termi{astelu
         korkein termien asteista, eli neljä.
     \end{esimvast}
 \end{esimerkki}
-
 
 Koska yhteenlasku on vaihdannainen, polynomin termit voi kirjoittaa missä tahansa järjestyksessä. Esimerkiksi polynomi $y^4+y^2-1$ voidaan kirjoittaa myös järjestyksessä $-1+y^4+y^2$. Yleensä polynomien termit kirjoitetaan niiden asteen perusteella laskevaan järjestykseen niin, että korkeimman asteen termi kirjoitetaan ensin. Useaa muuttujaa sisältävät termit on tapana kirjoittaa ennen yhtä muuttujaa sisältäviä termejä – kuitenkin niin, että potenssijärjestys on tärkeämpi.
 
@@ -142,14 +145,22 @@ Polynomeja ja polynomifunktioita käsitellään usein yhtäläisesti; voidaan es
 \qrlinkki{http://opetus.tv/maa/maa2/polynomien-yhteen-ja-vahennyslasku/}
 {Opetus.tv: \emph{polynomien yhteen- ja vähennyslasku} (7:36)}
 
-Polynomeja voidaan laskea yhteen laskemalla yhteen samanasteiset termit. On kätevää aloittaa ryhmittelemällä samanasteiset termit vierekkäin. Polynomien summat ja erotukset ovat aina polynomeja.
+Polynomien summat ja erotukset ovat aina polynomeja. Polynomeja voidaan laskea yhteen yhdistämällä samanasteiset termit. On kätevää aloittaa ryhmittelemällä samanasteiset termit vierekkäin. 
 
-Samanasteisten termien yhteen- ja vähennyslasku perustuu siihen, että reaalilukujen osittelulain (ks. Vapaa matikka 1) nojalla vakiokerroin voidaan ottaa yhteiseksi tekijäksi:
-\[ \begin{array}{rcll}
-ax^n+bx^n &=&(a+b)x^n, & \text{ esimerkiksi }\\
-5x^2+3x^2 &=& (5+3)x^2 &= 8x^2.
-\end{array} 
-\]
+Samanasteisten termien yhteen- ja vähennyslasku perustuu siihen, että soveltamalla reaalilukujen osittelulakia $a(b\pm c)=ab\pm ac$ oikealta vasemmalle (ks. Vapaa matikka 1) samanasteiset potenssit voidaan ottaa yhteiseksi tekijäksi:
+
+\[ ax^n+bx^n = (a+b)x^n \]
+
+\begin{esimerkki}
+
+	\begin{itemize}
+	\item $2x+3x=(2+3)x=5x$
+	\item $T-5T=1T-5T=(1-5)T$
+	\item $5x^2+3x^2 = (5+3)x^2 = 8x^2$
+	\item $\frac{1}{2}y^{42}+\frac{1}{3}y^{42}=(\frac{1}{2}+\frac{1}{3})y^{42}= \\
+	(\frac{3}{6}+\frac{2}{6})y^{42}=\frac{3+2}{6}y^{42}=\frac{5}{6}y^{42}$
+	\end{itemize}
+\end{esimerkki}
 
 \begin{esimerkki}
 Laske polynomien $5x^2-x+5$ ja $3x^2-1$ summa.
@@ -167,14 +178,14 @@ Laske polynomien $5x^2-x+5$ ja $3x^2-1$ summa.
     \end{esimvast}
 \end{esimerkki}
 
-Polynomeja voidaan vastaavalla tavalla vähentää toisistaan. Kun sulkujen edessä on
-miinusmerkki, tulee muistaa vaihtaa termien merkin sulkuja avattaessa.
+Polynomeja voidaan vastaavalla tavalla vähentää toisistaan. (Kun sulkujen edessä on miinusmerkki, tulee muistaa vaihtaa termien merkit sulkuja avattaessa.)
 
 \begin{esimerkki}
     Laske polynomien $4x^3+1$ ja $6x^3-2$ erotus.
     \begin{esimratk}
         \begin{align*}
-		(\textcolor{blue}{4x^3}+1)-(\textcolor{blue}{6x^3}-2) 
+		(\textcolor{blue}{4x^3}+1)-(\textcolor{blue}{6x^3}-2) \\
+		&= \textcolor{blue}{4x^3}+1 - \textcolor{blue}{6x^3} -(-2) \\
 		&= \textcolor{blue}{4x^3}+1 - \textcolor{blue}{6x^3} + 2 \\
 		&= \textcolor{blue}{4x^3-6x^3} +1 +2 \\
 		&=\textcolor{blue}{-2x^3}+3
@@ -216,9 +227,6 @@ miinusmerkki, tulee muistaa vaihtaa termien merkin sulkuja avattaessa.
     \end{esimvast}
 \end{esimerkki}
 
-%Polynomit sievennetään yleensä yleiseen muotoon, jossa on vain yksi termi kutakin astetta kohti.
-%Tämä tehdään esimerkiksi silloin, kun selvitetään polynomin aste.
-
 \begin{esimerkki}
     Laske polynomien $P$ ja $Q$ erotus $R$, kun $P(x)=-3x^4+x^2+1$ ja $Q(x)=-3x^4+3x^3-x$.
     Mikä on polynomin $R$ aste?
@@ -237,9 +245,10 @@ miinusmerkki, tulee muistaa vaihtaa termien merkin sulkuja avattaessa.
 
 \subsection*{Polynomin yleinen muoto}
 
+Polynomit sievennetään yleensä yleiseen muotoon, jossa on vain yksi termi kutakin astetta kohti.
+
 Formaalisti kirjoitettuna yhden muuttujan polynomin yleinen muoto on
-\[
-a_n x^n + a_{n-1} x^{n-1} + \ldots + a_1 x + a_0 \] 
+\[a_n x^n + a_{n-1} x^{n-1} + \ldots + a_1 x + a_0 \] 
 jollakin $n\in\N$. Muuttuja $n$ kertoo polynomin asteen, ja kertoimet $a_0, a_1, \ldots, a_{n-1}, a_n$ ovat reaalilukuvakioit. Kertoimen symbolilla $a$ on juoksevana alaindeksinä sama luku $n$ siksi, että vakioita on yhtä monta kuin on polynomin aste. Jos jokin kertoimista on $0$, kyseinen termi katoaa nollan kertolaskuominaisuuksien vuoksi..
 
 \begin{esimerkki}
