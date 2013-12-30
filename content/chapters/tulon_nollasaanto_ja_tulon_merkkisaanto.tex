@@ -28,40 +28,34 @@ Osoita, että funktio $P(x)=x^2+7$ saa vain positiivisia arvoja.
     \end{esimratk}
 \end{esimerkki}
 
+Tulon merkkisääntö yleistyy mille tahansa määrälle tulontekijöitä. Mikäli tulossa on pariton $(1, 3, 5, \ldots)$ määrä negatiivisia tekijöitä, tulo on negatiivinen. Muulloin tulo on positiivinen, eli esimerkiksi parillisesta potenssista ei voi tulla negatiivista vastausta.
+
 \begin{esimerkki}
 Mikä on funktion $f:\mathbb{R} \rightarrow \mathbb{R}, f(t)=-t^4+3$ suurin arvo?
     \begin{esimratk}
-	Koska muuttuja $t$ on reaaliluku, ei sen parillinen potenssi voi olla negatiivinen, vaan $t^4$:n arvo on vähintään $0$. Tämän perusteella $-t^4$:n arvo on epäpositiivinen eli korkeintaan nolla. Jos $-t^4$:n suurin arvo on nolla, niin lisäämällä tähän luvun $3$, saadaan funktion $f(t)=-t^4+3$ suurimmaksi arvoksi $3$.
+Koska muuttuja $t$ on reaaliluku, ei sen parillinen potenssi voi olla merkkisäännön mukaan negatiivinen, vaan $t^4$:n arvo on vähintään $0$. Tämän perusteella $-t^4$:n arvo on epäpositiivinen eli korkeintaan nolla. Jos $-t^4$:n suurin arvo on nolla, niin lisäämällä tähän luvun $3$, saadaan funktion $f(t)=-t^4+3$ suurimmaksi mahdolliseksi arvoksi $3$.
     \end{esimratk}
 \end{esimerkki}
 
-
-Tulon merkkisääntö yleistyy mille tahansa määrälle tulontekijöitä.
-Mikäli tulossa on pariton $(1, 3, 5, \ldots)$ määrä negatiivisia tekijöitä, tulo on negatiivinen.
-Muulloin tulo on positiivinen.
-
 %Hyödynnämme merkkisääntöä myöhemmin, kun teemme epäyhtälöistä merkkikaavioita.
-
-\newpage
 
 \subsection*{Tulon nollasääntö}
 
-Tulon merkkisäännöstä seuraa, että positiivisten ja negatiivisten lukujen tulo on aina positiivinen tai negatiivinen, ei koskaan nolla.
-Jos siis tulo on $0$, tulon tekijöistä ainakin yhden täytyy olla $0$.
-Toisaalta jos jokin tulon tekijöistä on $0$, myös tulo on automaattisesti $0$.
-Nämä tiedot yhdistämällä saadaan tulon nollasääntö:
+Reaaliluku voi olla vain joko positiivinen, nolla tai negatiivinen. Tulon merkkisäännöstä seuraa, että positiivisten ja negatiivisten lukujen tulo on aina positiivinen tai negatiivinen, ei koskaan nolla. Jos siis tulo on $0$, tulon tekijöistä ainakin yhden täytyy olla $0$. Toisaalta jos jokin tulon tekijöistä on $0$, myös tulo on automaattisesti $0$.
+
+Nämä tiedot yhdistämällä saadaan \termi{tulon nollasääntö}{tulon nollasääntö}:
 
 \laatikko[Tulon nollasääntö]{
-	\begin{description}
-		\item Jos jokin tulon tekijöistä on $0$, tulo on $0$.
-		\item Jos tulo on $0$, ainakin yksi tulon tekijöistä on $0$.
-	\end{description}
+
+Ainakin yksi tulon tekijöistä on $0$. $\Longleftrightarrow$ Tulo on $0$.
 }
+
+Tulon nollasäännössä on olennaista, että päättely toimii \emph{molempiin suuntiin}.
 
 \begin{esimerkki}
 Sievennä lauseke $(x^5-7)\cdot y \cdot 0\cdot(3a-5b)^2$.
     \begin{esimratk}
-	Koska tulossa on tekijänä $0$, vastaus on $0$.
+Koska tulossa on tekijänä $0$, vastaus on $0$.
     \end{esimratk}
 \end{esimerkki}
 
@@ -74,22 +68,17 @@ Sievennä lauseke $(x^5-7)\cdot y \cdot 0\cdot(3a-5b)^2$.
     Ratkaisuja on siis kaksi, $x= -5$ tai $x= 0$.
 \end{esimerkki}
 
-%\begin{esimerkki}
-%	\[2(x+5)=0\]
-%	Nyt tulon nollasäännön perusteella tiedetään, että $2=0$ tai $x+5=0$.
-%	Koska selvästi $2\neq 0$, jää ainoaksi ratkaisuksi $x+5=0$ eli $x=-5$.
-%\end{esimerkki}
+\begin{esimerkki} Ratkaistaan yhtälö $2(x+5)=0$.
 
-% \begin{esimerkki} Ratkaistaan $y$ yhtälöstä
-%     \[(x^5+5x+5)\cdot 0\cdot \sqrt{x^3-1} =y\]
-%     Koska vasemmalla puolella yksi tulon tekijöistä on $0$, tiedämme, että tulo on $0$. Siis $y=0$.
-% \end{esimerkki}
+Nyt tulon nollasäännön perusteella tiedetään, että $2=0$ tai $x+5=0$. Koska selvästi $2\neq 0$, jää ainoaksi ratkaisuksi $x+5=0$ eli $x=-5$.
+\end{esimerkki}
 
-%TODO: onko alla oleva järkevä? mistä tietää, mitä muuttujia on tarkoitus ratkaista. minusta vain sekoittaa asioita T: Jokke
-\begin{esimerkki} Ratkaise yhtälö
-    \[xyz=0.\]
-Tulon nollasäännön perusteella $x=0$, $y=0$ tai $z=0$. Nollia voi siis
-olla 1--3 kappaletta.
+
+\begin{esimerkki} Mitä voidaan yhtälön $xyz=0$ perusteella päätellä tuntemattomista $x$, $y$ ja $z$?
+
+	\begin{esimratk}
+Tulon nollasäännön perusteella $x=0$, $y=0$ tai $z=0$. Nollia voi siis olla 1--3 kappaletta.
+	\end{esimratk}
 \end{esimerkki}
 
 \begin{tehtavasivu}
@@ -156,7 +145,7 @@ olla 1--3 kappaletta.
 \paragraph*{Hallitse kokonaisuus}
 
 \begin{tehtava}
-	Olkoon $a > 0$. Mitkä vaihtoehdoista $b>0$, $b<0$, $b=0$ ovat mahdollisia, jos
+	Olkoon $a > 0$. Mitkä vaihtoehdoista $b>0$, $b<0$ ja $b=0$ ovat mahdollisia, jos
 	tiedetään, että
 	\begin{alakohdat}
 		\alakohta{$a \cdot b > 0$}
@@ -253,11 +242,16 @@ $\star$ Osoita, että $x^2+\frac{1}{x^2}\geq 2$, kun $x \neq 0$.
     \end{vastaus}
 \end{tehtava}
 
+%^ ja v -tehtävät epäyhtälölukuun?
+
 \begin{tehtava} 
 $\star$ Osoita, että kun $a \geq 0$ ja $b \geq 0$, pätee \\ $\frac{a+b}{2} \geq \sqrt{ab}$. Milloin yhtäsuuruus on voimassa?
     \begin{vastaus}
      Opastus: Aloita tiedosta $\left(\sqrt{a}-\sqrt{b}\right)^2 \geq 0$ ja sievennä. Yhtäsuuruus pätee, kun $a = b$.
     \end{vastaus}
 \end{tehtava}
+
+%tai vai vai vai joko tai, jos vai jos ja vain jos -tehtäviä :)
+%potensseja tehtäviin!
 
 \end{tehtavasivu}
