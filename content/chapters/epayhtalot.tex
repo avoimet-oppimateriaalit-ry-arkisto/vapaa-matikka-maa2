@@ -9,10 +9,13 @@ $a<b$ &  $a$ on pienempi kuin $b$ \\
 $a>b$ & $a$ on suurempi kuin $b$ \\
 $a \leq b$ & $a$ on pienempi tai yhtäsuuri kuin $b$ \\
 $a \geq b$ & $a$ on suurempi tai yhtäsuuri kuin $b$ \\
+$a \neq b$ & $a$ ei ole yhtä suuri kuin $b$ \\
 \end{tabular}
 \end{center}
 
-Sama epäyhtälö voidaan kirjoittaa kahdella tavalla: $a < b$ tarkoittaa samaa kuin $b > a$, ja $a \leq b$ tarkoittaa samaa kuin $b \geq a$. Epäyhtälö $a < b$ pätee täsmälleen silloin, kun epäyhtälö $a \geq b$ ei päde.
+%yhtäsuuri vai yhtä suuri?
+
+Sama epäyhtälö voidaan kirjoittaa kahdella tavalla: $a < b$ tarkoittaa samaa kuin $b > a$, ja $a \leq b$ tarkoittaa samaa kuin $b \geq a$. Epäyhtälö $a < b$ pätee täsmälleen silloin, kun epäyhtälö $a \geq b$ ei päde. Kahden luvun välinen epäyhtälöriippuvuus eli -relaatio voidaan esittää myös kielteisesti: $a \nless b $.
 
 Epäyhtälön totuusarvo voi riippua epäyhtälön puolilla esiintyvien muuttujien arvoista. Tämän perusteella epäyhtälöt voidaan jakaa kolmeen tyyppiin:
 
@@ -149,6 +152,7 @@ Epäyhtälön kertominen negatiivisella luvulla.
 \item kertomalla tai jakamalla molemmat puolet samalla negatiivisella luvulla ja kääntämällä epäyhtälömerkin suunta.
 \end{itemize}
 }
+%tarkennus/laajennus! ^
 
 Kuten yhtälöiden tapauksessa, epäyhtälön kertominen puolittain nollalla ei tuota yhtäpitävää epäyhtälöä, sillä esimerkiksi epäyhtälöstä $a \leq b$ tulee $0 \leq 0$, joka on aina tosi, ja epäyhtälöstä $a < b$ tulee $0 < 0$, joka on aina epätosi.
 
@@ -265,10 +269,48 @@ epäyhtälömerkintänä. Onko väli suljettu, avoin vai puoliavoin?
 \end{esimerkki}
 
 
+
+
 \newpage
+
+
+\begin{tehtavasivu}
+
+\begin{tehtava}
+
+
+\end{tehtava}
+
+\begin{tehtava}
+    Esitä joukko-opillisilla merkinnöillä ja lukusuoralla.
+    \begin{alakohdat}
+		\alakohta{$-10 < x < 10$}
+        \alakohta{$-9<x \leq 7$}
+        \alakohta{$5\leq c$}
+        \alakohta{$5\leq s \leq 7\frac{1}{2}$}
+        \alakohta{$5\geq x>1$}
+%        \alakohta{$a<b$}
+    \end{alakohdat}
+    \begin{vastaus}
+        \begin{alakohdat}
+			\alakohta{$x \in \aavali{-10}{10}$ \\  \naytaKuva{teht1}}
+            \alakohta{$x \in \asvali{-9}{7}$ \\  \naytaKuva{teht2}}
+            \alakohta{$c \in \savali{5}{\infty}$ \\  \naytaKuva{teht3}}
+            \alakohta{$s \in \ssvali{5}{7\frac{1}{2}}$ \\ , \naytaKuva{teht4}}
+            \alakohta{$x \in \asvali{1}{5}$ \\  \naytaKuva{teht5}}
+%            \alakohta{$a \in \aavali{-\infty}{b} \; \tai b \in \aavali{a}{\infty}$}
+        \end{alakohdat}
+    \end{vastaus}
+\end{tehtava}
+
+
+
+\end{tehtavasivu}
+
+\newpage
+
 \section{Ensimmäisen asteen epäyhtälö}
-% Pitäisikö tämä luku sijoittaa alkamaan omalta sivultaan, kuten luvut 2.1 ja 2.2:kin?
-% Korjattu, nyt on parempi. -Ville
+
 
 \qrlinkki{http://opetus.tv/maa/maa2/ensimmaisen-asteen-epayhtalo/}{Opetus.tv: \emph{ensimmäisen asteen epäyhtälö} (14:55 ja 8:21)}
 
@@ -287,7 +329,7 @@ x &< -\frac{1}{2}
 \end{esimratk}
 \begin{esimvast}
 $x < -\frac{1}{2}$. 
-%Ratkaisu voidaan esittää myös muodossa $x \in ]-\infty, -\frac{1}{2}[$.
+Ratkaisu voidaan esittää myös muodossa $x \in ]-\infty, -\frac{1}{2}[$.
 \end{esimvast}
 
 Ratkaisua voidaan tulkita graafisesti tutkimalla lausekkeeseen $2x+1$ liittyvää kuvaajaa:
@@ -402,28 +444,6 @@ lukusuora.pohja(-1, 7, 3, varaa_tila = False)
 lukusuora.kohta(0, "$0$")
 lukusuora.vali(1, 5, False, True, "$1$", "$5$")
 \end{luoKuva}
-
-\begin{tehtava}
-    Esitä joukko-opillisilla merkinnöillä ja lukusuoralla.
-    \begin{alakohdat}
-		\alakohta{$-10 < x < 10$}
-        \alakohta{$-9<x \leq 7$}
-        \alakohta{$5\leq c$}
-        \alakohta{$5\leq s \leq 7\frac{1}{2}$}
-        \alakohta{$5\geq x>1$}
-%        \alakohta{$a<b$}
-    \end{alakohdat}
-    \begin{vastaus}
-        \begin{alakohdat}
-			\alakohta{$x \in \aavali{-10}{10}$ \\  \naytaKuva{teht1}}
-            \alakohta{$x \in \asvali{-9}{7}$ \\  \naytaKuva{teht2}}
-            \alakohta{$c \in \savali{5}{\infty}$ \\  \naytaKuva{teht3}}
-            \alakohta{$s \in \ssvali{5}{7\frac{1}{2}}$ \\ , \naytaKuva{teht4}}
-            \alakohta{$x \in \asvali{1}{5}$ \\  \naytaKuva{teht5}}
-%            \alakohta{$a \in \aavali{-\infty}{b} \; \tai b \in \aavali{a}{\infty}$}
-        \end{alakohdat}
-    \end{vastaus}
-\end{tehtava}
 
 \begin{tehtava}
     Ratkaise seuraavat epäyhtälöt.
