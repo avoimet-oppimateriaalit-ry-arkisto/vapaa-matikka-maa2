@@ -1,4 +1,4 @@
 TARGET = MAA2
-PDFLATEX ?= pdflatex -shell-escape
+PDFLATEX ?= lualatex -shell-escape
 
 include commons/Makefile.include
