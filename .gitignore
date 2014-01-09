@@ -34,8 +34,8 @@
 *.pyc
 *~
 .DS_Store
-content/*.pdf
-content/appendices/vastaukset.tex
-content/appendices/monsterit_vastaukset.tex
-content/revision.tex
-content/kuva-tmp-*
+*.pdf
+content/LIITE_vastaukset.tex
+content/LIITE_lisavastaukset.tex
+revision.tex
+kuva-tmp-*
