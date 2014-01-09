@@ -3,9 +3,6 @@
 \qrlinkki{http://opetus.tv/maa/maa2/polynomien-peruskasitteet/}
 {Opetus.tv: \emph{polynomien peruskäsitteet} (9:00)}
 
-\qrlinkki{http://opetus.tv/maa/maa2/polynomin-tasmallinen-maaritelma/}
-{Opetus.tv: \emph{polynomin täsmällinen määritelmä} (6:10)}
-
 \subsection*{Polynomit}
 
 \termi{polynomi}{Polynomit} ovat matematiikassa ryhmä erittäin tärkeitä lausekkeita.
@@ -211,6 +208,9 @@ Polynomeja ja polynomifunktioita käsitellään usein yhtäläisesti; voidaan es
 
 \subsection*{Polynomin yleinen muoto}
 
+\qrlinkki{http://opetus.tv/maa/maa2/polynomin-tasmallinen-maaritelma/}
+{Opetus.tv: \emph{polynomin täsmällinen määritelmä} (6:10)}
+
 Formaalisti kirjoitettuna yhden muuttujan polynomin yleinen muoto on
 \[a_n x^n + a_{n-1} x^{n-1} + \ldots + a_1 x + a_0 \] 
 jollakin $n\in\N$. Muuttuja $n$ kertoo polynomin asteen, ja kertoimet $a_0, a_1, \ldots, a_{n-1}, a_n$ ovat reaalilukuvakioita. Kertoimen symbolilla $a$ on juoksevana alaindeksinä sama luku $n$ siksi, että vakioita on yhtä monta kuin on polynomin aste. Jos jokin kertoimista on $0$, kyseinen termi katoaa nollan kertolaskuominaisuuksien vuoksi.
@@ -227,116 +227,10 @@ Jokainen lauseke, joka on esitettävissä polynomin yleisessä muodossa, on poly
 
 Lauseke $\frac{2x^2+1}{x}$ ei ensi näkemältä näytä polynomilta murtolausekkeen nimittäjässä olevan $x$:n vuoksi. Lauseketta on kuitenkin mahdollista sieventää esimerkiksi jakamalla murtolauseke kahteen yksinkertaisempaan samannimiseen murtolausekkeeseen ja tämän jälkeen supistamalla termeittäin: \\
 
-
 $\frac{2x^3+x^2}{x} = \frac{2x^3}{x}+\frac{x^2}{x} = 2x^2+x $ \\
 
 Nyt nähdään selvästi, että kyseessä on toisen asteen kaksiterminen yhden muuttujan polynomi. (Huomataan kuitenkin, että alkuperäisen esitysmuodon vuoksi $x \neq 0$, koska nollalla jakamista ei ole määritelty.)
 
-\end{esimerkki}
-
-\subsection*{Polynomien yhteen- ja vähennyslasku}
-
-\qrlinkki{http://opetus.tv/maa/maa2/polynomien-yhteen-ja-vahennyslasku/}
-{Opetus.tv: \emph{polynomien yhteen- ja vähennyslasku} (7:36)}
-
-Kaikkien polynomien summat ja erotukset ovat aina polynomeja. Polynomeja voidaan laskea yhteen yhdistämällä samanasteiset termit. On kätevää aloittaa ryhmittelemällä samanasteiset termit vierekkäin. Polynomit sievennetään yleensä aina yleiseen muotoon asti, jossa on vain yksi termi kutakin astetta kohti.
-
-Samanasteisten termien yhteen- ja vähennyslasku perustuu siihen, että soveltamalla reaalilukujen osittelulakia $a(b\pm c)=ab\pm ac$ oikealta vasemmalle (ks. Vapaa matikka 1) samanasteiset potenssit voidaan ottaa yhteiseksi tekijäksi:
-
-\[ ax^n \pm bx^n = (a \pm b)x^n \]
-
-\begin{esimerkki}
-
-	\begin{itemize}
-	\item $2x+3x=(2+3)x=5x$
-	\item $t-5t=1t-5t=(1-5)t=-4t$
-	\item $5,1k^2+3,04k^2 = (5,1+3,04)k^2 = 8,14k^2$
-	\item $\frac{1}{2}y^{42}+\frac{1}{3}y^{42}=(\frac{1}{2}+\frac{1}{3})y^{42}= (\frac{3}{6}+\frac{2}{6})y^{42}=\frac{3+2}{6}y^{42}=\frac{5}{6}y^{42}$
-	\end{itemize}
-\end{esimerkki}
-
-\begin{esimerkki}
-Laske polynomien $5x^2-x+5$ ja $3x^2-1$ summa.
-    \begin{esimratk}
-    
-        \begin{align*}
-            (\textcolor{blue}{5x^2} \textcolor{red}{{}-x} + 5) + (\textcolor{blue}{3x^2} -1) 
-            &=\textcolor{blue}{5x^2} \textcolor{red}{{}-x} + 5 + \textcolor{blue}{3x^2} -1 \\
-            &=\textcolor{blue}{5x^2+3x^2} \textcolor{red}{{}-x} +5-1\\
-%                       &=\textcolor{blue}{(5+3)x^2} \textcolor{red}{{}-x}+(5-1)\\
-            &=\textcolor{blue}{8x^2} \textcolor{red}{{}-x}+4.
-        \end{align*}     
-    \end{esimratk}
-    \begin{esimvast}
-        Polynomien summa on $8x^2-x+4$.
-    \end{esimvast}
-\end{esimerkki}
-
-Edellisessä esimerkissä molemmat yhteenlaskettavat polynomit laitettiin rakenteen selventämisen vuoksi kaarisulkeiden sisään, vaikka niillä ei ollutkaan laskujärjestyksen kannalta mitään merkitystä.
-
-Polynomeja voidaan vastaavalla tavalla vähentää toisistaan. Vähennyslaskun tapauksessa on tärkeää laittaa vähennettävä polynomi sulkeisiin, sillä miinusmerkki vaikuttaa \emph{koko} polynomiin, ei vain sen ensimmäiseen termiin. Sulkeet avattaessa pitää muistaa vaihtaa kaikkien termien merkki: 
-
-\begin{esimerkki}
-    Laske polynomien $4x^3+1$ ja $6x^3-2$ erotus.
-    \begin{esimratk}
-        \begin{align*}
-		(\textcolor{blue}{4x^3}+1)-(\textcolor{blue}{6x^3}-2) \\
-		&= \textcolor{blue}{4x^3}+1 - \textcolor{blue}{6x^3} -(-2) \\
-		&= \textcolor{blue}{4x^3}+1 - \textcolor{blue}{6x^3} + 2 \\
-		&= \textcolor{blue}{4x^3-6x^3} +1 +2 \\
-		&=\textcolor{blue}{-2x^3}+3
-        \end{align*}
-    \end{esimratk}
-    \begin{esimvast}
-        Polynomien erotus on $-2x^3+3$.
-    \end{esimvast}
-\end{esimerkki}
-
-\begin{esimerkki}
-    Laske polynomien $14x^3+69$ ja $3x^3+2x^2+x$ erotus.
-    \begin{esimratk}
-        \begin{align*}
-            (\textcolor{blue!30!green}{14x^3} + 69) - (\textcolor{blue!30!green}{3x^3} \textcolor{blue}{{}+ 2x^2} \textcolor{red}{{}+x})
-            &= \textcolor{blue!30!green}{14x^3} + 69 \textcolor{blue!30!green}{{}-3x^3} \textcolor{blue}{-2x^2} \textcolor{red}{{}-x} \\
-            &= \textcolor{blue!30!green}{14x^3{}-3x^3} \textcolor{blue}{{}-2x^2} \textcolor{red}{{}-x} + 69 \\
-%           &= \textcolor{blue!30!green}{(14{}-3)x^3} \textcolor{blue}{{}-2x^2} \textcolor{red}{{}-x} + 69 \\
-            &= \textcolor{blue!30!green}{11x^3} \textcolor{blue}{{}-2x^2} \textcolor{red}{{}-x} + 69
-        \end{align*}
-    \end{esimratk}
-    \begin{esimvast}
-        Polynomien erotus on $11x^3-2x^2-x+69$.
-    \end{esimvast}
-\end{esimerkki}
-
-\begin{esimerkki}
-    Olkoot polynomit $P(x)=2x+1$ ja $Q(x)=3x^2-2x+5$. Määritä summa $R(x)=P(x)+Q(x)$.
-    \begin{esimratk}
-        \begin{align*}
-            R(x) = P(x)+Q(x) &= (2x+1)+(3x^2-2x+5) \\
-                             &= 2x+1+3x^2-2x+5 \\
-                             &= 3x^2+2x-2x+1+5 \\
-                             &= 3x^2+6.
-        \end{align*}
-    \end{esimratk}
-    \begin{esimvast}
-        $R(x) = 3x^2+6$.
-    \end{esimvast}
-\end{esimerkki}
-
-\begin{esimerkki}
-    Laske polynomien $P$ ja $Q$ erotus $R$, kun $P(x)=-3x^4+x^2+1$ ja $Q(x)=-3x^4+3x^3-x$.
-    Mikä on polynomin $R$ aste?
-   \begin{esimratk}
-        \begin{align*}
-            R(x) = P(x)-Q(x) &= (-3x^4+x^2+1)-(-3x^4+3x^3-x) \\
-                             &= -3x^4+x^2+1+3x^4-3x^3+x \\
-                             &= -3x^4+3x^4-3x^3+x^2+x+1 \\
-                             &= -3x^3+x^2+x+1.
-        \end{align*}
-    \end{esimratk}
-    \begin{esimvast}
-        $R(x) = -3x^3+x^2+x+1$. Polynomin $R$ aste on kolme.
-    \end{esimvast}
 \end{esimerkki}
 
 \begin{tehtavasivu}
@@ -455,42 +349,6 @@ $-5x^{99}$   &        1          &          $-5$     &       99            &    
 \end{tehtava}
 
 \begin{tehtava}
-    Sievennä.
-    \begin{enumerate}[a)]
-        \item $3x+5x $
-        \item $4x^2+7x^2$
-        \item $-6y+2y $
-        \item $3x-(-2x)$
-    \end{enumerate}
-    \begin{vastaus}
-        \begin{enumerate}[a)]
-            \item $8x$
-            \item $11x^2$
-            \item $-4y$
-            \item $5x$
-        \end{enumerate}
-    \end{vastaus}
-\end{tehtava}
-
-\begin{tehtava}
-    Sievennä.
-    \begin{enumerate}[a)]
-    	\item $5x-2+2x+7$
-        \item $5x-3y-y-2x$
-        \item $2x^2+x+x^2-5x$
-        \item $y^3 - 2y^2+4y^3-y $
-    \end{enumerate}
-    \begin{vastaus}
-        \begin{enumerate}[a)]
-        	\item $7x+5$
-            \item $3x-4y$
-            \item $3x^2-4x$
-            \item $5y^3-2y^2-y$
-        \end{enumerate}
-    \end{vastaus}
-\end{tehtava}
-
-\begin{tehtava}
     Olkoot $P(x)=x^2+5$ ja $Q(x)=x^3-1$. Laske
     \begin{enumerate}[a)]
         \item polynomin $P(x)$ arvo, kun $x=2$
@@ -510,21 +368,7 @@ $-5x^{99}$   &        1          &          $-5$     &       99            &    
 
 \paragraph*{Hallitse kokonaisuus}
 
-\begin{tehtava}
-    Sievennä.
-    \begin{enumerate}[a)]
-        \item $(x^2 - 2x + 1) + (-x^2 + x) $
-        \item $(3y^3 + 2y^2  + y) - (-y^2 + y)$
-        \item $(z^{10} - z^6 + z^2 + 1) + (z^{10} + 2z^8 - 3z^6)$
-    \end{enumerate}
-    \begin{vastaus}
-        \begin{enumerate}[a)]
-            \item $-x + 1$
-            \item $3y^3 + 3y^2$
-            \item $2z^{10} + 2z^8 - 4z^6 + z^2 + 1$
-        \end{enumerate}
-    \end{vastaus}
-\end{tehtava}
+
 
 \begin{tehtava}
 	Mitkä ovat seuraavien polynomifunktioiden asteet, ts. sievennettyjen muotojen asteet?
@@ -559,38 +403,7 @@ $-5x^{99}$   &        1          &          $-5$     &       99            &    
 	\end{vastaus}
 \end{tehtava}
 
-\begin{tehtava}
-    Olkoot $P(x)=x^2+3x+4$ ja $Q(x)=x^3-10x+1$. Sievennä
-    \begin{enumerate}[a)]
-        \item $P(x)+Q(x)$
-        \item $P(x)-Q(x)$
-        \item $Q(x)-P(x)$
-        \item $2P(3)+Q(2)$.
-    \end{enumerate}
-    \begin{vastaus}
-        \begin{enumerate}[a)]
-            \item $x^3+x^2-7x+5$ % x^2+3x+4 + x^3-10x+1
-            \item $-x^3+x^2+13x+3$ % x^2+3x+4 -(x^3-10x+1) = x^2+3x+4 -x^3+10x-1
-            \item $x^3-x^2-13x-3$ % 
-            \item $33$ % 2*(3^2+3*3+4) +  2^3-10*2+1 = 2*(9+9+4)+8-20+1 =44-11 =33
-        \end{enumerate}
-    \end{vastaus}
-\end{tehtava}
 
-\begin{tehtava}
-	Sievennä polynomifunktiot ja laske funktioiden arvot muuttujan arvoilla $1$, $-1$ ja $3$.
-	\begin{enumerate}[a)]
-		\item $P(x)=(x^3-4x+5)+(-x^3+x^2+4x-2)$
-		\item $Q(x)=(2x^3+x^2-10x)-(3x^3-4x^2+5x)$
-	\end{enumerate}
-	
-	\begin{vastaus}
-		\begin{enumerate}[a)]
-			\item $P(x)=x^2+3$, $P(1)=4$, $P(-1)=4$ ja $P(3)=12$
-			\item $Q(x)=-x^3+5x^2-15x$, $Q(1)=21$, $Q(-1)=-9$ ja $R(3)=-27$
-		\end{enumerate}
-	\end{vastaus}
-\end{tehtava}
 
 \begin{tehtava}
 	Hyödynnä edellisen tehtävän polynomifunktioita ja laske
@@ -650,35 +463,7 @@ $-5x^{99}$   &        1          &          $-5$     &       99            &    
 	\end{vastaus}
 \end{tehtava}
 
-\begin{tehtava}
-     Sievennä
-     \begin{enumerate}[a)]
-         \item $(2x + 3) + x $
-         \item $(3x - 1) + (-x + 1)$
-         \item $(5x + 10) + (6x - 6) - (x + 3)$
-     \end{enumerate}
-     \begin{vastaus}
-         \begin{enumerate}
-             \item $3x + 3$
-             \item $2x$
-             \item $10x + 1$
-         \end{enumerate}
-     \end{vastaus}
- \end{tehtava}
 
-\begin{tehtava}
-	Sievennä polynomifunktiot ja laske funktioiden arvot muuttujan arvoilla $1$, $-1$ ja $3$.
-	\begin{enumerate}[a)]
-		\item $R(x)=4(2x-4)+(-x^3+1)$
-		\item $S(x)=-(2x^2-x+8)+6(x^5-3x^2+1)$ \\ $-2(3x^5-10x^2)$
-	\end{enumerate}
-	\begin{vastaus}
-		\begin{enumerate}[a)]
-			\item $R(x)=-x^3+8x-15$, $R(1)=-8$, $R(-1)=-22$ ja $R(3)=-18$
-			\item $S(x)=-2$, $S(1)=-1$, $S(-1)=-3$ ja $S(3)=1$
-		\end{enumerate}
-	\end{vastaus}
-\end{tehtava}
 
 \begin{tehtava}
 	$\star$ Määritellään kahden reaalimuuttujan polynomifunktio kaavalla $f(x,y)=xy^2+x^2y$.
@@ -702,5 +487,31 @@ $-5x^{99}$   &        1          &          $-5$     &       99            &    
 		$x^2+y$, $x^2+xy$, $y^2+x$, $y^2+xy$, $x^2+y^2$
 	\end{vastaus}
 \end{tehtava}
+
+%\begin{tehtava} rationaalilausekkeista polynomeja :)
+%    Mitkä seuraavista ovat polynomeja?
+%    \begin{enumerate}[a)]
+%        \item $\frac{1}{x}$
+%       %\item $x^3+4x$
+%        \item $5x-125$
+%       %\item $2^x$
+%        \item $\sqrt{x}+1$
+%        \item $3x^4+6x^2+9$
+%        \item $\sqrt{2}x-x$
+%        \item $4^x+5x+6$
+%    \end{enumerate}
+%    \begin{vastaus}
+%        \begin{enumerate}[a)]
+%            \item Ei ole.
+%           %\item On.
+%            \item On.
+%           %\item Ei ole.
+%            \item Ei ole.
+%            \item On.
+%            \item On.
+%            \item Ei ole.
+%        \end{enumerate}
+%    \end{vastaus}
+%\end{tehtava}
 
 \end{tehtavasivu}
