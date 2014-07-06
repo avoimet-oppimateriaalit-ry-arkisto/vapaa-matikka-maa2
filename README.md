@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/avoimet-oppimateriaalit-ry/vapaa-matikka-maa2.svg)](https://travis-ci.org/avoimet-oppimateriaalit-ry/vapaa-matikka-maa2)
+[![Build Status](https://travis-ci.org/avoimet-oppimateriaalit-ry/vapaa-matikka-maa2.svg?branch=master)](https://travis-ci.org/avoimet-oppimateriaalit-ry/vapaa-matikka-maa2)
 
 
 ## Vapaa matikka MAA2 (Polynomifunktiot)
