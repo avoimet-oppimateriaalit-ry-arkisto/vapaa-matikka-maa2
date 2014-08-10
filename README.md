@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/avoimet-oppimateriaalit-ry/vapaa-matikka-maa2.svg?branch=master)](https://travis-ci.org/avoimet-oppimateriaalit-ry/vapaa-matikka-maa2)
+
+
 ## Vapaa matikka MAA2 (Polynomifunktiot)
 
 > Osa Vapaa matikka -kirjasarjaa lukion matematiikkaan. Part of Vapaa matikka textbook series for high school mathematics.
