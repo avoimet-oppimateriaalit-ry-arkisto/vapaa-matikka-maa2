@@ -1,6 +1,5 @@
 \section{Polynomifunktion kuvaaja}
-Polynomifunktiota voi
-havainnollistaa koordinaatistoon piirretyn kuvaajan avulla:
+Polynomifunktion käyttäytymistä eri muuttujan arvoilla voi havainnollistaa koordinaatistoon piirretyn kuvaajan avulla:
 
 %\begin{kuvaajapohja}{1.5}{-2}{2}{-3}{3}
 %\kuvaaja{-x-1}{$P(x) = -x-1$}{red}
@@ -21,7 +20,11 @@ kuvaaja.piirra("x**2+x", nimi = "$Q(x) = x^2+x$", kohta = 1, suunta = -45)
 kuvaaja.piirra("x**3-3*x-1", nimi = "$R(x) = x^3-3x-1$", kohta = 1.8)
 \end{kuva}
 
-\subsection*{Kuvaajan piirtäminen}
+%psytyakselin nimeäminen jne. :/
+
+\newpage
+
+\subsection{Kuvaajan piirtäminen}
 
 \qrlinkki{http://opetus.tv/maa/maa2/suoran-piirtaminen/}{Opetus.tv: \emph{suoran piirtäminen} (5:47)}
 
@@ -51,9 +54,7 @@ kuvaaja.piirra("0.5*x**2-x-2")
 \end{luoKuva}
 
 \begin{esimerkki}
-Hahmotellaan polynomifunktion $f(x) = \dfrac{1}{2}x^2 - x - 2$ kuvaaja.
-Lasketaan ensin joitakin funktion $f(x) = \dfrac{1}{2}x^2 - x - 2$ arvoja ja piirretään niitä vastaavat pisteet
-koordinaatistoon. Lopuksi hahmotellaan kuvaaja, joka kulkee pisteiden kautta.
+Hahmotellaan polynomifunktion $f(x) = \dfrac{1}{2}x^2 - x - 2$ kuvaaja. Lasketaan ensin joitakin funktion $f(x) = \dfrac{1}{2}x^2 - x - 2$ arvoja ja piirretään niitä vastaavat pisteet koordinaatistoon. Lopuksi hahmotellaan kuvaaja, joka kulkee pisteiden kautta.
 
 \begin{tabular}{c c c}
 	\begin{tabular}{|c|r @{,} l|}
@@ -112,13 +113,12 @@ koordinaatistoon. Lopuksi hahmotellaan kuvaaja, joka kulkee pisteiden kautta.
 
 \end{esimerkki}
 
-\subsection*{Kuvaajan tulkintaa}
+\subsection{Kuvaajan tulkintaa}
 
 %Ensimmäisen asteen polynomin kuvaaja on luonnollisesti aina suora. 
 %miten niin luonnollisesti?
 
-Kuvaajan avulla voidaan tehdä johtopäätöksiä funktion ominaisuuksista.
-Esimerkiksi funktion arvoja voidaan lukea kuvaajasta.
+Kuvaajan avulla voidaan tehdä johtopäätöksiä funktion ominaisuuksista. Esimerkiksi funktion arvoja voidaan lukea kuvaajasta.
 
 \begin{esimerkki}
 Seuraavassa on esitetty polynomifunktion $P(x)=-3x^2+2x+4$ kuvaaja.
@@ -151,12 +151,11 @@ eikä $1$, kuten kuvaajan perusteella voisi luulla. Kuvaajasta ei siis voi lukea
 
 \newpage
 
-\subsubsection*{Nollakohta}
+\subsubsection*{Funktion nollakohta}
 
-Funktion \termi{nollakohta}{nollakohta} on sellainen muuttujan arvo, jolla funktio saa arvon nolla. Esimerkiksi funktiolla $Q(x)=x^2-1$
-on nollakohdat $-1$ ja $1$, sillä $Q(-1)=0$ ja $Q(1)=0$.
+Funktion \termi{nollakohta}{nollakohta} on sellainen muuttujan arvo, jolla funktio saa arvon nolla. Esimerkiksi funktiolla $Q(x)=x^2-1$ on nollakohdat $-1$ ja $1$, sillä $Q(-1)=0$ ja $Q(1)=0$.
 
-Funktion kuvaaja antaa tietoa nollakohdista. Niiden kohdalla kuvaaja leikkaa $x$-akselin.
+Funktion kuvaaja antaa tietoa nollakohdista. Niiden kohdalla kuvaaja leikkaa muuttuja-akselin. (Yleensä $x$-akselin.)
 
 \begin{esimerkki}
 Funktion $P(x) = \dfrac{1}{3}x^2-4x+\dfrac{5}{2}$ kuvaajasta nähdään, että funktiolla on ainakin kaksi nollakohtaa. Toinen niistä on lähellä lukua $1$ ja toinen lukua $11$.
@@ -174,9 +173,7 @@ kuvaaja.piirra("1./3*x**2-4*x+5./2", nimi = "$P(x) = \dfrac{1}{3}x^2-4x+\dfrac{5
 % \end{kuvaajapohja}
 \end{esimerkki}
 
-%Nollakohta tarkoittaa sitä annetun polynomin muuttujan arvoa, jolla koko
-%polynomi saa arvon nolla. Kuvaajasta sen voi helposti lukea niinä kohtina,
-%joissa kuvaaja leikkaa muuttujan koordinaattiakselin. Funktion $P(x)$ ja
+%kohta VS piste
 %$xy$-koordinaatiston tapauksessa funktion nollakohdat ovat täsmälleen ne
 %$x$-koordinaatit, joilla funktion kuvaaja leikkaa $x$-akselin.
 
@@ -219,8 +216,7 @@ kuvaaja.piirra("1./3*x**2-4*x+5./2", nimi = "$P(x) = \dfrac{1}{3}x^2-4x+\dfrac{5
 
 \begin{tehtavasivu}
 
-\paragraph*{Opi perusteet}
-
+\subsubsection*{Opi perusteet}
 
 \begin{tehtava}
 \begin{kuva}
@@ -268,44 +264,35 @@ Kuvassa on polynomifunktion $P$ kuvaajaa. Määritä on kuvaajan perusteella
     \end{vastaus}
 \end{tehtava}
 
-\paragraph*{Hallitse kokonaisuus}
+\subsubsection*{Hallitse kokonaisuus}
 
 \begin{tehtava}
-Piirrä polynomifunktion kuvaaja ja päättele sen avulla polynomin nollakohdat.
-Käytä graafista laskinta, tietokonetta tai piirrä käsin.
-\begin{alakohdat}
-\alakohta{$x^3+x^2+x+1$}
-\alakohta{$x^2-6x+2$}
-\end{alakohdat}
-\begin{vastaus}
-\begin{alakohdat}
-\alakohta{$x=-1$}
-\alakohta{$x \approx 0,35$ ja $x \approx 5,65$}
-\end{alakohdat}
-\end{vastaus}
-\end{tehtava}
-
-\begin{tehtava} $\star$
-	Monia funktioita voidaan esittää likimääräisesti polynomeina (ns.
-Taylorin polynomi). Esimerkiksi (kun $-1<x<1$)
-
-	\begin{tabular}{lcll}
-	$\frac{1}{1+x^2}$ &$\approx$ & $1-x^2+x^4-x^6+x^8-x^{10}$ \\
-	$\sqrt{1+x}$ & $\approx $ & $ 1+\frac{x}{2}
-	-\frac{x^2}{8}+\frac{x^3}{16}-\frac{5x^4}{128}$
-	\end{tabular}
-
-	Piirrä alkuperäinen funktio ja polynomi samaan kuvaajaan tietokoneella
-tai graafisella laskimella. Kokeile, kuinka polynomin viimeisten termien pois
-jättäminen vaikuttaa tarkkuuteen. Mitä havaitset? (Termejä voi laskea lisääkin,
-mutta siihen ei puututa tässä.)
-
+Piirrä polynomifunktion kuvaaja ja päättele sen avulla polynomin nollakohdat. Käytä graafista laskinta, tietokonetta tai piirrä käsin.
+	\begin{alakohdat}
+	\alakohta{$P(x)=x^3+x^2+x+1$}
+	\alakohta{$Q(x)=x^2-6x+2$}
+	\end{alakohdat}
 	\begin{vastaus}
-		Mitä enemmän termejä, sitä parempi vastaavuus.
+	\begin{alakohdat}
+	\alakohta{$x=-1$}
+	\alakohta{$x \approx 0,35$ ja $x \approx 5,65$}
+	\end{alakohdat}
 	\end{vastaus}
 \end{tehtava}
 
-\paragraph*{Lisää tehtäviä}
+\begin{tehtava}
+Piirrä funktion $f$ kuvaaja, kun funktion arvot määritellään kaavalla $f(x)=1-x^2$, ja funktion määrittelyjoukko on
+		\begin{alakohdat}
+		\alakohta{$\mathbb{N}$}
+		\alakohta{$\mathbb{Z}$}
+		\alakohta{$\mathbb{R}$}
+		\alakohta{$\lbrace 0,1,2\rbrace$}
+	\end{alakohdat}		
+		%PUUTTUU VASTAUS
+		
+\end{tehtava}
+
+\subsubsection*{Lisää tehtäviä}
 
 \begin{tehtava}
     Piirrä polynomien kuvaajat käsin.
@@ -344,7 +331,6 @@ mutta siihen ei puututa tässä.)
         \alakohta{$x^2-6x+3$}
         \alakohta{$\frac{1}{5}x^3-x^2+2$}
         \alakohta{$-0,5x^4+0,25x^3+2,5x^2-1$}
-
     \end{alakohdat}
     \begin{vastaus}
     	\begin{alakohdat}
@@ -413,55 +399,19 @@ mutta siihen ei puututa tässä.)
 %    \end{vastaus}
 %\end{tehtava}
 
+\begin{tehtava} $\star$
+	Monia funktioita voidaan esittää likimääräisesti polynomeina (ns. Taylorin polynomi). Esimerkiksi (kun $-1<x<1$)
+
+	\begin{tabular}{lcll}
+	$\frac{1}{1+x^2}$ &$\approx$ & $1-x^2+x^4-x^6+x^8-x^{10}$ \\
+	$\sqrt{1+x}$ & $\approx $ & $ 1+\frac{x}{2}
+	-\frac{x^2}{8}+\frac{x^3}{16}-\frac{5x^4}{128}$
+	\end{tabular}
+
+	Piirrä alkuperäinen funktio ja polynomi samaan kuvaajaan tietokoneella tai graafisella laskimella. Kokeile, kuinka polynomin viimeisten termien pois jättäminen vaikuttaa tarkkuuteen. Mitä havaitset? (Termejä voi laskea lisääkin, mutta siihen ei puututa tässä.)
+	\begin{vastaus}
+		Mitä enemmän termejä, sitä parempi vastaavuus.
+	\end{vastaus}
+\end{tehtava}
+
 \end{tehtavasivu}
-
-
-% tämä alla oleva omaksi filukseen! ja näihin ratkaisut!
-
-\section{Testaa tietosi!}
-
-\subsection*{Osaatko selittää?}
-
-\begin{enumerate}
-
-\item Miksi polynomin vakiotermin (tai vakiopolynomin) asteluku on nolla?
-\item Miksi puhutaan vain termien summasta, vaikka polynomeissa voi esiintyä miinusmerkkejä?
-\item Miten usean muuttujan polynomin asteluku lasketaan?
-\item Mitä tarkoitetaan sillä, että luku on epänegatiivinen?
-\item Mitä tarkoitetaan tulon nollasäännöllä?
-\item Kun polynomi jaetaan tekijöihin, mitä voit varmasti sanoa tekijäpolynomien asteista verrattuna alkuperäiseen polynomiin?
-\item Miten selvität polynomin $(x^3-2x)^{15}$ asteen purkamatta sulkuja?
-
-%lisää MIKSI-tehtäviä!
-
-\end{enumerate}
-
-\subsection*{Kertauskysymyksiä}
-
-Valitse yksi oikea vaihtoehto
-
-\begin{enumerate}
-
-\item Mitkä ovat polynomin $x^4-x^2+\sqrt{2}x-1337$ termien kertoimet neljännestä asteesta alaspäin luetellen? \\
-a) $1, -1, \sqrt{2}$ ja $-1337$ \\
-c) $1, 0, -1, \sqrt{2}$ ja $-1337$ \\
-b) $1, 1, \sqrt{2}$ ja $1337$ \\
-
-
-\item Monettako astetta on 2 muuttujan polynomi $x^5y-x^4y^3-715517y$?
-\item Polynomifunktion $P(x)=-x^3-x^2-x-1$ arvo kohdassa $x=-1$?
-\item Mikä polynomi saadaan, kun avataan sulut lausekkeesta $(2x-1)^2$?
-\item Tulosta $ab$ tiedetään, että $a = 0$. Mikä seuraavista väitteistä pitää välttämätät paikkansa?
-a) $ab = 0$
-b) $b \geq a$
-c) $b = 0$
-d) $|b| \geq a$
-
-\item Mitkä on funktion $f(x) = (x+3)(x-50)$ nollakohdat
-\item Olkoon $f(x) = x^2 + 1$, ja $g(x) = x^2 - x$. Mitkä väitteistä pitää paikkaansa.
-a) $f(x) + g(x) = 2x^2 - x + 1$
-b) $f(x) \cdot g(x) = x^4-x^3+x^2-x$
-c) $f(0) = g(0)$
-d) $f(-1) = g(-1)$
-\end{enumerate}
-
