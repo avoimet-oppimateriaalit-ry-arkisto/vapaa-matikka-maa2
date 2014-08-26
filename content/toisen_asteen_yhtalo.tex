@@ -13,8 +13,7 @@ Funktion kuvaaja leikkaa x-akselin, kun $f(x)=0$. Tätä muuttujan $x$ arvoa kut
 \end{kuvaajapohja}
 \end{esimerkki}
 
-Kuvaajasta havaitaan, että funktion $f$ nollakohta on $x \approx -1$. Tätä funktion nollikohtien ratkaisumenetelmää kutsutaan graafiseksi ratkaisemiseksi.
-Graafinen ratkaisu on aina likimääräinen eli arvio oikeasta ratkaisusta.
+Kuvaajasta havaitaan, että funktion $f$ nollakohta on $x \approx -1$. Tätä funktion nollikohtien ratkaisumenetelmää kutsutaan graafiseksi ratkaisemiseksi. Graafinen ratkaisu on aina likimääräinen eli arvio oikeasta ratkaisusta.
 
 Määritettäessä toisen asteen polynomifunktion nollakohtia päädytään \textbf{toisen asteen yhtälöön}, joka on aina saatettavissa yleiseen muotoon
 \begin{align*}
@@ -27,7 +26,7 @@ Seuraavassa kuvat eri tapauksista:
 \begin{tabular}{c c}
 
 \begin{tabular}{c}
-	2 ratkaisua, $a$ positiivinen\\
+	$2$ ratkaisua, $a$ positiivinen\\
 	\begin{lukusuora}{-1}{1}{4}
 	\lukusuoraisobbox
 	\lukusuoraparaabeli{-0.5}{0.5}{-1}
@@ -37,7 +36,7 @@ Seuraavassa kuvat eri tapauksista:
 &
 
 \begin{tabular}{c}
-	2 ratkaisua, $a$ negatiivinen\\
+	$2$ ratkaisua, $a$ negatiivinen\\
 	\begin{lukusuora}{-1}{1}{4}
 	\lukusuoraisobbox
 	\lukusuoraparaabeli{-0.5}{0.5}{1}
@@ -47,7 +46,7 @@ Seuraavassa kuvat eri tapauksista:
 \\ \qquad & \qquad \\
 
 \begin{tabular}{c}
-	1 ratkaisu, $a$ positiivinen\\
+	$1$ ratkaisu, $a$ positiivinen\\
 	\begin{lukusuora}{-2}{2}{4}
 	\lukusuoraisobbox
 	\lukusuorakuvaaja{x**2}
@@ -57,7 +56,7 @@ Seuraavassa kuvat eri tapauksista:
 &
 
 \begin{tabular}{c}
-	1 ratkaisu, $a$ negatiivinen\\
+	$1$ ratkaisu, $a$ negatiivinen\\
 	\begin{lukusuora}{-2}{2}{4}
 	\lukusuoraisobbox
 	\lukusuorakuvaaja{-x**2}
@@ -89,13 +88,11 @@ Seuraavassa kuvat eri tapauksista:
 \end{tabular}
 % fixme {termi-komento ei toimi vaillinaisen ekvationin kohdalla}
 
-Graafisen ratkaisemisen sijasta toisen asteen yhtälö ratkaistaan
-yleensä laskemalla, mihin tutustutaan seuraavaksi.
+Graafisen ratkaisemisen sijasta toisen asteen yhtälö ratkaistaan yleensä laskemalla, mihin tutustutaan seuraavaksi.
 %Seuraavaksi tutustumme toisen asteen yhtälön algebralliseen ratkaisemiseen.
 
-\subsection*{Vaillinaiset yhtälöt}
-Jos toisen asteen yhtälöstä $ax^2+bx+c=0$ puuttuu joko termi $bx$ tai $c$, 
-kyseessä on niin sanottu \emph{vaillinainen toisen asteen yhtälö}. Se on muotoa
+\subsection{Vaillinaiset yhtälöt}
+Jos toisen asteen yhtälöstä $ax^2+bx+c=0$ puuttuu joko termi $bx$ tai $c$, kyseessä on niin sanottu \emph{vaillinainen toisen asteen yhtälö}. Se on muotoa
 \[ax^2+c=0 \quad \text{ tai } \quad ax^2+bx=0.\]
 Vaillinaisten yhtälöiden ratkaiseminen on paljon yleistä tapausta yksinkertaisempaa.
 
@@ -162,13 +159,10 @@ x&=0 \text{ tai } x=-\frac{8}{55}
 \end{align*}
 \end{esimerkki}
 
-\subsection*{Neliöksi täydentäminen}
-Toisen asteen yhtälöä $ax^2+bx+c=0$, jossa $a,b,c \neq 0$, kutsutaan
-täydelliseksi toisen asteen yhtälöksi. Tällaiset yhtälöt voidaan ratkaista muistikaavojen avulla täydentämällä ne neliöiksi.
-Tarkastellaan vaikkapa yhtälöä
+\subsection{Neliöksi täydentäminen}
+Toisen asteen yhtälöä $ax^2+bx+c=0$, jossa $a,b,c \neq 0$, kutsutaan täydelliseksi toisen asteen yhtälöksi. Tällaiset yhtälöt voidaan ratkaista muistikaavojen avulla täydentämällä ne neliöiksi. Tarkastellaan vaikkapa yhtälöä
 \[x^2+2x-3=0.\]
-Yhtälön vasen puoli on melkein sama kuin binomin $x+1$ neliö, sillä $(x+1)^2=x^2+2x+1$.
-Vain vakiotermissä on eroa. Korjataan asia ja ratkaistaan yhtälö:
+Yhtälön vasen puoli on melkein sama kuin binomin $x+1$ neliö, sillä $(x+1)^2=x^2+2x+1$. Vain vakiotermissä on eroa. Korjataan asia ja ratkaistaan yhtälö:
 
 \begin{align*}
 x^2+2x-3 & = 0  &&\ppalkki +4 \\
@@ -180,25 +174,19 @@ x & = 2-1 \text{ tai } x= -2-1 \\
 x & = 1 \text{ tai } x= -3. 
 \end{align*}
 
-Miksi edellä osattiin ajatella juuri oikeaa muistikaavaa $(x+1)^2=x^2+2x+1$?
-Syynä on se, että yhtälön vasemmalla
-puolella olevan polynomin alkuosaa $x^2+2x$ ei saada minkään muun
-binomin neliöstä. Neliöksi täydentäminen vaatii siis muistikaavojen hyvää
-hallintaa.
+Miksi edellä osattiin ajatella juuri oikeaa muistikaavaa $(x+1)^2=x^2+2x+1$? Syynä on se, että yhtälön vasemmalla puolella olevan polynomin alkuosaa $x^2+2x$ ei saada minkään muun binomin neliöstä. Neliöksi täydentäminen vaatii siis muistikaavojen hyvää hallintaa.
 
 Kaikki toisen asteen yhtälöt voidaan ratkaista neliöksi täydentämällä. Yleensä sen sijasta tosin käytetään \emph{toisen asteen yhtälön ratkaisukaavaa}, joka esitellään seuraavassa luvussa. Ratkaisukaava perustellaan neliöksi täydentämällä, minkä vuoksi neliöksi täydentäminen opetellaan ensin.
 
 \begin{esimerkki} 
 Ratkaise yhtälö $x^2+4x-16 = 0$. 
 
-Kirjoitetaan yhtälö muotoon $x^2+2\cdot 2\cdot x-16 = 0$ ja verrataan kahta ensimmäistä termiä
-muistikaavaan, jotta nähdään, minkä binomin neliöksi lauseke voidaan muokata.
+Kirjoitetaan yhtälö muotoon $x^2+2\cdot 2\cdot x-16 = 0$ ja verrataan kahta ensimmäistä termiä muistikaavaan, jotta nähdään, minkä binomin neliöksi lauseke voidaan muokata.
 \[ \begin{array}{lcl}
 x^2+2\cdot x\cdot 2  &=& (\quad + \quad)^2\\
 a^2 +2\cdot a\cdot b +b^2 &=& (a+b)^2
 \end{array} \]
-Lausekkeita vertaamalla nähdään vastaavuus $a = x$, $b = 2$. Neliöstä puuttuva
-termi $b^2$ on siis $2^2=4$. Täydennetään nyt neliöksi:
+Lausekkeita vertaamalla nähdään vastaavuus $a = x$, $b = 2$. Neliöstä puuttuva termi $b^2$ on siis $2^2=4$. Täydennetään nyt neliöksi:
 \begin{align*}
 x^2+4x-16 &= 0 && \ppalkki +16 \\
 x^2+4x &= 16 && \ppalkki +4\\
@@ -213,8 +201,7 @@ x &= -2 \pm 2\sqrt{5}.
 \begin{esimerkki}
 Ratkaistaan yhtälö $4x^2-4x-5=0$.
 
-Toisen ja ensimmäisen asteen termit saadaan neliöstä
-$(2x-1)^2=4x^2-4x+1$. Rakennetaan se yhtälön vasemmalle puolelle:
+Toisen ja ensimmäisen asteen termit saadaan neliöstä $(2x-1)^2=4x^2-4x+1$. Rakennetaan se yhtälön vasemmalle puolelle:
 \begin{align*}
 4x^2-4x-5 &= 0 && \ppalkki +6 \\
 4x^2-4x+1 &= 6 &&\text{muistikaava: $  4x^2-4x+1 = (2x-1)^2$} \\
@@ -264,7 +251,7 @@ x &= \frac{1 \pm \sqrt{6}}{2}.
 
 \begin{tehtavasivu}
 
-\paragraph*{Opi perusteet}
+\subsubsection*{Opi perusteet}
 
 \begin{tehtava}
     Ratkaise yhtälöt.
@@ -333,7 +320,7 @@ x &= \frac{1 \pm \sqrt{6}}{2}.
     \end{vastaus}
 \end{tehtava}
 
-\paragraph*{Hallitse kokonaisuus}
+\subsubsection*{Hallitse kokonaisuus}
 
 \begin{tehtava}
     Ratkaise seuraavat yhtälöt.
@@ -441,17 +428,13 @@ x &= \frac{1 \pm \sqrt{6}}{2}.
         \right.
       \]
       
-      Yhtälöparin ratkaisuna saadaan $a=\frac23$ ja $b=-3\frac13$. Yhtälö on siis
-      $\frac{2}{3}x^2-3\frac{1}{3}x+4=0$.
+      Yhtälöparin ratkaisuna saadaan $a=\frac23$ ja $b=-3\frac13$. Yhtälö on siis $\frac{2}{3}x^2-3\frac{1}{3}x+4=0$.
       
-      Vastauksen voi saada myös ilmaisemalla polynomiyhtälön tekijämuodossa $a(x-2)(x-3)=0$.
-      Tässä tarvitaan kuitenkin juurten ja tekijöiden välistä yhteyttä, joka opetetaan vasta myöhemmin tässä kirjassa.
+      Vastauksen voi saada myös ilmaisemalla polynomiyhtälön tekijämuodossa $a(x-2)(x-3)=0$. Tässä tarvitaan kuitenkin juurten ja tekijöiden välistä yhteyttä, joka opetetaan vasta myöhemmin tässä kirjassa.
     \end{vastaus}
 \end{tehtava}
 
-
-
-\paragraph*{Lisää tehtäviä}
+\subsubsection*{Lisää tehtäviä}
 
 \begin{tehtava}
     Ratkaise yhtälöt käyttämällä tulon nollasääntöä.
@@ -480,7 +463,7 @@ x &= \frac{1 \pm \sqrt{6}}{2}.
     \begin{vastaus}
         \begin{alakohdat}
             \alakohta{$x=\pm3$}
-            \alakohta{Ei ratkaisuja.}
+            \alakohta{Ei ratkaisuja}
             \alakohta{$x=\pm4$}
             \alakohta{$x=\pm1$}
         \end{alakohdat}
@@ -519,7 +502,6 @@ x &= \frac{1 \pm \sqrt{6}}{2}.
     \end{vastaus}
 \end{tehtava}
 
-% Monimutkainen tehtävänanto...
 %\begin{tehtava}
 %    Elokuvassa \emph{Dredd} pudotetaan ihmisiä kuolemaan noin $1$ kilometrin korkeudesta. Ennen pudotusta heille annetaan huumausainetta, joka hidastaa aikakäsityksen $1$ prosenttiin normaalista. Vapaassa pudotuksessa pudottu matka ajanhetkellä $t$ on $\frac{1}{2} gt^2$, jossa $g$ on putoamiskiihtyvyytenä tunnettu vakio, jolle voimme tässä hyvin käyttää arviota $g \approx 10\frac{\text{m}}{\text{s}^2}$.
 %    \begin{alakohdat}
@@ -535,7 +517,7 @@ x &= \frac{1 \pm \sqrt{6}}{2}.
 %\end{tehtava}
 
 
-%\begin{tehtava} % Onko tehtävänannnossa tolkkua? Selvennettävä!
+%\begin{tehtava}
 %Ollessaan leirikoulussa Lapissa lukiolaisryhmä saapuu järvelle ja havaitsee, että järven halkaisijan suuntainen maiseman poikkileikkaus on likimain paraabelin $\frac{1}{2500}x^2-\frac{1}{5}x$ muotoinen, jos $x$-akseli on on vedenpinnan taso ja yksikkönä on metri. Kuinka pitkä matka vastarannalle on?
 %\begin{vastaus}
 %500 metriä.

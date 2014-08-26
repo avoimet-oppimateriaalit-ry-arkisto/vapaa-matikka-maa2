@@ -137,6 +137,33 @@ Kun termissä on kaksi eri muuttujaa, niin termin asteluku on näiden muuttujien
 	\end{esimvast}
 \end{esimerkki}
 
+\subsection{Polynomin yleinen muoto}
+
+\qrlinkki{http://opetus.tv/maa/maa2/polynomin-tasmallinen-maaritelma/}
+{Opetus.tv: \emph{polynomin täsmällinen määritelmä} (6:10)}
+
+Formaalisti kirjoitettuna yhden muuttujan polynomin yleinen muoto on
+\[a_n x^n + a_{n-1} x^{n-1} + \ldots + a_1 x + a_0 \] 
+jollakin $n\in\nn$. Muuttuja $n$ kertoo polynomin asteen, ja kertoimet $a_0, a_1, \ldots, a_{n-1}, a_n$ ovat reaalilukuvakioita. Kertoimen symbolilla $a$ on juoksevana alaindeksinä sama luku $n$ siksi, että vakioita on yhtä monta kuin on polynomin aste. Jos jokin kertoimista on $0$, kyseinen termi katoaa nollan kertolaskuominaisuuksien vuoksi.
+
+\begin{esimerkki}
+
+Polynomi $-3x^{13}-\frac{3}{4}x^2-17$ on polynomin yleistä muotoa siten, että $n=13$, $a_{13}=-3$, $a_2=-\frac{3}{4}$ ja $a_0=-17$, ja kaikki muut kertoimet ovat nollia.
+
+\end{esimerkki}
+ 
+Jokainen lauseke, joka on esitettävissä polynomin yleisessä muodossa, on polynomi.
+
+\begin{esimerkki}
+
+Lauseke $\frac{2x^3+x^2}{x}$ ei ensi näkemältä näytä polynomilta murtolausekkeen nimittäjässä olevan $x$:n vuoksi. Lauseketta on kuitenkin mahdollista sieventää esimerkiksi jakamalla murtolauseke kahteen yksinkertaisempaan samannimiseen murtolausekkeeseen ja tämän jälkeen supistamalla termeittäin: \\
+
+$\frac{2x^3+x^2}{x} = \frac{2x^3}{x}+\frac{x^2}{x} = 2x^2+x $ \\
+
+Nyt nähdään selvästi, että kyseessä on toisen asteen kaksiterminen yhden muuttujan polynomi. (Huomataan kuitenkin, että alkuperäisen esitysmuodon vuoksi $x \neq 0$, koska nollalla jakamista ei ole määritelty.)
+
+\end{esimerkki}
+
 \subsection{Polynomifunktion arvo}
 
 \qrlinkki{http://opetus.tv/maa/maa2/polynomiesimerkkeja/}
@@ -178,34 +205,6 @@ Samoin $R(-1,1)=-1\cdot1-1^2=-1-1=-2$.
 \end{esimerkki}
 
 Polynomeja ja polynomifunktioita käsitellään usein yhtäläisesti; voidaan esimerkiksi sanoa ''polynomi $P(x)=2x+1$'', vaikka tarkoitetaan vastaavaa polynomifunktiota. Usein on yksinkertaisesti kätevää nimetä käsiteltäviä polynomeja, vaikkei alettaisi määritellä tarkasti niiden ominaisuuksia funktioina (määrittelyjoukko, arvojoukko jne.; ks. Vapaa matikka 1). %pitää vielä täsmentää
-
-\newpage
-\subsection{Polynomin yleinen muoto}
-
-\qrlinkki{http://opetus.tv/maa/maa2/polynomin-tasmallinen-maaritelma/}
-{Opetus.tv: \emph{polynomin täsmällinen määritelmä} (6:10)}
-
-Formaalisti kirjoitettuna yhden muuttujan polynomin yleinen muoto on
-\[a_n x^n + a_{n-1} x^{n-1} + \ldots + a_1 x + a_0 \] 
-jollakin $n\in\nn$. Muuttuja $n$ kertoo polynomin asteen, ja kertoimet $a_0, a_1, \ldots, a_{n-1}, a_n$ ovat reaalilukuvakioita. Kertoimen symbolilla $a$ on juoksevana alaindeksinä sama luku $n$ siksi, että vakioita on yhtä monta kuin on polynomin aste. Jos jokin kertoimista on $0$, kyseinen termi katoaa nollan kertolaskuominaisuuksien vuoksi.
-
-\begin{esimerkki}
-
-Polynomi $-3x^{13}-\frac{3}{4}x^2-17$ on polynomin yleistä muotoa siten, että $n=13$, $a_{13}=-3$, $a_2=-\frac{3}{4}$ ja $a_0=-17$, ja kaikki muut kertoimet ovat nollia.
-
-\end{esimerkki}
- 
-Jokainen lauseke, joka on esitettävissä polynomin yleisessä muodossa, on polynomi.
-
-\begin{esimerkki}
-
-Lauseke $\frac{2x^3+x^2}{x}$ ei ensi näkemältä näytä polynomilta murtolausekkeen nimittäjässä olevan $x$:n vuoksi. Lauseketta on kuitenkin mahdollista sieventää esimerkiksi jakamalla murtolauseke kahteen yksinkertaisempaan samannimiseen murtolausekkeeseen ja tämän jälkeen supistamalla termeittäin: \\
-
-$\frac{2x^3+x^2}{x} = \frac{2x^3}{x}+\frac{x^2}{x} = 2x^2+x $ \\
-
-Nyt nähdään selvästi, että kyseessä on toisen asteen kaksiterminen yhden muuttujan polynomi. (Huomataan kuitenkin, että alkuperäisen esitysmuodon vuoksi $x \neq 0$, koska nollalla jakamista ei ole määritelty.)
-
-\end{esimerkki}
 
 \begin{tehtavasivu}
 
