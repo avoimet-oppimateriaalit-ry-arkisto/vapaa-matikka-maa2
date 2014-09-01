@@ -102,7 +102,7 @@ Ratkaise $y$ yhtälöstä $\frac{1}{2}n^n y^2-n^{2n}y-n^{3n+1}=0$, kun $n=50$. E
 \begin{tehtava}
 Mikä on funktion $f$, $f(x)=3x^2-12x+6$ pienin arvo?
 	\begin{vastaus}
-	$-6$ (vetoaminen paraabelin symmetrisyyteen, että pohja on nollakohtien puolivälissä, tai vastaus nähdään neliöön täydennetystä lausekkeesta)
+	$-6$ (vetoaminen paraabelin symmetrisyyteen, että pohja on nollakohtien puolivälissä, tai vastaus nähdään neliöön täydennetystä lausekkeesta perustellen, että reaaliluvun neliö voi olla vähintään nolla)
 	\end{vastaus}
 \end{tehtava}
 	
@@ -133,17 +133,23 @@ Mikä on funktion $f$, $f(x)=3x^2-12x+6$ pienin arvo?
 
 \begin{tehtava}
 	\begin{alakohdat}
-%\alakohta{Näytä, että polynomiyhtälöt $(2t-1)^2=-2t+1$ ja ... ovat samat.}
-%\alakohta{Ratkaise reaaliluku $x$ yhtälöstä $x^3-3x^2+3x=9$}
+%\alakohta{Näytä, että polynomiyhtälöt $(2t-1)^2=-2t+1$ ja $t^2=-t$ ovat yhtenevät.}
+\alakohta{Ratkaise reaaliluku $x$ yhtälöstä $(2x^2-1)(x-1)=1$}
 	\end{alakohdat}
 	\begin{vastaus}
 		\begin{alakohdat}
-\alakohta{}
-\alakohta{}
+%\alakohta{Joko tee sijoitus $2t-1=x$, jolloin yhtälöt muuttuvat heti samanmuotoisiksi, tai puretaan sulut ja sievennetään:
+%$$(2t-1)^2=-2t+1$$
+%$$4t^2-4t+1+2t-1=0$$
+%$$4t^2-2t=0$$
+%$$2t^2-t=0$$
+%$$•$$
+%
+%}
+\alakohta{$x=0$ tai $x=\frac{1}{2}(1-\sqrt{3})$ tai $x=\frac{1}{2}(1+\sqrt{3})$}
 	\end{alakohdat}
 	\end{vastaus}
 \end{tehtava}
-%	
 
 \begin{enumerate}
 \item Ratkaise yhtälöt.\\ a) $x-5x=0$\\ b) $x^4-1=0$\\ c) $(x-1)(x+4) = x(x-5)$
@@ -170,17 +176,45 @@ Mikä on funktion $f$, $f(x)=3x^2-12x+6$ pienin arvo?
 \end{tehtava}
 
 \begin{tehtava}
-Muodosta muuttujan $a$ funktio $f$, joka antaa toisen asteen polynomin $x^2+2ax+2$ nollakohtien etäisyyden. Määritä funktion $f$ laajin reaalinen määrittelyjoukko, arvojoukko ja nollakohdat.
+Muodosta muuttujan $a$ funktio $f$, joka antaa toisen asteen polynomin $ax^2+2x+2a$ nollakohtien etäisyyden. Määritä funktion $f$ laajin reaalinen määrittelyjoukko ja arvojoukko.
+	\begin{vastaus}
+	Nollakohtien erotusfunktion määrittelee yhtälö $f(a)=\frac{\sqrt{4-8a^2}}{a}$. Määrittelyjoukkoa rajoittavia tekijöitä ovat neliöjuuri ja jakolasku. Nimittäjän perusteella vaaditaan $a\neq 0$, neliöjuuren perusteella $4-8a^2\geq 0$. Epäyhtälöstä saadaan kaksi ratkaisua: $-\frac{1}{\sqrt{2}}\leq a \leq \frac{1}{\sqrt{2}}$. Yhdistämällä tiedot saadaan määrittelyjoukoksi kaksiosainen reaalilukuväli $[-\frac{1}{\sqrt{2}},0[\cup ]0,\frac{1}{\sqrt{2}}]$.
+	
+	Arvojoukon voi päätellä asettamalla funktion arvoksi tuntematon $t$ ja ratkaisemalla yhtälöstä muuttuja $x$:
+	$$\frac{\sqrt{4-8x^2}}{x}=t$$
+	$$\sqrt{4-8x^2}=tx$$
+	$$4-8x^2=(tx)^2=t^2x^2$$
+	$$t^2x^2+8x^2=4$$
+	$$(t^2+8)x^2=4$$
+	$$x^2=\frac{4}{t^2+8}$$
+	$$x=\pm \frac{2}{\sqrt{t^2+8}}$$
+	
+	Huomataan, että saadun lausekkeen perusteella ei ole mitään syytä rajoittaa $t$:n arvoja. Funktion arvojoukko on siis koko reaalilukujen joukko $\mathbb{R}$.
+	\end{vastaus}
 \end{tehtava}
 
 \subsection*{Harjoituskoe 3}
 
+\begin{tehtava}
+	\begin{alakohdat}
+	\alakohta{Miksi $\frac{1}{t^2}+\pi$ ei ole polynomi? ($1$\,p.)}
+	\alakohta{Binomi kerrotaan trinomilla. Kuinka monta termiä syntyneeseen uuteen polynomiin tulee (ennen mahdollista sieventämistä)? ($1$\,p.)}
+	\alakohta{Mikä on tulomuodossa esitetyn polynomin $(x^3+1)^5(1-x)^3$ aste? ($1$\,p.)}
+	\alakohta{Selitä, miksi kerrottaessa epäyhtälöä negatiivisella luvulla epäyhtälön merkki kääntyy. ($1$\,p.)}
+	\end{alakohdat}
+ 			\begin{vastaus}
+ 				\begin{alakohdat}
+	\alakohta{Muuttujan $t$ eksponentti ($-2$) ei ole luonnollinen luku.}
+	\alakohta{kuusi}
+	\alakohta{$18$}
+	\alakohta{$\pi < x \leq 42$}
+	\end{alakohdat}
+ 			\end{vastaus}
+ \end{tehtava}
 
-\begin{enumerate}
-%\item Olkoon $a > 0$. Millä muuttujan $x$ arvoilla funktion $Q(x)=x3-ax^2$ arvot ovat epänegatiivisia?
-%\item Millä vakion $r$ arvoilla yhtälöllä $rx^2+rx-1=0$ ei ole reaaliratkaisuja?
-\item Muodosta funktio, joka esittää...
-\end{enumerate}
+%\begin{tehtava}
+%Pitsaravintola myy pitsoja ... Muodosta funktio, joka esittää...
+%\end{tehtava}
 
 \begin{tehtava}
 Millä $x$:n arvoilla polynomi $x^3-2x^2-x$ saa positiivisia arvoja?
@@ -197,16 +231,20 @@ Jaa polynomi $t^5-t^4+t^3-t^2$ tekijöihin. Kuinka monta reaalista nollakohtaa p
 \end{tehtava}
 
 \begin{tehtava}
-Polynomin $Q$ muuttuja on $x$, ja polynomi voidaan esittää tulomuodossa $(ax-b)(bx-a)$, missä $a$ ja $b$ ovat reaalisia vakioita, joille pätee $0<a<b$.
-	\begin{alakohdat}
-	\alakohta{Muodosta ja sievennä lauseke, jolla voi laskea funktion nollakohtien välisen etäisyyden.}
-	\alakohta{Miten nollakohtien etäisyys muuttuu, kun summa $a+b$ kasvaa $10$\,\%?}
-	\end{alakohdat}
+Polynomin $Q$ muuttuja on $x$, ja polynomi voidaan esittää tulomuodossa $(ax-b)(\frac{2ab}{a^2+b^2}x-1)(bx-a)$, missä $a$ ja $b$ ovat reaalisia vakioita, joille pätee $0<a<b$. Perustele, mikä on funktion nollakohtien suuruusjärjestys.
 		\begin{vastaus}
-	\begin{alakohdat}
-	\alakohta{$\frac{b^2-a^2}{ab}$}
-	\alakohta{}
-	\end{alakohdat}
+Lausekkeen perusteella nollakohdat ovat $\frac{b}{a}$,$\frac{a^2+b^2}{2ab}$ ja $\frac{a}{b}$. Koska $0<a<b$, niin $a$ on positiivinen, ja kaksoisepäyhtälö voidaan jakaa sillä niin, että järjestys säilyy (''merkkien suuntaa ei tarvitse kääntää''): $0<1<\frac{b}{a}$. Samoin voidaan tehdä $b$:llä: $0<\frac{a}{b}<1$. Vertailemalla nähdään, että selvästi $\frac{a}{b}<\frac{b}{a}$. Kolmas nollakohta on kahden muun aritmeettinen keskiarvo, joten se on varmasti niiden välissä.
+%Jos ei sattumalta huomannut, että kolmas nollakohta on kahden muun aritmeettinen keskiarvo (jolloin se on varmasti niiden välissä), selviää sekin samoin:
+%
+%\begin{align*}
+%0&<a&&<b &&&|\cdot a  \\
+%0&<a^2&&<ab &&&|+b^2 \\
+%b^2&<a^2+b^2&&<b^2+ab &&&|:2ab \\
+%\frac{b^2}{2ab}&<\frac{a^2+b^2}{2ab}&&<\frac{b^2+ab}{2ab} &&&|\textrm{sievennetään} \\
+%\frac{b}{2a}&<\frac{a^2+b^2}{2ab}&&<\frac{b+a}{2a} &&& \\
+%\frac{1}{2} \frac{b}{a}&<\frac{a^2+b^2}{2ab}&&<\frac{b}{2a}+\frac{a}{2a} &&& \\
+%\frac{1}{2} \frac{b}{a}&<\frac{a^2+b^2}{2ab}&&<\frac{1}{2} \frac{b}{a}+\frac{1}{2} &&& \\
+%\end{align*}
 		\end{vastaus}
 \end{tehtava}
 \newpage
@@ -218,7 +256,7 @@ Polynomin $Q$ muuttuja on $x$, ja polynomi voidaan esittää tulomuodossa $(ax-b
 a) $2x^3 \geq x$ \\
 b) $y^2 \leq 3y -9 $
 
-osoita, että (neliöjuuässäsä, neliöönkorottamisella.)
+%osoita, että (neliöjuuässäsä, neliöönkorottamisella.)
 %\item Millä vakion $a$ arvoilla yhtälöllä $x^2+ax+a=0$ on kaksoisjuuri?
 \item Muodosta funktio, joka esittää...
 
@@ -232,14 +270,14 @@ osoita, että (neliöjuuässäsä, neliöönkorottamisella.)
 \item Jaa polynomi tekijöihin.\\ a) $x^2-x-2$\\ b) $4x^2-2x-2$
 \end{enumerate}
 
-Kuinka kaukana funktion ... kaksi nollakohtaa ovat toisistaan?
+%Kuinka kaukana funktion ... kaksi nollakohtaa ovat toisistaan?
 
-Kinematiikkaa
+%Kinematiikkaa
 
 \begin{tehtava}
 Johda toisen asteen yhtälön ratkaisukaava lähtien yhtälön normaalimuodosta $ax^2+bx+c=0$, missä $a, b$ ja $c$ ovat reaalisia vakioita ja $a \neq 0$.
 	\begin{vastaus}
-	Katso luku Toisen asteen yhtälön ratkaisukaava.
+	Katso luku Toisen asteen yhtälön ratkaisukaava. (On olemassa erilaisia variantteja.)
 	\end{vastaus}
 \end{tehtava}
 
@@ -256,7 +294,6 @@ Funktion $y$ arvot määritellään kaavalla $y(t)=\dfrac{t^2+\left(\frac{1}{3}+
 	\end{alakohdat}
 		\end{vastaus}
 \end{tehtava}
-
 \newpage
 %\subsection*{Harjoituskoe 5}
 %\begin{enumerate}
@@ -266,6 +303,6 @@ Funktion $y$ arvot määritellään kaavalla $y(t)=\dfrac{t^2+\left(\frac{1}{3}+
 %\item Montako juurta on yhtälöllä\\ a) $9x^2+3x+1=0$\\ b) $6x^2-3x=-2$\\ c) $3x^2-32$\\ d) $3x-30=0$
 %\item Millä parametrin r arvoilla yhtälölle $rx^2-rx+1=0$ ei ole ratkaisuja.
 %\item 
-%\item Selitä miksi kerrottaessa epäyhtälöä negatiivisella luvulla epäyhtälön merkki kääntyy.
+%\item 
 %\item Ratkaise yhtälö $\frac{21x^2}{700}-\frac{7x}{1400}-\frac{14x}{2800}=0$ ilman laskinta.
 %\end{enumerate}
