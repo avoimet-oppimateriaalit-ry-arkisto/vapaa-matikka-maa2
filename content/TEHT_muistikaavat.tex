@@ -127,13 +127,26 @@ Osoita, että seuraavat laskukaavat eivät päde etsimällä esimerkki reaaliluv
 \begin{tehtava}
 	Tiedetään, että $(a+b)^2=12$ ja $(a-b)^2=4$. Ratkaise tulon $ab$ suuruus.
     \begin{vastaus}
-	$ab = 2$. Käytä muistikaavoja.
+	$ab = 2$
     \end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
-(YO 1888/1) Mikä on $a/b$:n arvo, jos \\
-$ (\sqrt{a}+\sqrt{b}):(\sqrt{a}-\sqrt{b})=\sqrt{2}$ ?
+Tutkitaan funtiota $f$, jonka arvot lasketaan kaavalla $f(n)=n^2+2n+2$, missä $n$ on mielivaltainen kokonaisluku.
+	\begin{alakohdat}
+		\alakohta{Osoita, että $f$ kuvaa parillisen kokonaisluvun aina uudeksi parilliseksi luvuksi.}
+		\alakohta{Tutki, mitä vastaavasti parittomille kokonaisluvuille käy.}
+	\end{alakohdat}
+	\begin{vastaus}
+		\begin{alakohdat}
+		\alakohta{Parilliset luvut voidaan aina kirjoittaa muodossa $2k$, missä $k$ on jokin kokonaisluku. Sijoitetaan lauseke muuttujan paikalle, niin funktion arvoksi saadaan $f(2k)=(2k)^2+2\cdot 2k+2=4k^2+4k+2=2(2k^2+2k+1)$. Koska $k$:n neliö on kokonaisluku, $k$ kerrottuna toisella kokonaisluvulla on kokonaisluku, ja kokonaislukujen summat ovat kokonaislukuja, on $2k^2+2k+1$ myös kokonaisluku. Funktion arvo saatiin siis kirjoitettua muodossa ''kaksi kertaa kokonaisluku'', joten mielivaltaisesta parillisesta luvusta tuli funktion arvoksi myös parillinen luku. }
+		\alakohta{Mielivaltaisen parittoman luvun voi kirjoittaa muodossa $2k+1$, missä $k$ on kokonaisluku. Nyt funktion arvoksi saadaan $f(2k+1)=(2k+1)^2+2(2k+1)+2=4k^2+4k+1+4k+2+2=4k^2+8k+5=2(2k^2+4k+2)+1$. Sulkeissa oleva lauseke on a-kohdan päättelyllä aina kokonaisluku, joten funktion arvo on muotoa ''kaksi kertaa kokonaisluku plus yksi'', eli aina pariton luku. Parittomasta luvusta tulee siis funktion arvona aina pariton luku.}
+	\end{alakohdat}
+	\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+(YO 1888/1) Mikä on $a/b$:n arvo, jos $(\sqrt{a}+\sqrt{b}):(\sqrt{a}-\sqrt{b})=\sqrt{2}$?
 	\begin{vastaus}
 $(3-2\sqrt{2}):(3+2\sqrt{2})$
 	\end{vastaus}
@@ -190,7 +203,7 @@ $(3-2\sqrt{2}):(3+2\sqrt{2})$
 \end{tehtava}
 
 \begin{tehtava}
-   	Muistikaavan mukaisen lausekkeen tunnistaminen on tärkeää. Tunnista edellisessä tehtävässä laskemasi muistikaavat ja esitä lausekkeet alkuperäisessä muodossaan tulona.
+   	Muistikaavan mukaisen lausekkeen tunnistaminen on tärkeää. Tunnista edellisessä tehtävässä laskemasi muistikaavat ja esitä lausekkeet tulomuodossa.
     \begin{alakohdat}
             \alakohta{$1-a^2$} 
 	        \alakohta{$a^2-4a+4$}
@@ -302,8 +315,8 @@ $(3-2\sqrt{2}):(3+2\sqrt{2})$
     \end{alakohdat}
     \begin{vastaus}
         \begin{alakohdat}
-            \alakohta{$(100+1)^2=100^2+2\cdot 100 \cdot 1 + 1^2=10201$}
-            \alakohta{$99^2=(100-1)^2=100^2-2\cdot 100 \cdot 1 + 1^2=9801 $}
+            \alakohta{$(100+1)^2=100^2+2\cdot 100 \cdot 1 + 1^2=10\,201$}
+            \alakohta{$99^2=(100-1)^2=100^2-2\cdot 100 \cdot 1 + 1^2=9\,801$}
             \alakohta{$49\cdot 51=(50-1)(50+1)=50^2-1^2=2\,500-1=2\,499$}
             \alakohta{$35^2-25^2 = (35+25)(35-25)=60 \cdot 10 = 600$}
             \alakohta{$170^2-30^2 = (170+30) \cdot (170-30)^2 = 200 \cdot 140 = 28\,000$}
@@ -342,6 +355,19 @@ $(3-2\sqrt{2}):(3+2\sqrt{2})$
 	        \alakohta{Yleisesti $\left(a+\sqrt{a^2-1}\right)^{-1}= a-\sqrt{a^2-1}$}
     \end{alakohdat}
     \end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+Sievennä lauseke $(x^2+2y^2+2xy)(x^2+2y^2-2xy)$ muistikaavojen avulla.
+	\begin{vastaus}
+	\begin{align*}
+		(x^2+2y^2+2xy)(x^2+2y^2-2xy) \\
+		&=(x^2+2y^2)^2-(2xy)^2 \\
+		&=x^4+4x^2y^2+4y^2-4x^2y^2 \\
+		&=x^4+4y^4
+	\end{align*}		
+	(Yhtälöä $(x^2+2y^2+2xy)(x^2+2y^2-2xy)=x^4+4y^2)$ kutsutaan \textit{Sophie Germainen} identiteetiksi.)
+	\end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}

@@ -38,14 +38,14 @@ Tekijät ovat alhaisempaa astetta kuin alkuperäinen polynomi, kunhan tekijänä
 \begin{tehtava}
 Miten selvität polynomin $(x^3-2x)^{15}$ asteen purkamatta sulkuja?
 	\begin{vastaus}
-
+Potenssiinkorotettava lausekkeen suurin aste määrää koko polynomin termin. Koska sulkeita avattaessa $x^3$ lopulta korotettaisiin potenssin $15$, sinne tulisi korkeimmaksi termiksi $x^{3\cdot 15}=x^{45}$. Asteen saa siis selville kertomalla korkeimman asteen termin eksponentit potenssilla, johon sulkeisiin laitettu polynomi korotetaan.
 	\end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
 Miksi epäyhtälön ''suunta muuttuu'', kun se kerrotaan puolittain negatiivisella luvulla?
 	\begin{vastaus}
-
+Epäyhtälö (muu kuin $\neq$) kuvaa järjestystä, ja kahden toisistaan poikkeavan reaaliluvun keskinäinen järjestys muuttuu aina, jos molemmat muutetaan vastaluvuikseen (eli on kerrottu negatiivisella luvulla) -- aiemmin pienemmästä luvusta on tullutkin nyt suurempi. Totuusarvon säilyttämiseksi tulee sen vuoksi kääntää epäyhtälömerkin suunta.
 	\end{vastaus}
 \end{tehtava}
 
@@ -66,30 +66,108 @@ Mitkä ovat polynomin $x^4-x^2+\sqrt{2}x-1\,337$ termien kertoimet neljännestä
 	\end{vastaus}
 \end{tehtava}
 
-\begin{enumerate}
+\begin{tehtava}
+Tulosta $ab$ tiedetään, että $a = 0$. Mikä seuraavista väitteistä pitää välttämättä paikkansa?
+		\begin{alakohdat}
+		\alakohta{$b \geq a$}
+		\alakohta{$b = 0$}
+		\alakohta{$|b| \geq a$}
+		\alakohta{$ab = 0$}
+		\end{alakohdat}
+		\begin{vastaus}
+d) $ab = 0$
+	\end{vastaus}
+\end{tehtava}
 
-\item Monettako astetta on kahden muuttujan polynomi $x^5y-x^4y^3-715\,517y$?
-\item Polynomifunktion $P(x)=-x^3-x^2-x-1$ arvo kohdassa $x=-1$?
-\item Mikä polynomi saadaan, kun avataan sulut lausekkeesta $(2x-1)^2$?
-\item Tulosta $ab$ tiedetään, että $a = 0$. Mikä seuraavista väitteistä pitää välttämätät paikkansa?
-a) $ab = 0$
-b) $b \geq a$
-c) $b = 0$
-d) $|b| \geq a$
+\begin{tehtava}
+Mitkä ovat funktion $f(x) = (x+3)(x-50)$ nollakohdat?
+		\begin{alakohdat}
+		\alakohta{$3$ ja $-50$}
+		\alakohta{$-3$ ja $-50$}
+		\alakohta{$-3$ ja $50$}
+		\alakohta{$3$ ja $50$}
+		\end{alakohdat}
+		\begin{vastaus}
+c) $-3$ ja $50$ %FIXME: opeta, sanotaanko "nollakohta on 3" vai "nollakohta on x=3"
+	\end{vastaus}
+\end{tehtava}
 
-\item Mitkä on funktion $f(x) = (x+3)(x-50)$ nollakohdat
-\item Olkoon $f(x) = x^2 + 1$, ja $g(x) = x^2 - x$. Mitkä väitteistä pitää paikkaansa.
-a) $f(x) + g(x) = 2x^2 - x + 1$
-b) $f(x) \cdot g(x) = x^4-x^3+x^2-x$
-c) $f(0) = g(0)$
-d) $f(-1) = g(-1)$
-\end{enumerate}
+\begin{tehtava}
+Monettako astetta on kahden muuttujan polynomi $x^5y-x^4y^3-715\,517y$?
+		\begin{alakohdat}
+		\alakohta{$1.$}
+		\alakohta{$3.$}
+		\alakohta{$4.$}
+		\alakohta{$5.$}
+		\alakohta{$7.$}
+		\end{alakohdat}
+		\begin{vastaus}
+e) $7.$
+	\end{vastaus}
+\end{tehtava}
 
- Pysyykö epäyhtälö yhtäpitävänä, jos
-a) lisäämällä kummallekkin puolelle sama lauseke
-b) kertomalla kummatkin puolet samalla luvulla
-c) korotetaan kummatkin puolet potenssiin n
-d) kerrotaan negatiivisellä luvulla ja käännetään epäyhtälön suunta.
+\begin{tehtava}
+Mikä on polynomin $P(x)=-x^3-x^2-x-1$ arvo kohdassa $x=-1$?
+		\begin{alakohdat}
+		\alakohta{$-4$}
+		\alakohta{$-2$}
+		\alakohta{$0$}
+		\alakohta{$1$}
+		\alakohta{$2$}
+		\end{alakohdat}
+		\begin{vastaus}
+c) $0$
+	\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+Mikä polynomi saadaan, kun avataan sulut lausekkeesta $(2x-1)^2$ ja sievennetään?
+		\begin{alakohdat}
+		\alakohta{$2x^2+1$}
+		\alakohta{$4x^2+1$}
+		\alakohta{$2x^2-1$}
+		\alakohta{$4x^2-1$}
+		\alakohta{$4x^2-4x+1$}
+		\alakohta{$4x^2+4x+1$}
+		\alakohta{$4x^2-4x-1$}
+		\end{alakohdat}
+		\begin{vastaus}
+e) $4x^2-4x+1$
+	\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+Määritellään kahden funktion arvot kaavoilla $f(x) = x^2 + 1$ ja $g(x) = x^2 - x$. Mikä väitteistä ei pidä paikkaansa?
+	\begin{alakohdat}
+	\alakohta{$f(x) + g(x) = 2x^2 - x + 1$}
+	\alakohta{$f(x) \cdot g(x) = x^4-x^3+x^2-x$}
+	\alakohta{$f(0) = g(0)$}
+	\alakohta{$f(-1) = g(-1)$}
+	\end{alakohdat}
+	\begin{vastaus}
+	c) $f(0) = g(0)$
+	\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+Eräs reaalimuuttujan polynomi saa kahdella erillisellä, suljetulla reaalilukuvälillä negatiivia arvoja ja kaikkialla muualla epänegatiivisia arvoja. Kuinka monta nollakohtaa polynomilla on?
+	\begin{alakohdat}
+	\alakohta{nolla}
+	\alakohta{yksi}
+	\alakohta{kaksi}
+	\alakohta{kolme}
+	\alakohta{neljä}
+	\end{alakohdat}
+	\begin{vastaus}
+	e) neljä
+	\end{vastaus}
+\end{tehtava}
+
+% Pysyykö epäyhtälö yhtäpitävänä, jos
+%a) lisäämällä kummallekkin puolelle sama lauseke
+%b) kertomalla kummatkin puolet samalla luvulla
+%c) korotetaan kummatkin puolet potenssiin n
+%d) kerrotaan negatiivisellä luvulla ja käännetään epäyhtälön suunta.
 
 \subsection*{Tosi vai epätosi?}
 
@@ -100,10 +178,14 @@ Pitävätkö väitteet paikkansa?
 	\alakohta{Potenssifunktiot ovat polynomifunktioita.}
 	\alakohta{Jokainen polynomi on jaollinen nollakohdillaan.}
 	\alakohta{Jos epäyhtälön molemmat puolet korotetaan kolmanteen potenssiin, epäyhtälö säilyy yhtäpitävänä.}
+	\alakohta{Jos trinomin kertoo trinomilla, sulkeet avaamalla saadaan kuusi termiä (ennen mahdollista sieventämistä eli samanasteisten termien yhdistämistä)}
+	\alakohta{Jos kolmannen asteen polynomi korotetaan kokonaisuudessaan kolmanteen potenssiin, saadaan tulomuotoinen yhdeksännen asteen polynomi.}
 	\end{alakohdat}
 	
 	\begin{vastaus}
 	\begin{alakohdat}
+	\alakohta{Tosi}
+	\alakohta{Epätosi}
 	\alakohta{Tosi}
 	\alakohta{Epätosi}
 	\alakohta{Tosi}
