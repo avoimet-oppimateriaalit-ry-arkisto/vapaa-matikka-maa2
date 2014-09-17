@@ -1,6 +1,6 @@
-Seuraavissa harjoituskokeissa on kussakin kahdeksan tehtävää, jotka on suunniteltu niin, että jokaisesta (alakohtineen) saa korkeintaan kuusi pistettä. %tulevaisuudessa täydet ratkaisut pisteytysohjeineen
+Seuraavissa harjoituskokeissa on kussakin kahdeksan tehtävää, jotka on suunniteltu niin, että jokaisesta (alakohtineen) saa korkeintaan kuusi pistettä. %tulevaisuudessa täydet ratkaisut pisteytysohjeineen %tarkista pisteytykset
 
-\subsection*{Harjoituskoe 1}
+\subsection*{Harjoituskoe 1} %prosenttilaskuja pitäisi ympätä...
 
 \begin{tehtava}
 	\begin{alakohdat}
@@ -156,11 +156,14 @@ Yhdistämällä osatulokset päädytään päätelmään, että alkuperäisen ep
  \end{tehtava}
 
 \begin{tehtava}
-lineaaristen mallien vertailu
-
-Vuokra-auto
+Millä parametrin $a$ arvoilla yhtälöllä $x^2-4ax-a=0$ on täsmälleen yksi reaaliratkaisu?
 	\begin{vastaus}
-	
+	Diskriminantin lauseke on $16a^2+4a$, ja yhtälöllä on yksi reaalijuuri (kaksoisjuuri) jos ja vain jos diskriminantin arvo on nolla. Ratkaistaan siis yhtälö $16a^2+4a=0$.
+	\begin{align*}
+	16a^2+4a&=0 \\
+	4a(4a+1)&=0 \\
+	\end{align*}
+	Eli $4a=0$ tai $4a+1=0$. Ensimmäisestä yhtälöstä saadaan ratkaistua $a=0$, ja toisesta $a=-\frac{1}{4}$.
 	\end{vastaus}
 \end{tehtava}
 
@@ -186,23 +189,28 @@ Reaaliluvuista $a$ ja $b$ tiedetään, että $a<b$. Osoita kyseistä epäyhtäl�
 \end{tehtava}
 
 \begin{tehtava}
-Toisen asteen yhtälön sovellus
+Määritä pienin kokonaisluku, joka toteuttaa epäyhtälön $\frac{1}{4}n^4<240+n^2$.
 	\begin{vastaus}
-	
+	$n=-5$
 	\end{vastaus}
 \end{tehtava}
 
-%\begin{tehtava}
-%Kajsalla on maatila, minne hän on rakentamassa uutta hevosaitausta. Aitatarvikkeita on ostettu niin paljon, että aitaa voidaan rakentaa $200$ metriä.
-%	\begin{vastaus}
-%	
-%	\end{vastaus}
-%\end{tehtava}
-
-\begin{tehtava}
-Määritä pienin kokonaisluku, joka toteuttaa epäyhtälön $\frac{1}{4}x^4<240+x^2$.
+\begin{tehtava} %PALJON LISÄÄ NÄITÄ TEHTÄVIÄ KIRJAAN JA ESIMERKKEJÄ ('' on myytävä näin monta,jotta pääsee omilleen, millä hinalla möi...'')
+Karkkikauppias ostaa joka kuukausi irtokarkkeja tukusta hintaan $10$\,€/kg ja myy niitä tavallisesti asiakkailleen hintaan $12,9$\,€/kg. Makeisten ostamisen lisäksi kauppiaalla menee joka kuukausi $500$ euroa niin sanottuihin kiinteisiin kustannuksiin. Kiinteät kustannukset ovat aina samat riippumatta myynnin määrästä. Kysynnän hän osaa arvioida niin hyvin, että mitään makeisia ei jää myymättä.
+\begin{alakohdat}
+	\alakohta{Merkitään myynnin kuukausittaista määrää kilogrammoina $q$:lla. Muodosta lausekelle niin sanotulle voittofunktiolle $P$ eli kuvaukselle myynnin määrästä tuottoon (euroina), josta on vähennetty kaikki myyntitoiminnan kustannukset. Funktion arvot määräävään lausekkeeseen ei tarvitse erikseen merkitä yksiköitä.}
+	\alakohta{Kauppias on pitkän myyntikokemuksen perusteella huomannut, että kilogrammahinnan kasvattaminen eurolla vähentää aina kuukausittaista myyntiä $50$ kilogrammaa ja toisaalta kilogrammahinnan vähentäminen eurolla lisää aina kuukausittaista myyntiä samat $50$ kilogrammaa. Mikä tulisi asettaa kilohinnaksi, jotta $180$ kilogramman kuukausimyynnillä kauppias ei jäisi liiketoiminnassaan tappiolle?}
+\end{alakohdat}
 	\begin{vastaus}
-	$x=-5$
+		\begin{alakohdat}
+	\alakohta{$P(q)=12,9q-10q-500=2,9q-500$}
+	\alakohta{Merkataan kilogrammahinnan euromääräistä lisäystä $x$:llä. Nyt voittofunktion määrittelevä yhtälö on $P(q,x)=(12,9+x)(q-50x)-10(q-50x)-500$, eli uusi kilogrammahinta on $12,9+x$ ja myynnin määrä $q-50x$. Sijoitetaan tehtävänannossa annettu $q=180$, niin saadaan $P(180,x)=(12,9+x)(180-50x)-10(180-50x)-500$. Ottamalla tästä tai jo aiemmasta muodosta yhteinen tekijä saadaan lyhyempi muoto $P(180,x)=(12,9+x-10)(180-50x)-500$ eli $P(180,x)=(2,9+x)(180-50x)-500$ (vrt. a-kohdan sievennetty lauseke).
+	
+Liiketoiminta on tappiotonta, kun $P(x)\geq0$, missä $P(x)=0$ tarkoittaisi tilannetta, että kauppiaan tulot kattavat täsmälleen kaikki kustannukset. Ratkaisemme siis epäyhtälön $(2,9+x)(180-50x)-500\geq0$, joka sievennettynä on $-50x^2+35x+22\geq0$. Polynomin $-50x^2+35x+22$ nollakohdat ovat ratkaisukaavan tai laskimen ratkaisuohjelman perusteella $x=-0,4$ ja $x=1,1$. Koska polynomin korkeimman asteen termin kerroin on negatiivinen, olisi polynomin kuvaaja alaspäin aukeava paraabeli, ja siten kuvaajan perusteella voidaan päätellä, että funktio $P$ saa positiiviset arvonsa nollakohtiensa välissä. Nollakohtia $x=-0,4$ ja $x=1,1$ vastaavat kilohinnat ovat $12,9-(-0,4)=13,3$ ja $12,9-1,1=11,8$, molemmat yksikössä €/kg.
+
+Jotta myyntitappiolta vältyttäisiin, kauppiaan tulee asettaa kilohinnaksi vähintään $11,8$\,€/kg ja korkeitaan $13,3$\,€/kg. (Näiden rajojen välillä tulee voittoa., rajojen ulkopuolella tappiota.)
+}
+		\end{alakohdat}
 	\end{vastaus}
 \end{tehtava}
 
@@ -222,9 +230,9 @@ Määritä pienin kokonaisluku, joka toteuttaa epäyhtälön $\frac{1}{4}x^4<240
 \begin{tehtava}
 Muodosta muuttujan $a$ funktio $f$, joka antaa toisen asteen polynomin $ax^2+2x+2a$ nollakohtien etäisyyden. Määritä funktion $f$ laajin reaalinen määrittelyjoukko ja arvojoukko.
 	\begin{vastaus}
-	Nollakohtien erotusfunktion määrittelee yhtälö $f(a)=\frac{\sqrt{4-8a^2}}{a}$. Määrittelyjoukkoa rajoittavia tekijöitä ovat neliöjuuri ja jakolasku. Nimittäjän perusteella vaaditaan $a\neq 0$, neliöjuuren perusteella $4-8a^2\geq 0$. Epäyhtälöstä saadaan ratkaisuksi $-\frac{1}{\sqrt{2}}\leq a \leq \frac{1}{\sqrt{2}}$. Yhdistämällä tiedot saadaan määrittelyjoukoksi kaksiosainen reaalilukuväli $[-\frac{1}{\sqrt{2}},0[\cup ]0,\frac{1}{\sqrt{2}}]$.
+	Nollakohtien erotusfunktion määrittelee yhtälö $f(a)=\frac{\sqrt{4-8a^2}}{a}$. Määrittelyjoukkoa rajoittavia tekijöitä ovat neliöjuuri ja jakolasku. Nimittäjän perusteella vaaditaan $a\neq 0$, neliöjuuren perusteella $4-8a^2\geq 0$. Epäyhtälöstä saadaan ratkaisuksi $-\frac{1}{\sqrt{2}}\leq a \leq \frac{1}{\sqrt{2}}$. Yhdistämällä tiedot saadaan määrittelyjoukoksi kaksiosainen reaalilukuväli $[-\frac{1}{\sqrt{2}},0[\cup ]0,\frac{1}{\sqrt{2}}]$. Välin voi myös ilmaista muodossa $[-\frac{1}{\sqrt{2}},\frac{1}{\sqrt{2}}] \setminus \lbrace 0 \rbrace$.
 	
-	Arvojoukon voi päätellä asettamalla funktion arvoksi tuntematon $t$ ja ratkaisemalla yhtälöstä muuttuja $x$:
+Arvojoukon voi päätellä asettamalla funktion arvoksi tuntematon $t$ ja ratkaisemalla yhtälöstä muuttuja $x$:
 	$$\frac{\sqrt{4-8x^2}}{x}=t$$
 	$$\sqrt{4-8x^2}=tx$$
 	$$4-8x^2=(tx)^2=t^2x^2$$
@@ -300,16 +308,30 @@ Tutkitaan polynomifunktiota $P$, jonka arvot määritellään kaavalla $P(x)=x^3
 \end{tehtava}
 
 \begin{tehtava}
-Ratkaise yhtälö $y$ yhtälöstä $y^{2n}-y^n=2$.
+Ratkaise yhtälö $t^5-t^4=t^2-t^3$.
 	\begin{vastaus}
-$y=(-1)^{\frac{1}{n}}$ (Tämä ei ole välttämättä reaalinen -- riippuu $n$:n arvosta.) tai $y=2^{\frac{1}{n}}$
+$t^5-t^4=t^2-t^3$ vastaa yhtälöä $t^5-t^4+t^3-t^2=0$, jonka taasen saa yhteisen tekijän (useaan kertaan) ottamalla muotoon $t^2(t-1)(t^2+1)=0$, eli reaaliset nollakohdat ovat $t=0$ ja $t=1$.
 	\end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
-Ratkaise yhtälö $t^5-t^4=t^2-t^3$.
+Ratkaise yhtälöstä $y^{2n}=y^n$ molemmat reaalimuuttujat $y$ ja $n$.
 	\begin{vastaus}
-$t^5-t^4=t^2-t^3$ vastaa yhtälöä $t^5-t^4+t^3-t^2=0$, jonka taasen saa yhteisen tekijän (useaan kertaan) ottamalla muotoon $t^2(t-1)(t^2+1)=0$, eli reaaliset nollakohdat ovat $t=0$ ja $t=1$.
+Alkuperäinen yhtälö on yhtäpitävä yhtälön $y^{2n}-y^n=0$ kanssa. Sovelletaan tulon nollasääntöä:
+	\begin{align*}
+	y^{2n}-y^n&=0 \\
+	(y^n)^2-y^n&=0 \\
+	y^n \cdot y^n-y^n&=0 \\
+	y^n(y^n-1)&=0\\
+	\end{align*}
+Eli joko $y^n=0$ tai $y^n-1=0$.	 Ensimmäinen yhtälö voi päteä vain, jos $y=0$. (Jos käsitellään $n$:n eri arvoja, niin eksponenttifunktio ei voi saada milloinkaan arvoa $0$.) Tällöin vaaditaan yksikäsitteisyyden vuoksi $n\neq0$, koska $0^0$ ei ole määritelty.
+
+Toisesta yhtälöstä saadaan $y^n=1$, joka voi olla tosi vain, jos joko $n=0$ ja $y \neq 0$ (minkä tahansa nollasta poikeavan luvun nollas potenssi on arvoltaan yksi) tai sitten $y=1$ ja $n$ on mielivaltainen.
+
+Yhtälön ratkaisut ovat siis:
+$y=0$ ja $n \neq 0$ \\
+$n=0$ ja $y \neq 0$ \\
+$y=1$ ja mikä tahansa $n$
 	\end{vastaus}
 \end{tehtava}
 
@@ -345,18 +367,9 @@ Lausekkeen perusteella nollakohdat ovat $\frac{b}{a}$,$\frac{a^2+b^2}{2ab}$ ja $
  \end{tehtava}
 
 \begin{tehtava}
-Matkapuhelinliittymääsi on saatavilla kaksi maksusuunnitelmaa mobiilidatan käyttöön. Tarjouksen A mukaan ... Tarjouksen B mukaan...
-
-Millä kuukauden datamäärillä tarjous B on tarjousta A edullisempi?
-	\begin{vastaus}
-	
-	\end{vastaus}
-\end{tehtava}
-
-\begin{tehtava}
 Polynomifunktion $P$ arvot määritellään kaavalla $P(x)=(k^2+2k)x+2k$. Määritä vakio $k$ siten, että ehto $P(2)=0$ pätee. Piirrä ehdon täyttävän polynomifunktion kuvaaja.
 	\begin{vastaus}
-$P(2)=0 \rightarrow$ $(k^2+2k)\cdot 2+2k=0$
+$P(2)=0 \Rightarrow$ $(k^2+2k)\cdot 2+2k=0$
 \begin{align*}
 k^2\cdot 2+2k\cdot 2+2k&=0 \\
 2k^2+4k+2k&=0 \\
@@ -388,6 +401,27 @@ x^2-4x+4&=0 \\
 x-2&=0 \\
 x&=2
 \end{align*}
+	\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava} %tästä esimerkkejä...
+Erääseen ulkomaalaiseen matkapuhelinliittymään on saatavilla kaksi maksusuunnitelmaa mobiilidatan käyttöön. Tarjouksen A mukaan maksat kuukaudessa vakiohinnan $40$ euroa riippumatta siitä, kuinka paljon dataa kulkee. Tarjouksen B mukaan kuukauden ensimmäiset $100$ megatavua maksaa $25$ euroa, minkä jälkeen ylimenevästä osasta maksetaan $0,12$ euroa megatavua kohden. Millä kuukausittaisilla datamäärillä tarjous A on tarjousta B edullisempi?
+	\begin{vastaus}
+	Merkataan $x$:llä kulkeneen datan määrää megatavuissa. Tällöin tarjouksen A hinta on $A(x)=40$ (hinta aina $40$ euroa, vakiofunktio) ja tarjouksen B hinta määritellään paloittain:
+	$$B(x)=\begin{cases}
+	25, & \mbox{kun } x\leq 100 \\
+	0,12(x-100)+25, & \mbox{kun } x>100
+	\end{cases}$$
+Yhtäsuuruuden voi merkitä vaihtoehtoisesti myös jälkimmäisen lausekkeen ehtoon: $x\geq 100$. Jälkimmäisessä ehdossa on pelkän $x$:n sijaan $x-100$, jotta datamäärän lasku alkaisi nollasta, eikä heti sadan megatavun rajan ylitettyä tulisi $0,12\cdot 100=12$ euron lisälaskua.
+
+Alle sadan megatavun käytössä tarjous A ei voi olla halvempi, koska $40>25$. Sitä suuremmalla käytöllä sen sijaan tämä on mahdollista. Ratkaistaan siis epäyhtälö $40<0,12(x-100)+25$, josta selviää, millä $x$:n arvoilla tarjous A on halvempi.
+\begin{align*}
+40&<0,12(x-100)+25 \\
+15 &<0,12(x-100) \\
+125&<x-100 \\
+225&<x \\
+\end{align*}
+	Tarjous A on siis halvempi, kun dataa siirretään kuukaudessa yli 225 megatavua.
 	\end{vastaus}
 \end{tehtava}
 
