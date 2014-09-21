@@ -230,7 +230,7 @@ Jotta myyntitappiolta vältyttäisiin, kauppiaan tulee asettaa kilohinnaksi väh
 \begin{tehtava}
 Muodosta muuttujan $a$ funktio $f$, joka antaa toisen asteen polynomin $ax^2+2x+2a$ nollakohtien etäisyyden. Määritä funktion $f$ laajin reaalinen määrittelyjoukko ja arvojoukko.
 	\begin{vastaus}
-	Nollakohtien erotusfunktion määrittelee yhtälö $f(a)=\frac{\sqrt{4-8a^2}}{a}$. Määrittelyjoukkoa rajoittavia tekijöitä ovat neliöjuuri ja jakolasku. Nimittäjän perusteella vaaditaan $a\neq 0$, neliöjuuren perusteella $4-8a^2\geq 0$. Epäyhtälöstä saadaan ratkaisuksi $-\frac{1}{\sqrt{2}}\leq a \leq \frac{1}{\sqrt{2}}$. Yhdistämällä tiedot saadaan määrittelyjoukoksi kaksiosainen reaalilukuväli $[-\frac{1}{\sqrt{2}},0[\cup ]0,\frac{1}{\sqrt{2}}]$. Välin voi myös ilmaista muodossa $[-\frac{1}{\sqrt{2}},\frac{1}{\sqrt{2}}] \setminus \lbrace 0 \rbrace$.
+	Nollakohtien erotusfunktion määrittelee yhtälö $f(a)=\frac{\sqrt{4-8a^2}}{a}$. Määrittelyjoukkoa rajoittavia tekijöitä ovat neliöjuuri ja jakolasku. Nimittäjän perusteella vaaditaan $a\neq 0$, neliöjuuren perusteella $4-8a^2\geq 0$. Epäyhtälöstä saadaan ratkaisuksi $-\frac{1}{\sqrt{2}}\leq a \leq \frac{1}{\sqrt{2}}$. Yhdistämällä tiedot saadaan määrittelyjoukoksi kaksiosainen reaalilukuväli, jonka osat erottaa luku nolla: $[-\frac{1}{\sqrt{2}},\frac{1}{\sqrt{2}}] \setminus \lbrace 0 \rbrace$. % $[-\frac{1}{\sqrt{2}},0[\cup ]0,\frac{1}{\sqrt{2}}]$.
 	
 Arvojoukon voi päätellä asettamalla funktion arvoksi tuntematon $t$ ja ratkaisemalla yhtälöstä muuttuja $x$:
 	$$\frac{\sqrt{4-8x^2}}{x}=t$$
@@ -405,7 +405,7 @@ x&=2
 \end{tehtava}
 
 \begin{tehtava} %tästä esimerkkejä...
-Erääseen ulkomaalaiseen matkapuhelinliittymään on saatavilla kaksi maksusuunnitelmaa mobiilidatan käyttöön. Tarjouksen A mukaan maksat kuukaudessa vakiohinnan $40$ euroa riippumatta siitä, kuinka paljon dataa kulkee. Tarjouksen B mukaan kuukauden ensimmäiset $100$ megatavua maksaa $25$ euroa, minkä jälkeen ylimenevästä osasta maksetaan $0,12$ euroa megatavua kohden. Millä kuukausittaisilla datamäärillä tarjous A on tarjousta B edullisempi?
+Erääseen ulkomaalaiseen matkapuhelinliittymään on saatavilla kaksi maksusuunnitelmaa mobiilidatan käyttöön. Tarjouksen A mukaan maksat kuukaudessa vakiohinnan $40$ euroa riippumatta siitä, kuinka paljon dataa kulkee. Tarjouksen B mukaan kuukauden ensimmäiset $100$ megatavua maksaa $25$ euroa, minkä jälkeen ylimenevästä osasta maksetaan $0,12$ euroa megatavua kohden. Millä kuukausittaisilla datamäärillä tarjous A on tarjousta B edullisempi? Hinnoittelussa ei tehdä eroa vastaanotetun ja lähetetyn datan välillä.
 	\begin{vastaus}
 	Merkataan $x$:llä kulkeneen datan määrää megatavuissa. Tällöin tarjouksen A hinta on $A(x)=40$ (hinta aina $40$ euroa, vakiofunktio) ja tarjouksen B hinta määritellään paloittain:
 	$$B(x)=\begin{cases}
@@ -460,7 +460,7 @@ Johda toisen asteen yhtälön ratkaisukaava lähtien yhtälön normaalimuodosta 
 	\end{vastaus}
 \end{tehtava}
 
-%\newpage
+\newpage
 
 %\subsection*{Harjoituskoe 5}
 %\begin{enumerate}
