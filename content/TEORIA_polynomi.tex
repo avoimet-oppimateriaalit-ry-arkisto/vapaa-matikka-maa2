@@ -7,12 +7,11 @@
 
 %sivuviite Vapaa matikka 1:een, lausekkeen määritelmä kirjoitettuna laskutoimituksena
 
-\laatikko{Polynomi on lauseke, jossa esiintyy vain:
-\begin{itemize}
-\item muuttujien potensseja (eksponentti luonnollinen luku, mukaan lukien $0$)
-\item kerrottuna jollakin vakiolla sekä
-\item näiden potenssien summia.
-\end{itemize}
+\luettelolaatikko{Polynomin määritelmä}{
+§ Lauseke, jossa esiintyy vain
+§§ muuttujien potensseja (eksponentti luonnollinen luku, mukaan lukien $0$)
+§§ kerrottuna jollakin vakiolla sekä
+§§ näiden potenssien summia.
 }
 
 Polynomissa voi olla yksi tai useampia muuttujia, tai se voi olla muuttujaton vakiopolynomi. Vakiopolynomin tapauksessa muuttujan eksponentin ajatellaan olevan $0$, sillä $x^0=1$, jolloin muuttuja -- oli se mikä hyvänsä -- katoaa.
@@ -32,20 +31,20 @@ $xy^2+x^2y$& muuttujina $x$ ja $y$
 
 \begin{esimerkki}
 Miksi muuttujan $t$ lausekkeet 
-\begin{enumerate}
-\item $\frac{2}{t}$
-\item $\pi^t$
-\item $\sqrt{t}+2$ ja
-\item $t^\pi$
-\end{enumerate}
+\alakohdat{
+§ $\frac{2}{t}$
+§ $\pi^t$
+§ $\sqrt{t}+2$ ja
+§ $t^\pi$
+}
 \emph{eivät ole} polynomeja?
 	\begin{esimratk}
-\begin{enumerate}
-\item $\frac{2}{t}$ ei ole polynomi, sillä muuttujan $t$ eksponentti ei ole luonnollinen luku: $\frac{2}{t}=2 \cdot \frac{1}{t}= 2t^{-1}$, ja $-1 \notin \mathbb{N}$.
-\item $\pi^t$ ei ole polynomi, sillä muuttuja on eksponentissa eikä potenssin kantalukuna.
-\item $\sqrt{t}+2$ ei ole polynomi, sillä neliöjuuri ei ole esitettävissä potenssina, jonka eksponentti olisi luonnollinen luku: $\sqrt{t}+2=t^{\frac{1}{2}}+2$, ja $\frac{1}{2} \notin \mathbb{N}$.
-\item $t^{\pi}$ ei ole polynomi, sillä muuttujan eksponentti ei ole luonnollinen luku: $\pi \notin \mathbb{N}$. ($\pi$ on irrationaaliluku.)
-\end{enumerate}
+\alakohdat{
+§ $\frac{2}{t}$ ei ole polynomi, sillä muuttujan $t$ eksponentti ei ole luonnollinen luku: $\frac{2}{t}=2 \cdot \frac{1}{t}= 2t^{-1}$, ja $-1 \notin \mathbb{N}$.
+§ $\pi^t$ ei ole polynomi, sillä muuttuja on eksponentissa eikä potenssin kantalukuna.
+§ $\sqrt{t}+2$ ei ole polynomi, sillä neliöjuuri ei ole esitettävissä potenssina, jonka eksponentti olisi luonnollinen luku: $\sqrt{t}+2=t^{\frac{1}{2}}+2$, ja $\frac{1}{2} \notin \mathbb{N}$.
+§ $t^{\pi}$ ei ole polynomi, sillä muuttujan eksponentti ei ole luonnollinen luku: $\pi \notin \mathbb{N}$. ($\pi$ on irrationaaliluku.)
+}
 	\end{esimratk}
 \end{esimerkki}
 
@@ -96,10 +95,10 @@ Trinomi $x^2-x^2+1$ ei ole toisen, vaan nollannen asteen polynomi, sillä sieven
 Useamman muuttujan tapauksessa polynomin termien asteet lasketaan muuttujien potenssien summana.
 
 \begin{esimerkki}
-	\begin{alakohdat}
-    \alakohta{Monomin $x^3y^2z$ aste on $6$, sillä muuttujien eksponenttien summa on $3+2+1=6$.}
-    \alakohta{Trinomin $x^6+x^2y^5-1$ aste on $7$, sillä korkea-asteisin termi on $x^2y^5$, ja sen aste on $2+5=7$.}
-    \end{alakohdat}
+	\alakohdat{
+    § Monomin $x^3y^2z$ aste on $6$, sillä muuttujien eksponenttien summa on $3+2+1=6$.
+    § Trinomin $x^6+x^2y^5-1$ aste on $7$, sillä korkea-asteisin termi on $x^2y^5$, ja sen aste on $2+5=7$.
+    }
 \end{esimerkki}
 
 Koska yhteenlasku on vaihdannainen ja liitännäinen, polynomin termit voi kirjoittaa missä tahansa järjestyksessä. Esimerkiksi polynomi $y^4+y^2-1$ voidaan kirjoittaa täysin yhtenevästi myös järjestyksessä $-1+y^4+y^2$. Yleensä polynomien termit kirjoitetaan niiden asteen perusteella laskevaan järjestykseen niin, että korkeimman asteen termi kirjoitetaan ensin. Termit on joskus tapana ryhmitellä -- jos mahdollista -- myös muuttujittain.
