@@ -12,9 +12,22 @@ $a \neq b$ & $a$ ei ole yhtä suuri kuin $b$ \\
 \end{tabular}
 \end{center}
 
-%yhtäsuuri vai yhtä suuri?
+Kahden luvun välinen epäyhtälöriippuvuus eli -relaatio voidaan esittää myös kielteisesti: $a \nless b $. Epäyhtälöiden relaatio-ominaisuudet poikkeavat merkittävästi yhtäsuuruudesta. Yhtäsuuruus on sekä refleksiivinen, symmetrinen että transitiivinen (ks. MAA1), mutta $<$, $>$ ovat vain transitiivisia, ja $\leq$ ja $\geq$ ovat transitiivisia ja symmetrisiä.
 
-Sama epäyhtälö voidaan kirjoittaa kahdella tavalla: $a < b$ tarkoittaa samaa kuin $b > a$, ja $a \leq b$ tarkoittaa samaa kuin $b \geq a$. Epäyhtälö $a < b$ pätee täsmälleen silloin, kun epäyhtälö $a \geq b$ ei päde. Kahden luvun välinen epäyhtälöriippuvuus eli -relaatio voidaan esittää myös kielteisesti: $a \nless b $.
+\begin{esimerkki}
+Jos $a>b$ ja $b>c$, niin aivan varmasti $a>c$. (transitiivisuus)
+Koska $a \leq a$ kaikilla luvuilla, niin $\leq$ on symmetrinen relaatio.
+\end{esimerkki}
+
+Sama epäyhtälö voidaan ilmaista usealla tavalla.
+
+\begin{esimerkki}
+\begin{alakohdat}
+\alakohta{$a < b$ tarkoittaa samaa kuin $b > a$}
+\alakohta{$a \leq b$ tarkoittaa samaa kuin $b \geq a$}.
+\alakohta{Epäyhtälö $a < b$ pätee täsmälleen silloin, kun epäyhtälö $a \geq b$ ei päde.}
+\end{alakohdat}
+\end{esimerkki}
 
 Epäyhtälön totuusarvo voi riippua epäyhtälön puolilla esiintyvien muuttujien arvoista. Tämän perusteella epäyhtälöt voidaan jakaa kolmeen tyyppiin:
 
@@ -25,6 +38,13 @@ Epäyhtälön totuusarvo voi riippua epäyhtälön puolilla esiintyvien muuttuji
 \item \emph{Aina epätosi} -- ei päde millään muuttujien arvoilla. Esimerkiksi epäyhtälöt $3 < 1$ ja $x < x$ eivät päde koskaan.
 \end{itemize}
 }
+
+\begin{esimerkki}
+Kaverisi katsoo teini-ikäisiä mutanttininjakilpikonnia (ja tietenkin fanittaa Michelangeloa), ja sinua kiinnostaa, kuinka monta jaksoa sarjaa on jo julkaistu. Kaverisi vastaa tiedusteluusi epämääräisesti, että viimeisin julkaistu jakso oli toisen tuotantokauden $19$. jakso. Mitä tästä voidaan päätellä, eli kuinka monta jaksoa ($n$) sarjaa on julkaistu enintään ja vähintään? Oletetaan, että jokaisessa tuotantokaudessa on yhtä monta jaksoa. Esitä vastaus epäyhtälönä.
+	\begin{esimratk}
+	Jos toisesta tuotantokaudesta on julkaistu jo $19$ jaksoa ja oletamme, että tuotantokausissa on yhtä monta jaksoa, niin silloin jaksoja on kokonaisuudessaan julkaistu \textit{vähintään} $2\cdot 19 = 38$. Emme tiedä, kuinka paljon ensimmäisessä tuotantokaudessa on ollut jaksoja, joten toisen tuotantokauden jakso $19$ saattaa olla niin alku- kuin loppupäästäkin. Ylärajaa näillä tiedoilla ei siis voi antaa, eli voimme vain sanoa $n\geq38$. (Muita lisätietoja hankkimalla tai esimerkiksi arvioimalla, että jaksoja ei tuotantokaudessa voi olla enempää kuin vuodessa viikkoja, jonkinlainen yläraja toki saadaan.)
+	\end{esimratk}
+\end{esimerkki}
 
 \subsection{Epäyhtälöiden muokkaaminen}
 
@@ -112,7 +132,10 @@ Epäyhtälön kertominen lukua yksi suuremmalla luvulla.
 \end{align*}
 \end{esimerkki}
 
-Sen sijaan negatiivisella luvulla kertominen ei säilytä suuruusjärjestystä. Esimerkiksi kun lukuja 2 ja 5 kerrotaan luvulla $-1$, niiden suuruusjärjestys kääntyy:
+Sen sijaan negatiivisella luvulla kertominen ei säilytä suuruusjärjestystä.
+
+\begin{esimerkki}
+Kun luvut $2$ ja $5$ kerrotaan luvulla $-1$, niiden suuruusjärjestys kääntyy:
 
 \begin{kuva}
 lukusuora.pohja(-6, 6, 11.5, n = 2)
@@ -128,6 +151,7 @@ lukusuora.piste(5, "$5$", 1)
 lukusuora.piste(-2, r"$2 \cdot (-1)$", 2)
 lukusuora.piste(-5, r"$5 \cdot (-1)$", 2)
 \end{kuva}
+\end{esimerkki}
 
 Jos epäyhtälöä kerrotaan tai jaetaan negatiivisella luvulla, epäyhtälömerkin suunta täytyy kääntää, jotta saataisiin yhtäpitävä epäyhtälö.
 %: esimerkissä $2 < 5$ muuttuu muotoon $-2 > -5$.
@@ -150,7 +174,11 @@ Epäyhtälön kertominen negatiivisella luvulla.
 }
 %tarkennus/laajennus! ^
 
-Kuten yhtälöiden tapauksessa, epäyhtälön kertominen puolittain nollalla ei tuota yhtäpitävää epäyhtälöä, sillä esimerkiksi epäyhtälöstä $a \leq b$ tulee $0 \leq 0$, joka on aina tosi, ja epäyhtälöstä $a < b$ tulee $0 < 0$, joka on aina epätosi.
+Kuten yhtälöiden tapauksessa, epäyhtälön kertominen puolittain nollalla ei tuota yhtäpitävää epäyhtälöä.
+
+\begin{esimerkki}
+$a \leq b$ tulee $0 \leq 0$, joka on aina tosi, ja epäyhtälöstä $a < b$ tulee $0 < 0$, joka on aina epätosi.
+\end{esimerkki}
 
 \begin{esimerkki}
 Muokataan epäyhtälöä $-2x+4<6$ käyttämällä esitettyjä operaatioita.
@@ -164,20 +192,32 @@ Tehdyt operaatiot tuottavat yhtäpitäviä epäyhtälöitä, joten epäyhtälö 
 
 \subsection{Reaalilukuvälit}
 
-Ratkaistaessa yhtälöitä ratkaisuksi saadaan yleensä pieni joukko lukuja. Epäyhtälöiden tapauksessa on tyypillistä, että ratkaisu on \termi{väli}{väli}, eli kaikki kahden luvun väliset luvut.
+Ratkaistaessa yhtälöitä ratkaisuksi saadaan yleensä pieni joukko lukuja. Epäyhtälöiden tapauksessa on tyypillistä, että ratkaisu on \termi{väli}{väli}, eli kaikki kahden luvun väliset luvut. Reaalilukuvälejä merkitään usein laittamalla välin ala- ja ylärajat hakasulkujen sisään: merkintä $[a, b]$ tarkoittaa niiden kaikkien lukujen (esim. $x$) joukkoa, jotka toteuttavat kaksoisepäyhtälön $a \leq x \leq b$. Mikäli ala- tai yläraja ei kuulu väliin, vastaava hakasulku käännetään.
 
-Reaalilukuvälejä merkitään usein laittamalla välin ala- ja ylärajat hakasulkujen sisään.  Esimerkiksi $[a, b]$ tarkoittaa lukuja $x$ jotka toteuttavat kaksoisepäyhtälön $a \leq x \leq b$. Mikäli ala- tai yläraja ei kuulu väliin, vastaava hakasulku käännetään. Esimerkiksi $[2,5[$ tarkoittaa lukuja $x$, joille pätee $2 \leq x < 5$.
+\begin{esimerkki}
+$[2,5[$ tarkoittaa lukuja $x$, joille pätee $2 \leq x < 5$. %lisää!
+\end{esimerkki}
+
+Huomaa, että pelkkä merkintä $[a,b]$ ja sen variaatiot tarkoittavat vain joukkoa reaalilukuja. Jos tarkoitus on esittää väite, että jokin luku (esim. $y$) kuuluu tuolle välille, se kirjoitetaan $y \in [a,b]$, missä $\in$ luetaan ''kuuluu joukkoon'' tai ''kuuluu välille''.
 
 Väliä kutsutaan \termi{suljettu väli}{suljetuksi väliksi}, mikäli ala- ja yläraja kuuluvat väliin, ja \termi{avoin väli}{avoimeksi väliksi}, mikäli ala- ja yläraja eivät kuulu väliin. Jos vain toinen rajoista kuuluu väliin, väli on \termi{puoliavoin väli}{puoliavoin}.
 
-Väli voidaan piirtää lukusuoralle kahden luvun välisenä janana. Päätepisteet merkitään täytetyllä ympyrällä, mikäli luku kuuluu väliin, ja muuten tyhjällä ympyrällä. Esimerkiksi väli $[a, b[$ piirretään seuraavasti:
+Väli voidaan piirtää lukusuoralle kahden luvun välisenä janana. Päätepisteet merkitään täytetyllä ympyrällä, mikäli luku kuuluu väliin, ja muuten tyhjällä ympyrällä.
+
+\begin{esimerkki}
+Väli $[a, b[$ piirretään seuraavasti:
 
 \begin{kuva}
 lukusuora.pohja(0, 10, 8)
 lukusuora.vali(2, 8, True, False, "$a$", "$b$")
 \end{kuva}
+\end{esimerkki}
 
-Jos halutaan, että väli ei ole alhaalta tai ylhäältä rajoitettu, merkitään rajaksi $-\infty$ tai $\infty$. Koska ääretön ei ole reaaliluku eikä näin ollen kuulu väliin, on sitä vastaava hakasulku käännettävä, ja siten esimerkiksi väli $]{-\infty}, a[$ on avoin. 
+Jos halutaan, että väli ei ole alhaalta tai ylhäältä rajoitettu, merkitään välimerkintään rajaksi $-\infty$ tai $\infty$. Koska ääretön ei ole reaaliluku eikä näin ollen kuulu väliin, on sitä vastaava hakasulku kirjoitettava ulospäin käännettynä.
+
+\begin{esimerkki}
+Väli $]{-\infty}, a[$ on avoin. 
+\end{esimerkki}
 
 Seuraavaan taulukkoon on koottu reaalilukuvälien olennainen käsitteistö ja merkinnät.
 
@@ -243,7 +283,7 @@ $x \leq 5$ & $x \in {]{-\infty}, 5]}$ & \naytaKuva{vali7} & Puoliavoin väli  \\
 $x < 5$ & $x \in {]{-\infty}, 5[}$ & \naytaKuva{vali8} & Avoin väli  \\
 \hline
 \end{tabular}
-\newpage
+
 \begin{esimerkki}
 	\begin{alakohdat}
 	\alakohta{Epäyhtälö $2<x<10$ vaatii, että $x$ saa arvoja kahden ja kymmenen väliltä, mutta se ei koskaan saa täsmälleen näitä reuna-arvoja. Kyseessä on avoin väli kahdesta kymmeneen, $]2,10[$. Annetulle epäyhtälölle yhtäpitävä ilmaisu on $x \in ]2,10[$.}
@@ -262,20 +302,32 @@ Merkitse väli
 	\alakohta{$]6,\infty[$}
 	\end{alakohdat}
 epäyhtälömerkintänä. Onko väli suljettu, avoin vai puoliavoin?
-\begin{esimratk}
+	\begin{esimratk}
 \begin{alakohdat}
 \alakohta{Kun $x\in [-2,4]$, pätee $-2\leq x \leq 4$. Väli on suljettu, koska päätepisteet kuluvat väliin.}
 \alakohta{Kun $x\in [4,5[$, pätee $4 \leq x < 5$. Väli on puoliavoin.}
 \alakohta{Kun $x\in ]6,\infty[$, pätee $6<x$. Väli on avoin, koska kumpikaan päätepiste ei kuulu väliin.}
 \end{alakohdat}
-\end{esimratk}
+
+Huomaa, että ei ole väliä, millä symbolilla mielivaltaista välille kuuluuvaa lukua merkkaa -- tässä niin tehtiin $x$:llä.
+	\end{esimratk}
 \end{esimerkki}
 
-Joskus, erityisesti englanninkielisissä matematiikan teksteissä, käytetään avoimen välin merkintänä käännetyn hakasulkeen sijasta tavallista kaarisuljetta. Merkintää ei suositella käytettävän, koska samaa merkintää käytetään kahdessa ulottuvuudessa siajitsevan pisteen koordinaattien ilmaisuun.
+Joskus -- erityisesti englanninkielisissä matematiikan teksteissä -- käytetään avoimen välin merkintänä käännetyn hakasulkeen sijasta tavallista kaarisuljetta. Merkintää ei suositella käytettävän, koska samaa merkintää käytetään kahdessa ulottuvuudessa siajitsevan pisteen koordinaattien ilmaisuun.
 \newpage
 \begin{esimerkki}
 	\begin{alakohdat}
 	\alakohta{Avoin väli $]1,9[$ kirjoitetaan joskus $(1,9)$.}
 	\alakohta{Puoliavoin väli $]3,4]$ kirjoitetaan joskus $(3,4]$.}
 	\end{alakohdat}
+\end{esimerkki}
+
+Myös kaksoisepäyhtälöitä voi muokata laskutoimituksilla.
+
+\begin{esimerkki}
+\begin{align*}
+& a+1<b+1<c && ||-1 \\
+&a<b<c-1 && ||\cdot(-1) \\
+&-a>-b>1-c &&
+\end{align*}
 \end{esimerkki}

@@ -116,15 +116,17 @@ Kuuluvatko luvut välille $[0,1;0,92]$?
 \end{tehtava}
 
 %Pitääkö epäyhtälö paikkansa, kun k=... ... ...  ...
-
+%
 \begin{tehtava}
 Monissa arkisissa ilmauksissa esitetään jonkinlaisia rajoja. Tarkoittavatko kyseiset ilmaisut aidon epäyhtälön tilannetta ($<$ tai $>$) vai sitä, että myös reuna-arvot ovat sallittuja ($\leq$ tai $\geq$)?
 	\begin{alakohdat}
-		\alakohta{"Lasten ateriat $12$-vuotiaaksi asti"}
-		\alakohta{"Kauppa on auki jälleen kuun ensimmäisestä päivästä lähtien."}
-		\alakohta{"Loton kierros on auki klo 20 asti."}
-		\alakohta{"jäseniksi käyvät korkeintaan $29$-vuotiaat"}		
-		\alakohta{"Lukekaa ensi tunnille kirjaa Potenssi-lukuun asti."}
+		\alakohta{''Lasten ateriat $12$-vuotiaaksi asti''}
+		\alakohta{''Kauppa on auki jälleen kuun ensimmäisestä päivästä lähtien.''}
+		\alakohta{''Loton kierros on auki klo 20 asti.''} %fixme, chekc mathmode, eli onko kellonaika luku?
+		\alakohta{''Nuorisojärjestön jäseniksi käyvät korkeintaan $29$-vuotiaat''}		
+		\alakohta{''Lukekaa ensi tunnille kirjaa Potenssi-lukuun asti.''}
+		\alakohta{''Seminaari on pidetään 5.11.--8.11.''}
+		\alakohta{''Arvonnassa voi voittaa jopa satatuhatta euroa!''}
 	\end{alakohdat}
 	\begin{vastaus}
 		\begin{alakohdat}
@@ -133,6 +135,8 @@ Monissa arkisissa ilmauksissa esitetään jonkinlaisia rajoja. Tarkoittavatko ky
 		\alakohta{Pelata voi vielä, kun kun kello on 19.59. Klo 20.00 on jo myöhäistä, joten ilmaisun ei käsitetä sisältävän reuna-arvoaan.}
 		\alakohta{Yhtäsuuruus on mukana, myös $29$-vuotiaat kelpaavat jäseniksi.}
 		\alakohta{Epäselvää. Se, pitääkö kotitehtävänä lukea myös Potenssi-luku, riippuu opettajasta.}
+		\alakohta{Kyseessä on suljettu väli, seminaaria pidetään varmasti vielä sekä viides että kahdeksas päivä.}
+		\alakohta{Suljettu väli ainakin päävoiton suuntaan (pienintä voittoa ei tunneta), sillä päävoitto tuskin on esimerkiksi $99\,999,99$ euroa.}
 		\end{alakohdat}
 	\end{vastaus}
 \end{tehtava}
@@ -180,7 +184,7 @@ Säilyykö epäyhtälö totena, kun siitä otetaan puolittain neliöjuuri?
 \end{tehtava}	
 	
 \begin{tehtava}
-Säilyykö epäyhtälö totena, kun epäyhtälön molemmille puolille käytetään 10-kantaista eksponenttifunktiota? (Eli epäyhtälön puolet sijoitetaan eksponenttifunktion muuttujan paikalle.)
+Säilyykö epäyhtälö totena, kun epäyhtälön molemmille puolille käytetään 10-kantaista eksponenttifunktiota? (Eli epäyhtälön puolet sijoitetaan eksponenttifunktion lausekkeeseen muuttujan paikalle.)
 	\begin{alakohdat}
 		\alakohta{$0\leq 2$}
 		\alakohta{$-2<2$}
@@ -199,9 +203,10 @@ Säilyykö epäyhtälö totena, kun epäyhtälön molemmille puolille käytetä�
 	\end{vastaus}
 \end{tehtava}	
 	
-	\begin{tehtava}
+\begin{tehtava}
 Piirrä funktion $P$ kuvaaja, kun funktion arvot määritellään kaavalla $P(x)=x^3-x$, ja funktion määrittelyjoukko on
 		\begin{alakohdat}
+		\alakohta{$\lbrace 1 \rbrace$}
 		\alakohta{$[0,2]$}
 		\alakohta{$[-2,2]$}
 		\alakohta{$]-\infty, 0]$}
@@ -209,7 +214,17 @@ Piirrä funktion $P$ kuvaaja, kun funktion arvot määritellään kaavalla $P(x)
 		%FIXME, TODO: PUUTTUU VASTAUS
 		\end{alakohdat}
 \end{tehtava}
-	
+
+\begin{tehtava}
+Osoita, että $m^2+n^2 \geq mn$ kaikilla kokonaisluvuilla $m$ ja $n$. Vihje: (binomin neliö).
+		\begin{vastaus}
+Käsitellään erilaiset tilanteet kolmessa eri osassa: 		
+		Jos joko $m$ tai $n$ on nolla, niin $0^2+n^2 \geq 0\cdot n$ eli $n^2\geq 0$, mikä pitää paikkansa kaikilla kokonaisluvuille $n$. Symmetrian vuoksi sama pätee myös tapaukselle $m=0$. Jos sekä $m$ että $n$ ovat nollia, saadaan $0\geq 0$, mikä on myös tosi epäyhtälö. \\
+		Jos $m$ ja $n$ ovat erimerkkiset, niin epäyhtälön vasenpuoli on edelleen neliöönkorotuksien vuoksi positiivinen. Epäyhtälön oikea puoli on kertolaskun merkkisäännön perusteella varmasti negatiivinen. Koska kaikki negatiiviset luvut ovat kaikkia positiivisia lukuja pienempiä, epäyhtälö pätee tässä tapauksessa. \\
+		Viimeinen tapaus: $m$ ja $n$ on samanmerkkiset. Epäyhtälön $m^2+n^2 \geq mn$ vasen puoli muistuttaa binomin neliötä. Täydennetään se vähentämällä molemmilta puolilta epäyhtälöä lauseke $2mn$, jolloin saadaan: $m^2+n^2-2mn \geq mn-2mn$ eli $m^2-2mn+n^2 \geq -mn$, minkä voi kirjoittaa binomin neliön kaavalla muodossa $(m-n)^2 \geq -mn$. Neliöönkorotus varmistaa, että epäyhtälön vasen puoli on aina epänegatiivinen. Koska oletuksen mukaan $m$ ja $n$ ovat samanmerkkiset, tulo $-mn$ on negatiivinen. Jälleen epäyhtälö pitää paikkansa, ja kaikki mahdolliset $m$:n ja $n$:n yhdistelmät on käsitelty. 
+		\end{vastaus}
+\end{tehtava}
+
 \subsubsection*{Lisää tehtäviä}
 
 \begin{tehtava}
@@ -219,19 +234,9 @@ Keksi jokin epätosi epäyhtälö, jonka totuusarvo muuttuu todeksi, kun puolitt
 	\end{vastaus}
 \end{tehtava}
 
-\begin{tehtava}
-$\star$ Osoita, että $m^2+n^2 \geq mn$ kaikilla kokonaisluvuilla $m,n$.
-		\begin{vastaus}
-Käsitellään erilaiset tilanteet kolmessa eri osassa: 		
-		Jos joko $m$ tai $n$ on nolla, niin $0^2+n^2 \geq 0\cdot n$ eli $n^2\geq 0$, mikä pitää paikkansa kaikilla kokonaisluvuille $n$. Symmetrian vuoksi sama pätee myös tapaukselle $m=0$. Jos sekä $m$ että $n$ ovat nollia, saadaan $0\geq 0$, mikä on myös tosi epäyhtälö. \\
-		Jos $m$ ja $n$ ovat erimerkkiset, niin epäyhtälön vasenpuoli on edelleen neliöönkorotuksien vuoksi positiivinen. Epäyhtälön oikea puoli on kertolaskun merkkisäännön perusteella varmasti negatiivinen. Koska kaikki negatiiviset luvut ovat kaikkia positiivisia lukuja pienempiä, epäyhtälö pätee tässä tapauksessa. \\
-		Viimeinen tapaus: $m$ ja $n$ on samanmerkkiset. Epäyhtälön $m^2+n^2 \geq mn$ vasen puoli muistuttaa binomin neliötä. Täydennetään se vähentämällä molemmilta puolilta epäyhtälöä lauseke $2mn$, jolloin saadaan: $m^2+n^2-2mn \geq mn-2mn$ eli $m^2-2mn+n^2 \geq -mn$, minkä voi kirjoittaa binomin neliön kaavalla muodossa $(m-n)^2 \geq -mn$. Neliöönkorotus varmistaa, että epäyhtälön vasen puoli on aina epänegatiivinen. Koska oletuksen mukaan $m$ ja $n$ ovat samanmerkkiset, tulo $-mn$ on negatiivinen. Jälleen epäyhtälö pitää paikkansa, ja kaikki mahdolliset $m$:n ja $n$:n yhdistelmät on käsitelty. 
-		\end{vastaus}
-\end{tehtava}
-
 %parannettava ratkaisua!
 \begin{tehtava}
-$\star$ Tilapäivitys sosiaalisessa mediassa sanoo: ''Vaimollani, alle $30$ vuotta, oli naurussa pitelemistä, kun hänelle valkeni, että täytän tänä vuonna $35$. Nauran takaisin, kun hän täyttää $35$ ja itse olen... yli neljäkymmentä.'' Pitääkö päättely välttämättä paikkansa?
+Tilapäivitys sosiaalisessa mediassa sanoo: ''Vaimollani, alle $30$ vuotta, oli naurussa pitelemistä, kun hänelle valkeni, että täytän tänä vuonna $35$. Nauran takaisin, kun hän täyttää $35$ ja itse olen... yli neljäkymmentä.'' Pitääkö päättely välttämättä paikkansa?
 		\begin{vastaus}
 		Merkataan vaimon ikää $v$:llä ja puolisonsa ikää $p$:llä. Näiden avulla voimme kirjoittaa kaksoisepäyhtälön $v<30<p$. Huomataan myös, että $p=34$. Alle kolmekymppinen täyttää $35$ vuotta aikaisintaan kuuden vuoden kuluttua. Lisätään kaksoisepäyhtälöön puolittain $6$, jolloin saadaan $v+6<36<p+6$. Koska $p=34$, niin $v+6<36<40$, eli puolisonsa on välttämättäkin täyttänyt $40$ vuotta.
 		\end{vastaus}
